@@ -1,0 +1,50 @@
+spriteTypes = {
+	
+
+	#Event pictures
+	
+	spriteType = {
+		name = "GFX_news_event_BYZ_formation"
+		texturefile = "gfx/event_pictures/news_event_BYZ_formation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_BYZ_formation"
+		texturefile = "gfx/event_pictures/report_event_BYZ_formation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_BYZ_Hagia_Sofia"
+		texturefile = "gfx/event_pictures/report_event_BYZ_Hagia_Sofia.dds"
+	}
+	
+	#Decisions
+	
+	spriteType = {
+		name = "GFX_decision_BYZ_notawarcrimeintheslightest"
+		texturefile = "gfx/interface/decisions/decision_BYZ_notawarcrimeintheslightest.dds"
+	}
+	
+	#Ideas
+	
+	spriteType = {
+		name = "GFX_idea_BYZ_resurgent_byzantium"
+		texturefile = "gfx/interface/ideas/BYZ_byzantium_resurgent.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BYZ_immigrant_economy"
+		texturefile = "gfx/interface/ideas/BYZ_immigrant_economy.dds"
+	}
+	
+	#National Focuses
+	
+	spriteType = {
+		name = "GFX_goal_BYZ_resurgent_byzantium"
+		texturefile = "gfx/interface/goals/focus_BYZ_resurgent.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BYZ_army_resurgent"
+		texturefile = "gfx/interface/goals/focus_BYZ_army_resurgent.dds"
+	}
+}

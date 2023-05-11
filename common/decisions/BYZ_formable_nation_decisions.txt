@@ -1,0 +1,283 @@
+foreign_influence = {
+	
+	form_byz_syria = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GRE
+		}
+
+		available = {
+			is_subject = no
+			OR = {
+			# SYR
+				controls_state = 554
+				SYR = { is_subject_of = ROOT }
+			}
+			# BSR
+			OR = {
+				controls_state = 554
+				BSR = { is_subject_of = ROOT }
+			}
+		}
+
+		visible = {
+			original_tag = GRE
+			NOT = { has_global_flag = formed_byz_syria }
+			OR = {
+			# SYR
+				controls_state = 554
+				SYR = { is_subject_of = ROOT }
+			}
+			# BSR
+			OR = {
+				controls_state = 554
+				BSR = { is_subject_of = ROOT }
+			}
+		}
+
+		complete_effect = {
+			#custom_effect_tooltip = form_byz_syria_tt
+			hidden_effect = {
+				BSR = {
+					transfer_state = 554
+					transfer_state = 553
+					transfer_state = 680
+					transfer_state = 992
+					transfer_state = 677
+					transfer_state = 995
+					transfer_state = 454
+					transfer_state = 455
+				}
+				set_autonomy = {
+					target = BSR
+					autonomy_state = byz_exarchate
+				}
+				set_global_flag = formed_byz_syria
+				BSR = {
+					load_oob = BSR
+					add_manpower = 75000
+					instant_effect = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 8000 producer = GRE }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 600 producer = GRE }
+					add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 200 producer = GRE }
+					add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 producer = GRE }
+					add_equipment_to_stockpile = { type = gw_armored_car_equipment amount = 100 producer = GRE }
+				}
+				}
+			}
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+
+form_byz_egypt = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GRE
+		}
+
+		available = {
+			is_subject = no
+			OR = {
+			# SYR
+				controls_state = 446
+				EGY = { is_subject_of = ROOT }
+			}
+			# BSR
+			OR = {
+				controls_state = 447
+				AGY = { is_subject_of = ROOT }
+			}
+		}
+
+		visible = {
+			original_tag = GRE
+			NOT = { has_global_flag = formed_byz_egypt }
+			OR = {
+			# SYR
+				controls_state = 446
+				EGY = { is_subject_of = ROOT }
+			}
+			# BSR
+			OR = {
+				controls_state = 447
+				AGY = { is_subject_of = ROOT }
+			}
+		}
+
+		complete_effect = {
+			#custom_effect_tooltip = form_byz_syria_tt
+			hidden_effect = {
+				AGY = {
+					transfer_state = 446
+					transfer_state = 447
+					transfer_state = 453
+					transfer_state = 273
+					transfer_state = 1009
+					transfer_state = 451
+					transfer_state = 457
+					transfer_state = 1011
+					transfer_state = 452
+					transfer_state = 862
+					transfer_state = 1007
+					transfer_state = 1010
+					transfer_state = 549
+					transfer_state = 1008
+					transfer_state = 551
+					transfer_state = 552
+					transfer_state = 663
+					transfer_state = 450
+					transfer_state = 448
+					transfer_state = 456
+				}
+				set_autonomy = {
+					target = AGY
+					autonomy_state = byz_exarchate
+				}
+				set_global_flag = formed_byz_egypt
+				AGY = {
+					load_oob = AGY
+					add_manpower = 375000
+					instant_effect = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 20000 producer = GRE }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 1200 producer = GRE }
+					add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = GRE }
+					add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 500 producer = GRE }
+					add_equipment_to_stockpile = { type = gw_armored_car_equipment amount = 200 producer = GRE }
+				}
+				}
+			}
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	protect_byz_serb = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GRE
+		}
+
+		available = {
+			SER = {
+				has_war_with = BUL
+			}
+		}
+
+		visible = {
+			original_tag = GRE
+			SER = {
+				has_war_with = BUL
+			}
+		}
+
+		cost = 10
+		fire_only_once = yes
+
+		complete_effect = {
+			declare_war_on = {
+				target = BUL
+				type = annex_everything
+			}
+				set_autonomy = {
+					target = SER
+					autonomy_state = byz_exarchate
+				}
+		hidden_effect = {
+			SER = {
+				create_country_leader = {
+					name = "Exarch Péter II"
+					desc = "POLITICS_PETAR_II_DESC"
+					picture = "Portrait_SER_Peter_II.png"
+					expire = "1965.1.1"
+					ideology = [RULING_PARTY_TAG]
+				}
+				add_ideas = {
+					SER_Milan_Stojadinovic_hog_pau
+					SER_Aleksandar_Cincar_Markovic_for_pau
+					SER_Dusan_Letica_eco_ade
+					SER_Milan_Srskic_sec_ade
+				}
+			}
+		}
+	}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	protect_byz_romania = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GRE
+		}
+
+		available = {
+			ROM = {
+				has_war_with = BUL
+			}
+		}
+
+		visible = {
+			original_tag = GRE
+			ROM = {
+				has_war_with = BUL
+			}
+		}
+
+		cost = 10
+		fire_only_once = yes
+
+		complete_effect = {
+			declare_war_on = {
+				target = BUL
+				type = annex_everything
+			}
+			set_autonomy = {
+				target = ROM
+				autonomy_state = byz_exarchate
+			}
+			hidden_effect = {
+				ROM = {
+					create_country_leader = {
+						name = "Exarch Károl II"
+						desc = "POLITICS_CAROL_II_DESC"
+						picture = "Portrait_ROM_Carol_II.png"
+						expire = "1965.1.1"
+						ideology = [RULING_PARTY_TAG]
+						traits = { ROM_autocrat }
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+
+
+
+}
+
+
+
+
+

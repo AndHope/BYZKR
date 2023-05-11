@@ -1,0 +1,27 @@
+
+state={
+	id=417
+	name="STATE_417"
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = PER
+		add_core_of = KUR
+		victory_points = {
+			7604 3 
+		}
+
+	}
+
+	provinces={
+		1822 7604 13120 
+	}
+	manpower=347354
+	buildings_max_level_factor=1.000
+	state_category=two
+}

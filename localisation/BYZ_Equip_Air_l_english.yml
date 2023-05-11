@@ -1,0 +1,108 @@
+﻿l_english:
+
+###
+### Greece ###
+###
+
+
+
+GRE_scout_plane_equipment_1:0 "Aeolus 126"
+GRE_scout_plane_equipment_1_short:0 "Aeolus. 126"
+
+GEO_scout_plane_equipment_1:0 "Aeolus 126"
+GEO_scout_plane_equipment_1_short:0 "Aeolus. 126"
+
+ARM_scout_plane_equipment_1:0 "Aeolus 126"
+ARM_scout_plane_equipment_1_short:0 "Aeolus. 126"
+
+SER_scout_plane_equipment_1:0 "Aeolus 126"
+SER_scout_plane_equipment_1_short:0 "Aeolus. 126"
+
+ROM_scout_plane_equipment_1:0 "Aeolus 126"
+ROM_scout_plane_equipment_1_short:0 "Aeolus. 126"
+
+ # Air
+
+ GRE_CAS_equipment_1:0 "Peristéri"
+ GRE_CAS_equipment_1_short:0 "Peristéri"
+ GRE_CAS_equipment_2:0 "Dryokoláptis"
+ GRE_CAS_equipment_2_short:0 "Dryokoláptis"
+ GRE_CAS_equipment_3:0 "Odikó Ptinó"
+ GRE_CAS_equipment_3_short:0 "Odikó Ptinó"
+
+ GRE_cv_CAS_equipment_1:0 "Alkyóna"
+ GRE_cv_CAS_equipment_1_short:0 "Alkyóna"
+ GRE_cv_CAS_equipment_2:0 "Chelidóni"
+ GRE_cv_CAS_equipment_2_short:0 "Chelidóni"
+ GRE_cv_CAS_equipment_3:0 "Flóros"
+ GRE_cv_CAS_equipment_3_short:0 "Flóros"
+
+ GRE_fighter_equipment_0:0 "Astrapí"
+ GRE_fighter_equipment_0_short:0 "Astrapí"
+ GRE_fighter_equipment_0_desc:0 ""
+ GRE_fighter_equipment_1:0 "Aetós"
+ GRE_fighter_equipment_1_short:0 "Aetós"
+ GRE_fighter_equipment_2:0 "Foínix II"
+ GRE_fighter_equipment_2_short:0 "Foínix II"
+ GRE_fighter_equipment_3:0 "Geráki"
+ GRE_fighter_equipment_3_short:0 "Geráki"
+
+ GRE_cv_fighter_equipment_0:0 "Astrapí"
+ GRE_cv_fighter_equipment_0_short:0 "Astrapí"
+ GRE_cv_fighter_equipment_0_desc:0 ""
+ GRE_cv_fighter_equipment_1:0 "Aetós"
+ GRE_cv_fighter_equipment_1_short:0 "Aetós"
+ GRE_cv_fighter_equipment_2:0 "Tachýs"
+ GRE_cv_fighter_equipment_2_short:0 "Tachýs"
+ GRE_cv_fighter_equipment_3:0 "Spourgítis"
+ GRE_cv_fighter_equipment_3_short:0 "Spourgítis"
+
+ GRE_nav_bomber_equipment_1:0 "Pápia"
+ GRE_nav_bomber_equipment_1_short:0 "Pápia"
+ GRE_nav_bomber_equipment_2:0 "Pelekános"
+ GRE_nav_bomber_equipment_2_short:0 "Pelekános"
+ GRE_nav_bomber_equipment_3:0 "Kýknos"
+ GRE_nav_bomber_equipment_3_short:0 "Kýknos"
+
+ GRE_cv_nav_bomber_equipment_1:0 "Erodiós"
+ GRE_cv_nav_bomber_equipment_1_short:0 "Erodiós"
+ GRE_cv_nav_bomber_equipment_2:0 "Grýpas"
+ GRE_cv_nav_bomber_equipment_2_short:0 "Grýpas"
+ GRE_cv_nav_bomber_equipment_3:0 "Foínix"
+ GRE_cv_nav_bomber_equipment_3_short:0 "Foínix"
+
+ GRE_heavy_fighter_equipment_1:0 "Koráki"
+ GRE_heavy_fighter_equipment_1_short:0 "Koráki"
+ GRE_heavy_fighter_equipment_2:0 "Kollyríon"
+ GRE_heavy_fighter_equipment_2_short:0 "Kollyríon"
+ GRE_heavy_fighter_equipment_3:0 "Koukouvágia"
+ GRE_heavy_fighter_equipment_3_short:0 "Koukouvágia"
+
+ GRE_tac_bomber_equipment_0:0 "Ornio"
+ GRE_tac_bomber_equipment_0_short:0 "Ornio"
+ GRE_tac_bomber_equipment_1:0 "Pelargós"
+ GRE_tac_bomber_equipment_1_short:0 "Pelargós"
+ GRE_tac_bomber_equipment_2:0 "Foinikópteros"
+ GRE_tac_bomber_equipment_2_short:0 "Foinikópteros"
+ GRE_tac_bomber_equipment_3:0 "Iérax"
+ GRE_tac_bomber_equipment_3_short:0 "Iérax"
+
+ GRE_strat_bomber_equipment_1:0 "Vomvardistís"
+ GRE_strat_bomber_equipment_1_short:0 "Vomvardistís"
+ GRE_strat_bomber_equipment_2:0 "Almpatrós"
+ GRE_strat_bomber_equipment_2_short:0 "Almpatrós"
+ GRE_strat_bomber_equipment_3:0 "Vrontí"
+ GRE_strat_bomber_equipment_3_short:0 "Vrontí"
+
+ GRE_jet_fighter_equipment_1:0 "Drákon"
+ GRE_jet_fighter_equipment_1_short:0 "Drákon"
+ GRE_jet_fighter_equipment_2:0 "Pígasos"
+ GRE_jet_fighter_equipment_2_short:0 "Pígasos"
+
+ GRE_jet_tac_bomber_equipment_1:0 "Kataigída"
+ GRE_jet_tac_bomber_equipment_1_short:0 "Kataigída"
+ GRE_jet_tac_bomber_equipment_2:0 "Iérax II"
+ GRE_jet_tac_bomber_equipment_2_short:0 "Iérax II"
+
+ GRE_jet_strat_bomber_equipment_1:0 "Vrychithmós"
+ GRE_jet_strat_bomber_equipment_1_short:0 "Vrychithmós"

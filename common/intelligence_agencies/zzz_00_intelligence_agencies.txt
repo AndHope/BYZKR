@@ -1,0 +1,20 @@
+# List of names and logos for intelligence agencies
+# available trigger will determine if the logo is in the list of available logos or not
+# names is a list of names. Can be a localization entry, or the name directly. A random name will be picked from them.
+
+##-------------------------------
+##
+##	KAISERREICH ONES GOES HERE
+##
+##-------------------------------
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_kr_gre
+	names = { "Kentrikí Ypiresía Pliroforión" }
+
+	default = { tag = GRE }
+	available = { original_tag = GRE }
+}
+
+

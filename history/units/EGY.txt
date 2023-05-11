@@ -1,0 +1,1514 @@
+﻿division_template = {
+	name = "Al-Mushati Infantry"
+	is_locked = yes
+	division_names_group = EGY_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Sipahis"
+	is_locked = yes
+	division_names_group = EGY_CAV_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		camelry = { x = 2 y = 0 }
+		camelry = { x = 2 y = 1 }
+		camelry = { x = 2 y = 2 }
+		camelry = { x = 3 y = 0 }
+		camelry = { x = 3 y = 1 }
+		camelry = { x = 3 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Al-Milishiya"
+	division_names_group = EGY_MIL_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+	}
+	priority = 0
+	template_counter = 68
+}
+division_template = {
+	name = "Al-Mushati Garrison"
+	division_names_group = EGY_GAR_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+	priority = 0
+	template_counter = 67
+}
+
+division_template = {
+	name = "Armored-Sipahis"
+	division_names_group = EGY_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Thémata Polikí"
+	division_names_group = GRE_CAV_01
+	regiments = {
+		armored_car = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+
+units = {
+	division = {
+		#name = "Sipahis al-3i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10005
+		division_template = "Armored-Sipahis"
+		start_experience_factor = 1.0
+		##start_equipment_factor = 0.5
+		force_equipment_variants = { motorized_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { gw_armored_car_equipment = { owner = "GER" } }
+
+	}
+	division = {
+		#name = "Al-Mushati al-4i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10005
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { motorized_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { gw_armored_car_equipment = { owner = "GER" } }
+	}
+	division = {
+		#name = "Al-Mushati al-4i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10005
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-4i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10005
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-4i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10005
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-4i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10005
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-4i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10005
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-4i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10005
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-4i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10005
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-4i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10005
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-4i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10005
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-4i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10005
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati Infantry al-1i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3996
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati Infantry al-2i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3996
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-6i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 4076
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-2i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1071
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-3i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1071
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Sipahis al-2i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1071
+		division_template = "Sipahis"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { gw_tank_equipment = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Sipahis al-2i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1071
+		division_template = "Sipahis"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { gw_tank_equipment = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-5i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12806
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-4i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10005
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-4i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10005
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-4i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10005
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-4i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10005
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-4i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10005
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-4i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10005
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-4i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10005
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-4i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10005
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-4i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10005
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-4i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10005
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-4i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10005
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati Infantry al-1i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3996
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati Infantry al-2i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3996
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-6i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 4076
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-2i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1071
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-3i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1071
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Sipahis al-2i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1071
+		division_template = "Sipahis"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { gw_tank_equipment = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Sipahis al-2i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1071
+		division_template = "Sipahis"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { gw_tank_equipment = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Sipahis al-2i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1071
+		division_template = "Sipahis"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { gw_tank_equipment = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Sipahis al-2i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1071
+		division_template = "Sipahis"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { gw_tank_equipment = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Sipahis al-2i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1071
+		division_template = "Sipahis"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { gw_tank_equipment = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-5i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12806
+		division_template = "Al-Mushati Infantry"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+
+	division = {
+		#name = "Al-Mushati al-5i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12806
+		division_template = "Al-Milishiya"
+		start_experience_factor = 0.1
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-5i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12806
+		division_template = "Al-Milishiya"
+		start_experience_factor = 0.1
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-5i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12806
+		division_template = "Al-Milishiya"
+		start_experience_factor = 0.1
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-5i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12806
+		division_template = "Al-Milishiya"
+		start_experience_factor = 0.1
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-5i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12806
+		division_template = "Al-Milishiya"
+		start_experience_factor = 0.1
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-5i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12806
+		division_template = "Al-Milishiya"
+		start_experience_factor = 0.1
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-5i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12806
+		division_template = "Al-Milishiya"
+		start_experience_factor = 0.1
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-5i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12806
+		division_template = "Al-Milishiya"
+		start_experience_factor = 0.1
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-5i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12806
+		division_template = "Al-Milishiya"
+		start_experience_factor = 0.1
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-5i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12806
+		division_template = "Al-Milishiya"
+		start_experience_factor = 0.1
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-5i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12806
+		division_template = "Al-Milishiya"
+		start_experience_factor = 0.1
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-5i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12806
+		division_template = "Al-Milishiya"
+		start_experience_factor = 0.1
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-5i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12806
+		division_template = "Al-Milishiya"
+		start_experience_factor = 0.1
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-5i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12806
+		division_template = "Al-Milishiya"
+		start_experience_factor = 0.1
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-5i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12806
+		division_template = "Al-Milishiya"
+		start_experience_factor = 0.1
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-5i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12806
+		division_template = "Al-Milishiya"
+		start_experience_factor = 0.1
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-5i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12806
+		division_template = "Al-Milishiya"
+		start_experience_factor = 0.1
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-5i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12806
+		division_template = "Al-Milishiya"
+		start_experience_factor = 0.1
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-5i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12806
+		division_template = "Al-Milishiya"
+		start_experience_factor = 0.1
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Al-Mushati al-5i"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12806
+		division_template = "Al-Milishiya"
+		start_experience_factor = 0.1
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+
+}
+
+air_wings = {
+	446 = {
+		fighter_equipment_1 = {
+			owner = "EGY"
+			creator = "GER" 
+			amount = 75
+		}
+		start_experience_factor = 0.6
+		tac_bomber_equipment_0 = {
+			owner = "EGY"
+			creator = "GER" 
+			amount = 50
+		}
+		start_experience_factor = 0.6
+		fighter_equipment_0 = {
+			owner = "EGY"
+			creator = "AUS" 
+			amount = 75
+		}
+		start_experience_factor = 0.6
+		tac_bomber_equipment_0 = {
+			owner = "EGY"
+			creator = "GER" 
+			amount = 50
+		}
+		start_experience_factor = 0.6
+		fighter_equipment_0 = {
+			owner = "EGY"
+			creator = "AUS" 
+			amount = 75
+		}
+		start_experience_factor = 0.6
+		tac_bomber_equipment_0 = {
+			owner = "EGY"
+			creator = "GER" 
+			amount = 50
+		}
+		start_experience_factor = 0.6
+		fighter_equipment_0 = {
+			owner = "EGY"
+			creator = "GER" 
+			amount = 65
+		}
+		start_experience_factor = 0.6
+		tac_bomber_equipment_0 = {
+			owner = "EGY"
+			creator = "GER" 
+			amount = 50
+		}
+		start_experience_factor = 0.6
+		transport_plane_equipment_1 = {
+			owner = "EGY"
+			creator = "GER" 
+			amount = 50
+		}
+		start_experience_factor = 0.6
+	}
+}
+
+
+instant_effect = {
+
+	add_manpower = 855000
+	add_political_power = 2000
+	### Offsite Factories ###
+	add_offsite_building = {
+		type = arms_factory
+		level = 15
+	}
+	add_offsite_building = {
+		type = industrial_complex
+		level = 5
+	}
+	add_offsite_building = {
+		type = dockyard
+		level = 10
+	}
+	
+	set_politics = {
+		ruling_party = authoritarian_democrat
+		elections_allowed = no
+		}
+
+	set_popularities = {
+		totalist = 0
+		radical_socialist = 5
+		syndicalist = 5
+		social_democrat = 5
+		social_liberal = 5
+		market_liberal = 10
+		social_conservative = 20
+		authoritarian_democrat = 25
+		paternal_autocrat = 20
+		national_populist = 5
+	}
+
+	set_technology = {
+		### General ###
+		tech_support = 1
+		tech_recon = 1
+		tech_engineers = 1
+		gw_artillery = 1
+		gwtank = 1
+		scout_plane1 = 1
+		armored_car1 = 1
+		tech_military_police = 1
+		early_fighter = 1
+		early_bomber = 1
+		naval_bomber1 = 1
+		CAS1 = 1
+
+		mobile_warfare = 1
+		trench_warfare = 1
+		mass_assault = 1
+		infiltration_in_depth = 1
+		guerilla_warfare = 1
+
+		trade_interdiction = 1
+		
+		#air
+		formation_flying = 1
+
+	}
+
+	add_war_support = 0.40
+	add_stability = 0.20
+	set_fuel_ratio = 1.0
+	army_experience = 200
+	navy_experience = 200
+	air_experience = 200
+
+	#complete_national_focus = EGY_modernization_program
+	complete_national_focus = EGY_Third_Arab_Congress
+	complete_national_focus = EGY_Radio_Free_Cairo
+	complete_national_focus = EGY_Coordinate_Al_Fatat
+	complete_national_focus = EGY_Coordinate_Al_Ahd
+	complete_national_focus = EGY_Society_Defence_Palestine
+	complete_national_focus = EGY_Support_the_Imamate
+	complete_national_focus = EGY_Liberate_Tripolitania
+	complete_national_focus = EGY_Victory_Levant
+	complete_national_focus = EGY_nile_proclamation
+	complete_national_focus = EGY_gather_african_allies
+	complete_national_focus = EGY_Bureau_Military_Engineering
+	complete_national_focus = EGY_Operation_Abu
+
+	set_autonomy = {
+		target = SAU
+		autonomous_state = kr_ottoman_emirate
+	}
+	set_autonomy = {
+		target = SOM
+		autonomous_state = kr_ottoman_emirate
+	}
+
+EGY = {
+	create_faction = cairo_pact
+	add_to_faction = EGY
+}
+
+set_country_flag = was_at_war_with_OTT
+set_country_flag = SYR_CONQ
+set_country_flag = LEB_CONQ
+set_country_flag = LBA_CONQ
+set_country_flag = TRP_CONQ
+
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_intelligence_agency = yes
+	upgrade_intelligence_agency = upgrade_economy_civilian
+	upgrade_intelligence_agency = upgrade_army_department
+
+	upgrade_intelligence_agency = upgrade_passive_defense
+	upgrade_intelligence_agency = upgrade_anti_partisan
+
+	upgrade_intelligence_agency = upgrade_form_department
+	upgrade_intelligence_agency = upgrade_crypto_strength
+	upgrade_intelligence_agency = upgrade_crypto_strength_2
+}
+
+		add_equipment_production = {
+			equipment = {
+				type = infantry_equipment_1
+				creator = GER
+			}
+			requested_factories = 2
+			progress = 0.82
+			efficiency = 100
+		}
+		add_equipment_production = {
+			equipment = {
+				type = artillery_equipment_1
+				creator = GER
+			}
+			requested_factories = 1
+			progress = 0.83
+			efficiency = 100
+		}
+		add_equipment_production = {
+			equipment = {
+				type = support_equipment_1
+				creator = GER
+			}
+			requested_factories = 1
+			progress = 0.44
+			efficiency = 100
+		}
+		if = {
+			limit = {
+				has_dlc = "La Resistance"
+			}
+			add_equipment_production = {
+				equipment = {
+					type = gw_armored_car_equipment
+					creator = GER
+				}
+				requested_factories = 1
+				progress = 0.59
+				efficiency = 100
+			}
+		}
+		add_equipment_production = {
+			equipment = {
+				type = light_tank_equipment_1
+				creator = GER
+			}
+			requested_factories = 1
+			progress = 0.59
+			efficiency = 100
+		}
+		add_equipment_production = {
+			equipment = {
+				type = fighter_equipment_1
+				creator = GER
+			}
+			requested_factories = 1
+			progress = 0.29
+			efficiency = 100
+		}
+		add_equipment_production = {
+			equipment = {
+				type = tac_bomber_equipment_0
+				creator = GER
+			}
+			requested_factories = 1
+			progress = 0.29
+			efficiency = 100
+		}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "GER"
+			version_name = "Descubierta Class"
+		}
+		requested_factories = 4
+		progress = 0.85
+		amount = 6
+	}
+
+	create_field_marshal = {
+		name = "Osman Fuad Efendi"
+		traits = {
+			politically_connected
+			war_hero
+			inspirational_leader
+			desert_fox
+			aggressive_assaulter
+		}
+		skill = 3
+		attack_skill = 2
+		defense_skill = 4
+		planning_skill = 3
+		logistics_skill = 4
+	}
+	
+	create_field_marshal = { #New Portrait
+		name = "Fevzi "
+		traits = {
+			career_officer
+			inflexible_strategist
+			unyielding_defender
+			skilled_staffer
+		}
+		skill = 3
+		attack_skill = 2
+		defense_skill = 4
+		planning_skill = 2
+		logistics_skill = 4
+	}
+	
+	### Corps Commander
+	
+	create_corps_commander = { #New Portrait
+		name = "Ömer Fahrettin "
+		traits = {
+			old_guard
+			war_hero
+			desert_fox
+			commando
+		}
+		skill = 4
+		attack_skill = 2
+		defense_skill = 4
+		planning_skill = 3
+		logistics_skill = 5
+	}
+	
+	create_corps_commander = {	#New Portrait
+		name = "Nuri "
+		traits = {
+			artillery_officer
+			war_hero
+			politically_connected
+		}
+		skill = 2
+		attack_skill = 1
+		defense_skill = 4
+		planning_skill = 1
+		logistics_skill = 4
+	}
+	
+	create_corps_commander = { #New Portrait
+		name = "Hayrullah "
+		traits = {
+			career_officer
+			war_hero
+			infantry_officer
+		}
+		skill = 1
+		attack_skill = 1
+		defense_skill = 4
+		planning_skill = 1
+		logistics_skill = 4
+	}
+	
+	create_corps_commander = { #New Portrait
+		name = "Abdurrahman Nafiz "
+		traits = {
+			war_hero
+			desert_fox
+		}
+		skill = 3
+		attack_skill = 3
+		defense_skill = 4
+		planning_skill = 1
+		logistics_skill = 4
+	}
+	
+	create_corps_commander = { #New Portrait
+		name = "Mustafa Muglali "
+		traits = {
+			war_hero
+			trait_mountaineer
+			infantry_officer
+		}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 4
+		planning_skill = 2
+		logistics_skill = 4
+	}
+	
+	create_corps_commander = { #New Portrait
+		name = "Mehmet Kâzım "
+		traits = {
+			war_hero
+			infantry_officer
+			trait_engineer
+		}
+		skill = 2
+		attack_skill = 1
+		defense_skill = 4
+		planning_skill = 3
+		logistics_skill = 4
+	}
+	
+	create_corps_commander = { #New Portrait
+		name = "Cemil Cahit "
+		traits = {
+			war_hero
+			infantry_leader
+		}
+		skill = 3
+		attack_skill = 3
+		defense_skill = 4
+		planning_skill = 2
+		logistics_skill = 4
+	}
+	
+	create_corps_commander = { #New Portrait (Iraqi)
+		name = "Yasin al-Hashimi"
+		traits = {
+			war_hero
+			politically_connected
+			infantry_leader
+			harsh_leader
+		}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 4
+		planning_skill = 1
+		logistics_skill = 4
+	}
+	
+	create_corps_commander = { #New Portrait
+		name = "Asım "
+		traits = {
+			war_hero
+			trait_engineer
+		}
+		skill = 2
+		attack_skill = 1
+		defense_skill = 4
+		planning_skill = 2
+		logistics_skill = 4
+	}
+	
+	create_corps_commander = { #New Portrait
+		name = "Mehmet Hayri "
+		traits = {
+			war_hero
+			politically_connected
+			trait_cautious
+		}
+		skill = 2
+		attack_skill = 1
+		defense_skill = 4
+		planning_skill = 2
+		logistics_skill = 4
+	}
+	
+	create_corps_commander = { #New Portrait
+		name = "Nihat "
+		traits = {
+			fortress_buster
+			trait_engineer
+		}
+		skill = 2
+		attack_skill = 1
+		defense_skill = 4
+		planning_skill = 2
+		logistics_skill = 4
+	}
+	
+	create_corps_commander = { #close associate of Mustafa Kemal
+		name = "Fahrettin "
+		traits = {
+			war_hero
+			trickster
+			cavalry_leader
+			cavalry_expert
+		}
+		skill = 3
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 3
+		logistics_skill = 4
+	}
+	
+	create_corps_commander = { #New Portrait
+		name = "Tahsin "
+		traits = {
+			armor_officer
+		}
+		skill = 2
+		attack_skill = 1
+		defense_skill = 4
+		planning_skill = 2
+		logistics_skill = 4
+	}
+	
+	#son of the sultan and pretty cool lad, also big footbal fan
+	create_corps_commander = {
+		name = "Ömer Faruk Efendi"
+		traits = {
+			war_hero
+			politically_connected
+		}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 4
+		planning_skill = 1
+		logistics_skill = 4
+	}
+	
+	### Navy Leader
+	create_navy_leader = {
+		name = "Mehmet Ali "
+		traits = {}
+		skill = 1
+		attack_skill = 1
+		defense_skill = 4
+		maneuvering_skill = 1
+		coordination_skill = 1
+	}
+	
+	create_navy_leader = {
+		name = "Şükrü "
+		traits = {}
+		skill = 2
+		attack_skill = 1
+		defense_skill = 4
+		maneuvering_skill = 2
+		coordination_skill = 2
+	}
+	
+	create_navy_leader = {
+		name = "Hüseyin Rauf "
+		traits = {
+			superior_tactician
+		}
+		skill = 3
+		attack_skill = 2
+		defense_skill = 4
+		maneuvering_skill = 2
+		coordination_skill = 3
+	}
+	
+	create_navy_leader = {
+		name = "Mahmud Muhtar "
+		traits = {
+			seawolf
+		}
+		skill = 2
+		coordination_skill = 2
+		maneuvering_skill = 2
+		defense_skill = 4
+		attack_skill = 2
+	}
+
+	EGY = {
+		every_army_leader = { 
+			add_skill_level = 1
+			add_logistics = 3
+			add_defense = 2
+		}	
+		every_navy_leader = { 
+			add_skill_level = 1
+			add_defense = 1
+			add_maneuvering = 2
+		}	
+	}
+
+}

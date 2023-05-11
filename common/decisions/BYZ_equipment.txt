@@ -1,0 +1,116 @@
+war_measures = {
+
+	byz_civilian_equipment = {
+		icon = motorized_operation
+		allowed = {
+			original_tag = GRE
+		}
+		available = {
+			has_war = yes
+			has_capitulated = no
+		}
+
+		visible = {
+			OR = {
+				has_idea = war_economy
+				has_war = yes
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 100
+		
+		complete_effect = {
+			add_war_support = -0.05
+			add_stability = -0.05
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 1000
+				producer = GRE
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 600
+				producer = GRE
+			}
+			add_equipment_to_stockpile = {
+				type = scout_plane_equipment_1
+				amount = 100
+				producer = GRE
+			}
+			add_equipment_to_stockpile = {
+				type = transport_plane_equipment
+				amount = 50
+				producer = GRE
+			}
+		}
+		
+		remove_effect = {
+        } 
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	byz_gw_armory = {
+		icon = motorized_operation
+		allowed = {
+			original_tag = GRE
+		}
+		available = {
+			has_war = yes
+			has_capitulated = no
+		}
+
+		visible = {
+			OR = {
+				has_idea = war_economy
+				has_war = yes
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 100
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gw_tank_equipment
+				amount = 600
+				producer = GRE
+			}
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_0
+				amount = 200
+				producer = GRE
+			}
+			add_equipment_to_stockpile = {
+				type = tac_bomber_equipment_0
+				amount = 200
+				producer = GRE
+			}
+			add_equipment_to_stockpile = {
+				type = gw_armored_car_equipment
+				amount = 800
+				producer = GRE
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 800
+				producer = GRE
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 28000
+				producer = GRE
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	
+}

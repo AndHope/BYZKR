@@ -1,0 +1,1917 @@
+capital = 773
+
+oob = "GRE"
+set_naval_oob= "GRE_naval"
+
+set_research_slots = 4
+add_political_power = 300
+set_technology = {
+	### General ###
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+	oil_processing = 1
+
+	### Tanks ###
+	gwtank = 1
+	basic_heavy_tank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+
+	### Infantry ###
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	motorised_infantry = 1
+	tech_recon = 1
+	#tech_recon2 = 1
+	tech_engineers = 1
+	tech_mountaineers = 1
+	#tech_maintenance_company = 1
+	tech_logistics_company = 1
+	marines = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+	tech_field_hospital = 1
+	camelry = 1
+
+	### Air ###
+	early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	fighter1 = 1
+	fighter2 = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	CAS1 = 1
+	scout_plane1 = 1
+	cv_early_fighter = 1
+	cv_CAS1 = 1
+	cv_naval_bomber1 = 1
+	armored_car1 = 1
+	armored_car2 = 1
+	#armored_car3 = 1
+	tech_military_police = 1
+	#tech_military_police2 = 1
+	
+
+	fleet_in_being = 1
+	battlefleet_concentration = 1
+		
+	#Air
+	force_rotation = 1
+	fighter_baiting = 1
+
+	superior_firepower = 1
+	#sup_delay = 1
+	#mobile_defence = 1
+
+	#electronics
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	#decimetric_radar = 1
+	mechanical_computing = 1
+	#computing_machine = 1
+
+	#industry
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	excavation1 = 1
+	#excavation2 = 1
+	construction1 = 1
+	#concentrated_industry = 1
+}
+
+
+### Navy - MtG ###
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+
+		early_ship_hull_light = 1
+		basic_naval_mines = 1
+		basic_ship_hull_light = 1
+		#improved_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		#improved_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		#improved_ship_hull_submarine = 1
+		early_ship_hull_carrier = 1
+		#basic_ship_hull_carrier = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		ship_hull_super_heavy = 1
+		improved_ship_hull_heavy = 1
+		cruiser_submarines = 1
+		panzerschiffe = 1
+
+		## Modules##
+
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		dp_secondary_battery = 1
+		improved_ship_torpedo_launcher = 1
+		improved_airplane_launcher = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		submarine_mine_laying = 1
+		pre_dreadnoughts = 1
+		sonar = 1
+		snorkel_one = 1
+
+		### Transport ###
+		mtg_transport = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_technology = {
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_submarine = 1
+		basic_submarine = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battlecruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		heavy_battleship = 1
+		early_carrier = 1
+		basic_carrier = 1
+
+		### Transport ###
+		transport = 1
+	}
+}
+
+create_faction = "Néo Imperium"
+add_to_faction = GRE
+add_to_faction = GEO
+add_to_faction = ARM
+add_to_faction = ETH
+
+set_convoys = 500
+#add_equipment_to_stockpile = { type = gw_tank_equipment amount = 400 producer = GRE }
+#add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 25000 producer = GRE }
+#add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 150 producer = GRE }
+#add_equipment_to_stockpile = { type = nav_bomber_equipment_1 amount = 50 producer = GRE }
+#add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 600 producer = GRE }
+#add_equipment_to_stockpile = { type = support_equipment_1 amount = 800 producer = GRE }
+#add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 800 producer = GRE }
+#add_equipment_to_stockpile = { type = tac_bomber_equipment_0 amount = 50 producer = GRE }
+#add_equipment_to_stockpile = { type = scout_plane_equipment_1 amount = 200 producer = GRE }
+#add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 600 producer = GRE }
+#add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 1200 producer = GRE }
+#add_equipment_to_stockpile = { type = gw_armored_car_equipment amount = 1200 producer = GRE }
+#add_equipment_to_stockpile = { type = heavy_tank_equipment_1 amount = 100 producer = GRE }
+#add_equipment_to_stockpile = { type = transport_plane_equipment amount = 100 producer = GRE }
+
+set_stability = 0.45
+set_war_support = 0.35
+add_manpower = 575000
+
+add_ideas = {
+	GRE_King_Georgios_II_hog_ade
+	GRE_Ioannis_Metaxas_for_pau
+	GRE_Ioannis_Venizelos_eco_ade
+	GRE_Anastasios_Tavoularis_sec_npo
+
+	GRE_Alexandros_Papagos_cos_ade
+	GRE_Georgios_Bakos_carm_npo
+	GRE_Dimitrios_Oikonomou_cnav_ade
+	GRE_Antoine_Frangulis_cair_sco
+
+	BYZ_minority_problem
+	BYZ_aristocrat
+}
+
+country_event = { id = gre.1 days = 1 } #Intro event
+country_event = { id = gre.3 days = 85 } #Independence Day
+			set_cosmetic_tag = BYZ
+				set_global_flag = form_byzantium_flag
+				set_party_name = { # SEKR-T
+					ideology = totalist
+					long_name = BYZ_totalist_party_long
+					name = BYZ_totalist_party
+				}
+				set_party_name = { # SEKR-S
+					ideology = syndicalist
+					long_name = BYZ_syndicalist_party_long
+					name = BYZ_syndicalist_party
+				}
+				set_party_name = { # SEKR
+					ideology = radical_socialist
+					long_name = BYZ_radical_socialist_party_long
+					name = BYZ_radical_socialist_party
+				}
+				set_party_name = { # AKR
+					ideology = social_democrat
+					long_name = BYZ_social_democrat_party_long
+					name = BYZ_social_democrat_party
+				}
+				set_party_name = { # FK
+					ideology = social_liberal
+					long_name = BYZ_social_liberal_party_long
+					name = BYZ_social_liberal_party
+				}
+				set_party_name = { # ERK
+					ideology = market_liberal
+					long_name = BYZ_market_liberal_party_long
+					name = BYZ_market_liberal_party
+				}
+				set_party_name = { # LK
+					ideology = social_conservative
+					long_name = BYZ_social_conservative_party_long
+					name = BYZ_social_conservative_party
+				}
+				set_party_name = { # KTE
+					ideology = authoritarian_democrat
+					long_name = BYZ_authoritarian_democrat_party_long
+					name = BYZ_authoritarian_democrat_party
+				}
+				set_party_name = { # NK
+					ideology = paternal_autocrat
+					long_name = BYZ_paternal_autocrat_party_long
+					name = BYZ_paternal_autocrat_party
+				}
+				set_party_name = { # EER
+					ideology = national_populist
+					long_name = BYZ_national_populist_party_long
+					name = BYZ_national_populist_party
+				}
+
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1934.1.26"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	totalist = 0
+	radical_socialist = 0
+	syndicalist = 5
+	social_democrat = 15
+	social_liberal = 15
+	market_liberal = 10
+	social_conservative = 10
+	authoritarian_democrat = 20
+	paternal_autocrat = 25
+	national_populist = 0
+}
+
+ETH = {
+	add_opinion_modifier = { target = GRE modifier = KR_close_allies }
+	reverse_add_opinion_modifier = { target = GRE modifier = KR_close_allies }
+	give_guarantee = NFA
+}
+GEO = {
+	add_opinion_modifier = { target = GRE modifier = KR_close_allies }
+	reverse_add_opinion_modifier = { target = GRE modifier = KR_close_allies }
+}
+ARM = {
+	add_opinion_modifier = { target = GRE modifier = KR_close_allies }
+	reverse_add_opinion_modifier = { target = GRE modifier = KR_close_allies }
+}
+
+set_country_flag = { flag = gre_monarchist_sympathies value = 10 }
+
+
+#create_wargoal = {
+#	target = BUL
+#	type = annex_everything
+#}
+
+GER = {
+	add_opinion_modifier = { target = GRE modifier = KR_hostile }
+	reverse_add_opinion_modifier = { target = GRE modifier = KR_hostile }
+	give_guarantee = AUS
+	add_opinion_modifier = { target = BUL modifier = KR_close_allies }
+}
+AUS = {
+	add_opinion_modifier = { target = GRE modifier = KR_hostile }
+	reverse_add_opinion_modifier = { target = GRE modifier = KR_hostile }
+	give_guarantee = SIC
+	give_guarantee = ALB
+	give_military_access = GER
+	add_opinion_modifier = { target = BUL modifier = KR_close_allies }
+}
+SIC = {
+	add_opinion_modifier = { target = GRE modifier = KR_hostile }
+	reverse_add_opinion_modifier = { target = GRE modifier = KR_hostile }
+}
+ALB = {
+	add_opinion_modifier = { target = GRE modifier = KR_hostile }
+	reverse_add_opinion_modifier = { target = GRE modifier = KR_hostile }
+	add_opinion_modifier = { target = BUL modifier = KR_close_allies }
+}
+PER = {
+	add_opinion_modifier = { target = GRE modifier = KR_hostile }
+	reverse_add_opinion_modifier = { target = GRE modifier = KR_hostile }
+	add_opinion_modifier = { target = RAJ modifier = KR_hostile }
+	reverse_add_opinion_modifier = { target = RAJ modifier = KR_hostile }
+	add_opinion_modifier = { target = EGY modifier = KR_close_allies }
+}
+EGY = {
+	add_opinion_modifier = { target = GRE modifier = KR_hostile }
+	reverse_add_opinion_modifier = { target = GRE modifier = KR_hostile }
+	add_opinion_modifier = { target = PER modifier = KR_close_allies }
+}
+BUL = {
+	add_opinion_modifier = { target = GRE modifier = KR_hostile }
+	reverse_add_opinion_modifier = { target = GRE modifier = KR_hostile }
+	#give_guarantee = ALB
+}
+ROM = {
+	give_guarantee = SER
+}
+
+set_autonomy = {
+	target = GEO
+	autonomous_state = byz_exarchate
+}
+set_autonomy = {
+	target = ARM
+	autonomous_state = byz_exarchate
+}
+set_autonomy = {
+	target = TAR
+	autonomous_state = byz_exarchate
+}
+
+diplomatic_relation = {
+	country = TAR
+	relation = docking_rights
+	active = yes
+}
+diplomatic_relation = {
+	country = GEO
+	relation = docking_rights
+	active = yes
+}
+diplomatic_relation = {
+	country = ETH
+	relation = docking_rights
+	active = yes
+}
+
+#set_autonomy = {
+#	target = ETH
+#	autonomous_state = byz_exarchate
+#}
+
+recruit_character = BYZ_Basileus_Geórgios
+
+### Country Leaders ###
+#recruit_character = GRE_athanasios_klaras
+#recruit_character = GRE_georgios_siantos
+#recruit_character = GRE_nikos_zachariadis
+#recruit_character = GRE_konstantinos_speras
+#recruit_character = GRE_nikos_beloyannis
+#recruit_character = GRE_kostas_gavriilides
+recruit_character = GRE_nikos_ploumpidis
+recruit_character = GRE_alexandros_papanastasiou
+recruit_character = GRE_nikolaos_plastiras
+recruit_character = GRE_georgios_papandreou
+recruit_character = GRE_panagiotis_kanellopoulos
+#recruit_character = GRE_themistoklis_sofoulis
+recruit_character = GRE_konstantinos_tsatsos
+#recruit_character = GRE_panagis_tsaldaris
+recruit_character = GRE_konstantinos_tsaldaris
+recruit_character = GRE_alexandros_papagos
+recruit_character = GRE_christodoulos_tsigantes
+recruit_character = GRE_ioannis_metaxas
+recruit_character = GRE_alexandros_koryzis
+recruit_character = GRE_georgios_mercouris
+
+recruit_character = GRE_alexandros_glyksbourg
+recruit_character = GRE_georgios_glyksbourg
+recruit_character = GRE_pavlos_glyksbourg
+
+### Generals ###
+recruit_character = GRE_napoleon_zervas
+recruit_character = GRE_manolis_mantakas
+recruit_character = GRE_konstantinos_bakopoulos
+recruit_character = GRE_georgios_grivas
+recruit_character = GRE_dimitrios_psarros
+recruit_character = GRE_vasileios_vrachnos
+recruit_character = GRE_konstantinos_davakis
+recruit_character = GRE_stefanos_sarafis
+
+### Admirals ###
+recruit_character = GRE_alexandros_sakellariou
+recruit_character = GRE_petros_voulgaris
+recruit_character = GRE_ioannis_toumbas
+recruit_character = GRE_antonis_mezeviris
+recruit_character = GRE_stylianos_lykoudis
+
+
+
+
+### Field Marshals ###
+
+
+create_field_marshal = {
+	name = "Basileus Geórgios II"
+	portrait_path = "gfx/leaders/GRE/Portrait_GRE_George_army.png"
+	#portrait_path = "gfx/leaders/GRE/Portrait_GRE_George.png"
+	traits = {
+		unyielding_defender
+		inspirational_leader
+		politically_connected
+	}
+	id = 1570
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {# Alessandro Pirzio Biroli
+	name = "Flavius Belisarius"
+	portrait_path = "gfx/leaders/SIC/Portrait_SIC_Alessandro_Pirzio_Biroli.png"
+	traits = {
+		inspirational_leader
+		politically_connected
+		brilliant_strategist
+		organizer
+		logistics_wizard
+	}
+	id = 1540
+	skill = 2
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Alexandros Papagos"
+	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Alexandros_Papagos.png"
+	traits = {
+		defensive_doctrine
+		trait_engineer
+		trait_mountaineer
+		trait_cautious
+	}
+	id = 570
+	skill = 1
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {# Giovanni Messe
+	name = "Nicephorus Phocas"
+	portrait_path = "gfx/leaders/SIC/Portrait_SIC_Giovanni_Messe.png"
+	traits = {
+		war_hero
+		brilliant_strategist
+		armor_officer
+		cavalry_officer
+		#trickster
+		#desert_fox
+		#commando
+	}
+	id = 1541
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {# Antonio Gualano
+	name = "John Tzimiskes"
+	portrait_path = "gfx/leaders/SIC/Portrait_SIC_Gualano.png"
+	traits = {
+		trait_mountaineer
+		trait_engineer
+		commando
+		winter_specialist
+	}
+	id = 1542
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {# Giuseppe Izzo
+	name = "John Komnenos"
+	portrait_path = "gfx/leaders/SIC/Portrait_SIC_Izzo.png"
+	traits = {
+		career_officer
+		infantry_officer
+		infantry_leader
+	}
+	id = 1543
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 4
+}
+
+create_corps_commander = {# Carlo Geloso
+	name = "John Kourkouas"
+	portrait_path = "gfx/leaders/SIC/Portrait_SIC_Carlo_Geloso.png"
+	traits = {
+		politically_connected
+		trait_engineer
+		infantry_leader
+	}
+	id = 1544
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Narses Hyperios"
+	portrait_path = "gfx/leaders/SIC/Portrait_SIC_Achille_Starace.png"
+	traits = {
+		armor_officer
+		media_personality
+		trickster
+		brilliant_strategist
+		armor_officer
+		panzer_leader
+		cavalry_officer
+	}
+	id = 1545
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+### Admirals ###
+create_navy_leader = {
+	name = "Andronikos Kontostefanos"
+	portrait_path = "gfx/leaders/SIC/Portrait_SIC_Ingianni.png"
+	id = 1546
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Alexios Apokaukos"
+	portrait_path = "gfx/leaders/SIC/Portrait_SIC_Salvatore_Todaro.png"
+	traits = {
+		seawolf
+	}
+	id = 1547
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 4
+}
+create_navy_leader = {
+	name = "Gaius Duilius"
+	portrait_path = "gfx/leaders/SIC/Portrait_SIC_Toscano.png"
+	id = 1548
+	traits = {
+		superior_tactician
+		ironside
+		old_guard_navy
+	 }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "Alexios Dukas Philathropinos"
+	portrait_path = "gfx/leaders/SIC/Portrait_SIC_Romeo_Oliva.png"
+	traits = {spotter}
+	id = 1549
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Ikarios"
+	portrait_path = "gfx/leaders/SIC/Portrait_SIC_Luigi_Rizzo.png"
+	traits = {seawolf}
+	id = 1550
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+create_corps_commander = {
+	name = "Napoleon Zervas"
+	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Napoleon_Zervas.png"
+	traits = {
+		trait_mountaineer
+		commando
+		hill_fighter
+	}
+	id = 573
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Manolis Mantakas"
+	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Manolis_Mantakas.png"
+	traits = {
+		infantry_officer
+	}
+	id = 575
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Konstantinos Bakopoulos"
+	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Konstantinos_Bakopoulos.png"
+	traits = {
+		trait_engineer
+	}
+	id = 576
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+#create_field_marshal = {
+#	name = "Prince Geórgios II"
+#	portrait_path = "gfx/leaders/GRE/Portrait_GRE_George_army.png"
+#	traits = {
+#		inspirational_leader
+#	}
+# 	id = 577
+#	skill = 1
+#	attack_skill = 1
+#	defense_skill = 2
+#	planning_skill = 2
+#	logistics_skill = 1
+#}
+create_corps_commander = {
+	name = "Georgios Grivas"
+	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Georgios_Grivas.png"
+	traits = {
+		trickster
+		fortress_buster
+	}
+	id = 578
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Dimitrios Psarros"
+	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Dimitrios_Psarros.png"
+	traits = {
+		artillery_officer
+		trait_mountaineer
+	}
+	id = 579
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Vasileios Vrachnos"
+	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Vasileios_Vrachnos.png"
+	traits = {
+		career_officer
+		infantry_leader
+	}
+	id = 580
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Konstantinos Davakis"
+	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Konstantinos_Davakis.png"
+	traits = {
+		skilled_staffer
+		infantry_officer
+	}
+	id = 581
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+### Admirals ###
+
+create_navy_leader = {
+	name = "Alexandros Sakellariou"
+	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Alexandros_Sakellariou.png"
+	traits = {
+		old_guard_navy
+		superior_tactician
+	}
+	id = 582
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Petros Voulgaris"
+	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Petros_Voulgaris.png"
+	traits = { }
+	skill = 2
+	id = 583
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Ioannis Toumbas"
+	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Ioannis_Toumbas.png"
+	traits = {
+		seawolf
+	}
+	skill = 2
+	id = 584
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Antonis Mezeviris"
+	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Antonis_Mezeviris.png"
+	traits = {
+		spotter
+	}
+	skill = 3
+	id = 585
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Stylianos Lykoudis"
+	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Stylianos_Lykoudis.png"
+	traits = {
+		old_guard_navy
+	}
+	skill = 2
+	id = 586
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 4
+	coordination_skill = 2
+}
+
+create_corps_commander = {
+	name = "Aris Velouchiotis"
+	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Athanasios_Klaras.png"
+	traits = {
+		trickster
+		aggressive_assaulter
+		brilliant_strategist
+	}
+	id = 571
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Stefanos Sarafis"
+	portrait_path = "gfx/leaders/GRE/Portrait_GRE_Stefanos_Sarafis.png"
+	traits = {
+		trait_reckless
+		ranger
+	}
+	id = 572
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {# Amedeo di Savoia-Aosta
+	name = "Alexios Gidos"
+	portrait_path = "gfx/leaders/GRE/Portrait_SRD_King_Amedeo.png"
+	traits = {
+		politically_connected
+		war_hero
+		inspirational_leader
+	}
+	id = 11600
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Giovanni Giustiniani"
+	portrait_path = "gfx/leaders/GRE/Portrait_SRD_Pietro_Badoglio.png"
+	traits = {
+		old_guard
+		thorough_planner
+		organizer
+	}
+	id = 11601
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+### Corps Commanders ###
+create_corps_commander = {# Giuseppe Valle
+	name = "Giuseppe Valle"
+	portrait_path = "gfx/leaders/GRE/Portrait_SRD_Giuseppe_Valle.png"
+	traits = {
+		career_officer
+		commando
+	}
+	id = 11602
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Michael Kaballarios"
+	picture = "Portrait_SRD_Pietro_Pintor.png"
+	traits = {trait_engineer}
+	id = 11603
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "John Kammytzes"
+	picture = "Portrait_SRD_Prince_Umberto.png"
+	traits = {
+		politically_connected
+		inflexible_strategist
+		organizer
+	}
+	id = 11604
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {# Filiberto Duca di Pistoia
+	name = "Michael Lachanodrakon"
+	portrait_path = "gfx/leaders/GRE/Portrait_SRD_Duca_Pistoia.png"
+	traits = {
+		politically_connected
+		armor_officer
+		panzer_leader
+		cavalry_officer
+	}
+	id = 11605
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {# Amadeo Guillet
+	name = "Leo Diogenes"
+	portrait_path = "gfx/leaders/GRE/Portrait_SRD_Amadeo_Guillet.png"
+	traits = {
+		cavalry_officer
+	}
+	id = 11606
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {# Giuseppe Cordero Lanza di Montezemolo
+	name = "Leo Sarakenopoulos"
+	portrait_path = "gfx/leaders/GRE/Portrait_SRD_Giuseppe_Cordero.png"
+	traits = {
+		politically_connected
+		infantry_officer
+		trait_engineer
+	}
+	id = 11607
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Basil Vatatzes"
+	portrait_path = "gfx/leaders/GRE/Portrait_SRD_Prince_Adalberto.png"
+	traits = {
+		politically_connected
+		skilled_staffer
+	}
+	id = 11608
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+##Admirals
+create_navy_leader = {# Aimone di Savoia-Aosta
+	name = "Niketas Scholares"
+	portrait_path = "gfx/leaders/GRE/Portrait_SRD_Aimone.png"
+	id = 11609
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 2
+}
+create_navy_leader = {# Domenico Cavagnari
+	name = "Alexios Strategopoulos"
+	portrait_path = "gfx/leaders/GRE/Portrait_SRD_Domenico_Cavagnari.png"
+	traits = {seawolf  }
+	id = 11610
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Kontoleon Tornikios"
+	portrait_path = "gfx/leaders/GRE/Portrait_SRD_Angelo_Iachino.png"
+	traits = {fleet_protector}
+	id = 11611
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+
+create_field_marshal = {# Emilio di Bono
+	name = "Marianos Argyros"
+	picture = "Portrait_ITA_Emilio_De_Bono.png"
+	traits = {
+		war_hero
+		old_guard
+		thorough_planner
+		organizer
+	}
+	id = 1551
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_field_marshal = {# Rodolfo Graziani
+	name = "Constantine Opos"
+	picture = "Portrait_ITA_Rodolfo_Graziani.png"
+	traits = {
+		offensive_doctrine
+		organizer
+		armor_officer
+		fast_planner
+	}
+	id = 1552
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+### Generals ###
+create_corps_commander = {# Ettore Bastico
+	name = "Philaretos Brachamios"
+	picture = "Portrait_ITA_Ettore_Bastico.png"
+	traits = {
+		trickster
+		career_officer
+	}
+	id = 1553
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+create_corps_commander = {# Annibale Bergonzoli
+	name = "Romanos Dalassenos"
+	picture = "Portrait_ITA_Annibale_Bergonzoli.png"
+	traits = {
+		war_hero
+		brilliant_strategist
+	}
+	id = 1554
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {# Alberto Pariani
+	name = "Krenites Arotras"
+	picture = "Portrait_ITA_Alberto_Pariani.png"
+	traits = {
+		organizer
+		trait_mountaineer
+	}
+	id = 1555
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {# Sebastiano Visconti Prasca
+	name = "Staurakios Platys"
+	picture = "Portrait_ITA_Sebastiano_Visconti_Prasca.png"
+	id = 1556
+	traits = { }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {# Arnaldo Azzi
+	name = "Tiberios Komnenos"
+	picture = "Portrait_ITA_Arnaldo_Azzi.png"
+	traits = {
+		armor_officer
+		panzer_leader
+	}
+	id = 1557
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {# Enrico Riccardi
+	name = "Theodoulos Parsakoutenos"
+	picture = "Portrait_ITA_Enrico_Riccardi.png"
+	id = 1558
+	traits = { }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {# Gabriele Nasci
+	name = "Alexios Mosele"
+	picture = "Portrait_ITA_Gabriele_Nasci.png"
+	traits = {trait_mountaineer}
+	id = 1559
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {# Italo Gariboldi
+	name = "Sabinianus Magnus"
+	picture = "Portrait_ITA_Italo_Gariboldi.png"
+	traits = {hill_fighter }
+	id = 1560
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {# Venanzio Gabriotti
+	name = "Bardas Skleros"
+	picture = "Portrait_ITA_Venanzio_Gabriotti.png"
+	traits = { commando }
+	id = 1561
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Kontoleon Tornikios"
+	picture = "Portrait_ITA_Fedele_de_Giorgis.png"
+	traits = {
+		career_officer
+		trait_cautious
+	}
+	id = 1562
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+### Admirals ###
+create_navy_leader = {# Alberto Da Zara
+	name = "Eustathios Argyros"
+	picture = "Portrait_ITA_Alberto_Da_Zara.png"
+	traits = { superior_tactician spotter }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 4
+	id = 1563
+}
+create_navy_leader = {
+	name = "Droungarios Laskaris"
+	picture = "Portrait_ITA_Gino_Pavesi.png"
+	traits = { superior_tactician ironside}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 4
+	coordination_skill = 4
+	id = 1564
+}
+create_navy_leader = {# Raffaele de Courten
+	name = "Krateros Morisco"
+	picture = "Portrait_ITA_Raffaele_de_Courten.png"
+	traits = { blockade_runner }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 3
+	id = 1565
+}
+create_navy_leader = {# Carlo Bergamini
+	name = "Alexios Mosele"
+	picture = "Portrait_ITA_Carlo_Bergamini.png"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 2
+	id = 1566
+}
+create_navy_leader = {# Costanzo Ciano
+	name = "Theophylact Rhangabe"
+	picture = "Portrait_ITA_Costanzo_Ciano.png"
+	traits = { }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+	id = 1567
+}
+create_navy_leader = {# Carlo Bergamini
+	name = "Basil Hexamilites"
+	picture = "Portrait_ITA_Giovanni_Galati.png"
+	traits = {air_controller}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 1
+	id = 1568
+}
+
+### VARIANTS ###
+# 1936 Start #
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "Katapéra"
+		type = light_tank_chassis_0
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = wet_ammo_storage
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 8
+			tank_nsb_armor_upgrade = 0
+		}
+		obsolete = yes
+		icon = "gfx/interface/technologies/GRE_basic_light_tank.dds"
+	}
+	create_equipment_variant = {
+		name = "Kataphraktoi"
+		type = medium_tank_chassis_0
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_close_support_gun
+			turret_type_slot = tank_medium_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = wet_ammo_storage
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 8
+			tank_nsb_armor_upgrade = 0
+		}
+		icon = "gfx/interface/technologies/GRE_basic_main_tank.dds"
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Katapéra II"
+		type = light_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_2
+			special_type_slot_2 = wet_ammo_storage
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 8
+			tank_nsb_armor_upgrade = 2
+		}
+		icon = "gfx/interface/technologies/GRE_imp_light_tank.dds"
+		obsolete = yes
+	}
+
+	create_equipment_variant = {
+			name = "Katapéra III"
+			type = light_tank_chassis_2
+			parent_version = 0
+			modules = {
+			main_armament_slot = tank_small_cannon_2
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_2
+			special_type_slot_2 = wet_ammo_storage
+			#special_type_slot_3 = extra_ammo_storage
+			#special_type_slot_4 = smoke_launchers
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 8
+				tank_nsb_armor_upgrade = 4
+			}
+			icon = "gfx/interface/technologies/GRE_adv_light_tank.dds"
+		}
+
+		create_equipment_variant = {
+			name = "Kataphraktoi II"
+			type = medium_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon
+				turret_type_slot = tank_medium_two_man_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = wet_ammo_storage
+				#special_type_slot_3 = extra_ammo_storage
+				#special_type_slot_4 = smoke_launchers
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 8
+				tank_nsb_armor_upgrade = 4
+			}
+			icon = "gfx/interface/technologies/GRE_imp_main_tank.dds"
+		}
+
+
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Katsonis Class"				
+		type = ship_hull_submarine_2
+		name_group = GRE_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_3
+			fixed_ship_engine_slot = sub_ship_engine_4
+			#front_1_custom_slot = ship_torpedo_sub_3
+			#mid_1_custom_slot = ship_sub_snorkel_1
+			rear_1_custom_slot = ship_torpedo_sub_3
+		}
+	}
+	create_equipment_variant = {
+		name = "Glafkos Class"				
+		type = ship_hull_cruiser_submarine
+		name_group = GRE_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_3
+			fixed_ship_engine_slot = sub_ship_engine_4
+			front_1_custom_slot = ship_mine_layer_sub
+			mid_1_custom_slot = ship_sub_snorkel_2
+			rear_1_custom_slot = ship_mine_layer_sub
+		}
+		obsolete = yes
+	}
+
+	create_equipment_variant = {
+		name = "Kynigós Class"				
+		type = ship_hull_cruiser_submarine
+		name_group = GRE_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_3
+			fixed_ship_engine_slot = sub_ship_engine_4
+			front_1_custom_slot = ship_torpedo_sub_3
+			mid_1_custom_slot = ship_radar_2
+			rear_1_custom_slot = ship_airplane_launcher_2
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Aetos Class"					
+		type = ship_hull_light_1
+		name_group = GRE_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = dp_light_battery
+			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_fire_control_system_slot = ship_sonar_2
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_engine_slot = light_ship_engine_3
+			fixed_ship_torpedo_slot = ship_torpedo_2
+			front_1_custom_slot = dp_light_battery
+			mid_1_custom_slot = ship_depth_charge_2
+			rear_1_custom_slot = ship_depth_charge_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Hydra Class"	
+		type = ship_hull_light_2
+		name_group = GRE_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = dp_light_battery
+			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_fire_control_system_slot = ship_sonar_2
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_engine_slot = light_ship_engine_4
+			fixed_ship_torpedo_slot = ship_torpedo_2
+			front_1_custom_slot = dp_light_battery
+			mid_1_custom_slot = ship_depth_charge_2
+			rear_1_custom_slot = dp_light_battery
+		}
+	}
+
+	# Cruisers #
+	create_equipment_variant = {
+		name = "Elli Class"				
+		type = ship_hull_cruiser_1
+		name_group = GRE_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_fire_control_system_slot = ship_sonar_2
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_engine_slot = cruiser_ship_engine_3
+			fixed_ship_armor_slot = empty
+			fixed_ship_secondaries_slot = dp_ship_secondaries
+			front_1_custom_slot = ship_light_medium_battery_2
+			mid_1_custom_slot = ship_torpedo_2
+			mid_2_custom_slot = dp_ship_secondaries
+			rear_1_custom_slot = ship_mine_layer_1
+			#rear_2_custom_slot = empty
+		}
+		obsolete = yes
+	}
+
+	create_equipment_variant = {
+		name = "Rhódos Class"				
+		type = ship_hull_cruiser_2
+		name_group = GRE_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_fire_control_system_slot = ship_sonar_2
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_engine_slot = cruiser_ship_engine_4
+			fixed_ship_armor_slot = empty
+			fixed_ship_secondaries_slot = dp_ship_secondaries
+			front_1_custom_slot = ship_light_medium_battery_2
+			mid_1_custom_slot = ship_torpedo_2
+			mid_2_custom_slot = dp_ship_secondaries
+			rear_1_custom_slot = ship_mine_layer_1
+			rear_2_custom_slot = ship_mine_layer_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Póntos Class"				
+		type = ship_hull_cruiser_1
+		name_group = GRE_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_engine_slot = cruiser_ship_engine_3
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = dp_ship_secondaries
+			front_1_custom_slot = ship_medium_battery_2
+			mid_1_custom_slot = ship_torpedo_2
+			mid_2_custom_slot = dp_ship_secondaries
+			rear_1_custom_slot = ship_airplane_launcher_2
+			#rear_2_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Kríti Class"				
+		type = ship_hull_cruiser_2
+		name_group = GRE_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_engine_slot = cruiser_ship_engine_4
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = dp_ship_secondaries
+			front_1_custom_slot = ship_medium_battery_2
+			mid_1_custom_slot = ship_torpedo_2
+			mid_2_custom_slot = dp_ship_secondaries
+			rear_1_custom_slot = ship_airplane_launcher_2
+			#rear_2_custom_slot = empty
+		}
+	}
+	# Battleships #
+	create_equipment_variant = {
+			name = "Konstantine Class"
+			name_group = GRE_BB_HISTORICAL
+			type = ship_hull_heavy_1
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_heavy_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_radar_slot = ship_radar_1
+				fixed_ship_engine_slot = heavy_ship_engine_3
+				fixed_ship_secondaries_slot = dp_ship_secondaries
+				fixed_ship_armor_slot = ship_armor_bb_2
+				front_1_custom_slot = ship_heavy_battery_2
+				front_2_custom_slot = ship_heavy_battery_2
+				mid_1_custom_slot = ship_airplane_launcher_2
+				mid_2_custom_slot = dp_ship_secondaries
+				#mid_3_custom_slot = empty
+				rear_1_custom_slot = ship_heavy_battery_2
+			}
+			obsolete = yes
+		}
+
+		create_equipment_variant = {
+			name = "Ioustinianós Class"
+			name_group = GRE_BB_HISTORICAL
+			type = ship_hull_heavy_2
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_heavy_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_3
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+				fixed_ship_radar_slot = ship_radar_2
+				fixed_ship_engine_slot = heavy_ship_engine_4
+				fixed_ship_secondaries_slot = dp_ship_secondaries
+				fixed_ship_armor_slot = ship_armor_bc_3
+				front_1_custom_slot = ship_heavy_battery_2
+				front_2_custom_slot = ship_heavy_battery_2
+				mid_1_custom_slot = ship_heavy_battery_2
+				mid_2_custom_slot = dp_ship_secondaries
+				mid_3_custom_slot = dp_ship_secondaries
+				rear_1_custom_slot = ship_heavy_battery_2
+			}
+		}
+
+		create_equipment_variant = {
+			name = "Mega Konstantine Class"
+			name_group = GRE_BB_HISTORICAL
+			type = ship_hull_super_heavy_1
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_super_heavy_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_3
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+				fixed_ship_radar_slot = ship_radar_2
+				fixed_ship_engine_slot = heavy_ship_engine_4
+				fixed_ship_secondaries_slot = dp_ship_secondaries
+				fixed_ship_armor_slot = ship_armor_shbb
+				front_1_custom_slot = ship_super_heavy_battery_1
+				front_2_custom_slot = ship_anti_air_3
+				mid_1_custom_slot = dp_ship_secondaries
+				mid_2_custom_slot = dp_ship_secondaries
+				mid_3_custom_slot = dp_ship_secondaries
+				rear_1_custom_slot = ship_super_heavy_battery_1
+				rear_2_custom_slot = ship_super_heavy_battery_1
+			}
+		}
+		### Carrier Variants
+		create_equipment_variant = {
+			name = "Komninós Class"
+			type = ship_hull_carrier_conversion_bb
+			name_group = GRE_CV_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_3
+				fixed_ship_radar_slot = ship_radar_2
+				fixed_ship_engine_slot = heavy_ship_engine_4
+				fixed_ship_secondaries_slot = dp_ship_secondaries
+				mid_1_custom_slot = ship_deck_space
+			}
+		}
+		create_equipment_variant = {
+			name = "Theodóra Class"
+			type = ship_hull_carrier_conversion_ca
+			name_group = GRE_CVL_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_3
+				fixed_ship_radar_slot = ship_radar_2
+				fixed_ship_engine_slot = carrier_ship_engine_4
+				fixed_ship_secondaries_slot = dp_ship_secondaries
+			}
+		}
+}
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_intelligence_agency = yes
+	upgrade_intelligence_agency = upgrade_economy_civilian
+	upgrade_intelligence_agency = upgrade_army_department
+	upgrade_intelligence_agency = upgrade_naval_department
+	upgrade_intelligence_agency = upgrade_airforce_department
+
+	upgrade_intelligence_agency = upgrade_passive_defense
+	upgrade_intelligence_agency = upgrade_anti_partisan
+
+	upgrade_intelligence_agency = upgrade_suicide_pills
+	upgrade_intelligence_agency = upgrade_interrogation_techniques
+	upgrade_intelligence_agency = upgrade_diplo_training
+	upgrade_intelligence_agency = upgrade_psycho_warfare
+
+	upgrade_intelligence_agency = upgrade_form_department
+	upgrade_intelligence_agency = upgrade_decryption_boost
+	upgrade_intelligence_agency = upgrade_decryption_boost_2
+	upgrade_intelligence_agency = upgrade_crypto_strength
+	upgrade_intelligence_agency = upgrade_crypto_strength_2
+
+	create_operative_leader = {
+		name = "Sophia Gavalas"
+		#GFX = EuropeFemale6
+		portrait_path = "gfx/leaders/Operatives/EuropeFemale6.png"
+		traits = {
+			operative_seducer operative_master_interrogator
+		}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		skill = 2
+		nationalities = { BUL GRE}
+	}
+	create_operative_leader = {
+		name = "Zenobia Maleïnos"
+		#GFX = ArabicFemale3
+		portrait_path = "gfx/leaders/Operatives/ArabicFemale3.png"
+		traits = {
+			operative_seducer operative_infiltrator
+		}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		skill = 2
+		nationalities = { EGY SYR GRE}
+	}
+	create_operative_leader = {
+		name = "Aikaterine Xiphias"
+		#GFX = ArabicFemale4
+		portrait_path = "gfx/leaders/Operatives/ArabicFemale4.png"
+		traits = {
+			operative_seducer operative_infiltrator
+		}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		skill = 2
+		nationalities = { PER GRE}
+	}
+}
+
+create_equipment_variant = {
+		name = "Koráki"
+		type = fighter_equipment_0
+		upgrades = {
+			plane_gun_upgrade = 1
+			plane_range_upgrade = 4
+			plane_engine_upgrade = 2
+			plane_reliability_upgrade = 8
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Aetós II"
+		type = fighter_equipment_1
+		upgrades = {
+			plane_gun_upgrade = 1
+			plane_range_upgrade = 4
+			plane_engine_upgrade = 2
+			plane_reliability_upgrade = 8
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Foínix III"
+		type = fighter_equipment_2
+		upgrades = {
+			plane_gun_upgrade = 2
+			plane_range_upgrade = 6
+			plane_engine_upgrade = 6
+			plane_reliability_upgrade = 10
+		}
+	}
+	create_equipment_variant = {
+	name = "Vrychithmós"
+	type = tac_bomber_equipment_0
+	upgrades = {
+		plane_tac_bomb_upgrade = 1
+		plane_range_upgrade = 4
+		plane_engine_upgrade = 2
+		plane_reliability_upgrade = 8
+	}
+	obsolete = yes
+}
+	create_equipment_variant = {
+	name = "Pelargós II"
+	type = tac_bomber_equipment_1
+	upgrades = {
+		plane_tac_bomb_upgrade = 1
+		plane_range_upgrade = 4
+		plane_engine_upgrade = 2
+		plane_reliability_upgrade = 8
+	}
+}
+
+create_equipment_variant = {
+	name = "Peristéri II"
+	type = CAS_equipment_1
+	upgrades = {
+		plane_cas_upgrade = 1
+		plane_range_upgrade = 4
+		plane_engine_upgrade = 2
+		plane_reliability_upgrade = 8
+	}
+
+}
+create_equipment_variant = {
+	name = "Erodiós II"
+	type = nav_bomber_equipment_1
+	upgrades = {
+		plane_naval_upgrade = 1
+		plane_range_upgrade = 4
+		plane_engine_upgrade = 2
+		plane_reliability_upgrade = 8
+	}
+
+}
+create_equipment_variant = {
+	name = "Kataphraktoi III"
+	type = light_tank_equipment_2
+	upgrades = {
+		tank_gun_upgrade = 1
+		tank_armor_upgrade = 6
+		tank_engine_upgrade = 2
+		tank_reliability_upgrade = 8
+	}
+	}
+create_equipment_variant = {
+	name = "Katapéra II"
+	type = armored_car_equipment_1
+	upgrades = {
+		tank_gun_upgrade = 1
+		tank_armor_upgrade = 6
+		ac_engine_upgrade = 2
+		tank_reliability_upgrade = 8
+	}
+	}
+
+	####byz and allies
+	GRE = {
+		add_ai_strategy = {
+			type = conquer
+			id = "BUL"
+			value = 300
+		}
+		add_ai_strategy = {
+			type = conquer
+			id = "EGY"
+			value = 200
+		}
+		add_ai_strategy = {
+			type = contain
+			id = "PER"
+			value = 200
+		}
+		add_ai_strategy = {
+			type = antagonize
+			id = "PER"
+			value = 200
+		}
+		add_ai_strategy = {
+			type = dont_defend_ally_borders
+			id = "ARM"
+			value = 250
+		}
+		add_ai_strategy = {
+			type = dont_defend_ally_borders
+			id = "GEO"
+			value = 250
+		}
+		add_ai_strategy = {
+			type = dont_defend_ally_borders
+			id = "ETH"
+			value = 500
+		}
+	}
+
+	GEO = {
+		add_ai_strategy = {
+			type = prepare_for_war
+			id = "RUS"
+			value = 100
+		}
+		add_ai_strategy = {
+			type = prepare_for_war
+			id = "SOV"
+			value = 100
+		}
+		add_ai_strategy = {
+			type = prepare_for_war
+			id = "DKB"
+			value = 50
+		}
+		add_ai_strategy = {
+			type = prepare_for_war
+			id = "PER"
+			value = 200
+		}
+		add_ai_strategy = {
+			type = dont_defend_ally_borders
+			id = "ARM"
+			value = 500
+		}
+		add_ai_strategy = {
+			type = dont_defend_ally_borders
+			id = "ETH"
+			value = 10000
+		}
+		add_ai_strategy = {
+			type = invade
+			id = "BUL"
+			value = -500
+		}
+		add_ai_strategy = {
+			type = invade
+			id = "EGY"
+			value = -500
+		}
+		add_ai_strategy = {
+			type = send_volunteers_desire
+			id = "GRE"
+			value = 500
+		}
+		diplomatic_relation = {
+			country = GRE
+			relation = docking_rights
+			active = yes
+		}
+	}
+
+	ARM = {
+		add_ai_strategy = {
+			type = prepare_for_war
+			id = "PER"
+			value = 200
+		}
+		add_ai_strategy = {
+			type = dont_defend_ally_borders
+			id = "GEO"
+			value = 1000
+		}
+		add_ai_strategy = {
+			type = dont_defend_ally_borders
+			id = "ETH"
+			value = 10000
+		}
+		add_ai_strategy = {
+			type = send_volunteers_desire
+			id = "GRE"
+			value = 500
+		}
+		diplomatic_relation = {
+			country = GRE
+			relation = docking_rights
+			active = yes
+		}
+	}
+	ETH = {
+		add_ai_strategy = {
+			type = prepare_for_war
+			id = "EGY"
+			value = 100
+		}
+		add_ai_strategy = {
+			type = prepare_for_war
+			id = "SOM"
+			value = 100
+		}
+		diplomatic_relation = {
+			country = GRE
+			relation = docking_rights
+			active = yes
+		}
+	}
+
+

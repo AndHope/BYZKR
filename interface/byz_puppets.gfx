@@ -1,0 +1,12 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_byz_exarchate_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_crownland_icon.png"
+	}
+spriteType = {
+		name = "GFX_byz_themata_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_crownland_icon.png"
+	}
+}
+

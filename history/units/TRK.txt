@@ -1,0 +1,249 @@
+﻿division_template = {
+	name = "Piyodalarga Bo'linish"
+	division_names_group = CA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Piyodalarga Bo'linish II"
+	division_names_group = CA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Otliqlar Bo'linmasi"
+	division_names_group = CA_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Tuya Otliqlar Bo'linmasi"
+	division_names_group = CA_CAM_01
+
+	regiments = {
+		camelry = { x = 0 y = 0 }
+		camelry = { x = 0 y = 1 }
+		camelry = { x = 0 y = 2 }
+		camelry = { x = 1 y = 0 }
+		camelry = { x = 1 y = 1 }
+		camelry = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1459
+		division_template = "Piyodalarga Bo'linish II"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1459
+		division_template = "Piyodalarga Bo'linish II"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 12581
+		division_template = "Otliqlar Bo'linmasi"
+		start_experience_factor = 1.0
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 12583
+		division_template = "Otliqlar Bo'linmasi"
+		start_experience_factor = 1.0
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12583
+		division_template = "Otliqlar Bo'linmasi"
+		start_experience_factor = 1.0
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 10353
+		division_template = "Otliqlar Bo'linmasi"
+		start_experience_factor = 1.0
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 12581
+		division_template = "Otliqlar Bo'linmasi"
+		start_experience_factor = 1.0
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 12583
+		division_template = "Otliqlar Bo'linmasi"
+		start_experience_factor = 1.0
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12583
+		division_template = "Otliqlar Bo'linmasi"
+		start_experience_factor = 1.0
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 10353
+		division_template = "Otliqlar Bo'linmasi"
+		start_experience_factor = 1.0
+		start_equipment_factor = 0.8
+	}
+}
+
+
+instant_effect = {
+
+
+	annex_country = {
+		target = KHI
+		transfer_troops = yes
+	}
+	annex_country = {
+		target = BUK
+		transfer_troops = yes
+	}
+
+	add_manpower = 175000
+	add_political_power = 2000
+
+	add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 8000 producer = PER }
+	add_equipment_to_stockpile = { type = support_equipment_1 amount = 200 producer = PER }
+	add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 200 producer = PER }
+	
+	add_war_support = 0.50
+	add_stability = 0.50
+
+	set_technology = {
+		### General ###
+		tech_support = 1
+		tech_recon = 1
+		tech_recon2 = 1
+		tech_recon3 = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		support_weapons3 = 1
+
+		mobile_warfare = 1
+		#trench_warfare = 1
+		mass_assault = 1
+		#infiltration_in_depth = 1
+		guerilla_warfare = 1
+	}
+
+	add_ai_strategy = {
+		type = prepare_for_war
+		id = "PER"
+		value = 200
+	}
+	add_ai_strategy = {
+		type = invade
+		id = "PER"
+		value = 200
+	}
+
+add_equipment_production = {
+	equipment = {
+		type = infantry_equipment_0
+	}
+	requested_factories = 5
+	progress = 0.82
+	efficiency = 100
+}
+add_equipment_production = {
+	equipment = {
+		type = artillery_equipment_1
+	}
+	requested_factories = 1
+	progress = 0.83
+	efficiency = 100
+}
+add_equipment_production = {
+	equipment = {
+		type = support_equipment_1
+	}
+	requested_factories = 1
+	progress = 0.44
+	efficiency = 100
+}
+}
+

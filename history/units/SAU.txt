@@ -1,0 +1,404 @@
+﻿division_template = {
+	name = "'Iikhwan Alfursan"
+	division_names_group = SAU_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		camelry = { x = 1 y = 0 }
+		camelry = { x = 1 y = 1 }
+		camelry = { x = 1 y = 2 }
+		camelry = { x = 2 y = 0 }
+		camelry = { x = 2 y = 1 }
+		camelry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Ikhwan"
+	division_names_group = SAU_CAV_01
+	is_locked = yes
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		camelry = { x = 1 y = 0 }
+		camelry = { x = 1 y = 1 }
+		camelry = { x = 1 y = 2 }
+		camelry = { x = 2 y = 0 }
+		camelry = { x = 2 y = 1 }
+		camelry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Qasam Milishia"
+	division_names_group = SAU_MIL_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	template_counter = 68
+}
+division_template = {
+	name = "Firqat Musha"
+	division_names_group = SAU_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	### Ikhwan
+	division = {
+		name = "Mutair"
+		location = 13667
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Mutair"
+		location = 10850
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Utaibah"
+		location = 8004
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Mutair"
+		location = 13667
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Mutair"
+		location = 10850
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Utaibah"
+		location = 8004
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Mutair"
+		location = 13667
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Mutair"
+		location = 10850
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Utaibah"
+		location = 8004
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Mutair"
+		location = 13667
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Mutair"
+		location = 10850
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Utaibah"
+		location = 8004
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Mutair"
+		location = 13667
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Mutair"
+		location = 10850
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Utaibah"
+		location = 8004
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Mutair"
+		location = 13667
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Mutair"
+		location = 10850
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Utaibah"
+		location = 8004
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Mutair"
+		location = 13667
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Mutair"
+		location = 10850
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Utaibah"
+		location = 8004
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Mutair"
+		location = 13667
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Mutair"
+		location = 10850
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Utaibah"
+		location = 8004
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+	division = {
+		name = "Mutair"
+		location = 13667
+		division_template = "Ikhwan"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { support_equipment_1 = { owner = "EGY" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EGY" } }
+	}
+}
+
+instant_effect = {
+
+
+	add_manpower = 375000
+	add_political_power = 2000
+	annex_country = {
+		target = OMA
+		transfer_troops = yes
+	}
+	annex_country = {
+		target = YEM
+		transfer_troops = yes
+	}
+	annex_country = {
+		target = JBS
+		transfer_troops = yes
+	}
+	### Offsite Factories ###
+	add_offsite_building = {
+		type = arms_factory
+		level = 5
+	}
+	add_offsite_building = {
+		type = industrial_complex
+		level = 5
+	}
+	add_offsite_building = {
+		type = dockyard
+		level = 2
+	}
+	
+	add_war_support = 0.50
+	add_stability = 0.50
+	army_experience = 500
+	set_fuel_ratio = 1.0
+
+	set_technology = {
+		### General ###
+		tech_support = 1
+		tech_recon = 1
+		tech_recon2 = 1
+		tech_recon3 = 1
+		tech_recon4 = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		support_weapons3 = 1
+		support_weapons4 = 1
+
+		mobile_warfare = 1
+		trench_warfare = 1
+		mass_assault = 1
+		infiltration_in_depth = 1
+		guerilla_warfare = 1
+	}
+
+set_country_flag = was_at_war_with_OTT
+SAU = {
+	every_army_leader = { 
+		add_skill_level = 2
+		add_logistics = 4
+		add_defense = 2
+		
+	}	
+}
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_intelligence_agency = yes
+	upgrade_intelligence_agency = upgrade_economy_civilian
+	upgrade_intelligence_agency = upgrade_army_department
+
+	upgrade_intelligence_agency = upgrade_passive_defense
+	upgrade_intelligence_agency = upgrade_anti_partisan
+
+	upgrade_intelligence_agency = upgrade_form_department
+	upgrade_intelligence_agency = upgrade_crypto_strength
+	upgrade_intelligence_agency = upgrade_crypto_strength_2
+}
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = GER
+		}
+		requested_factories = 2
+		progress = 0.82
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = GER
+		}
+		requested_factories = 1
+		progress = 0.83
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = GER
+		}
+		requested_factories = 1
+		progress = 0.44
+		efficiency = 100
+	}
+}
+

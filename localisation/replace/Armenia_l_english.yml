@@ -1,0 +1,339 @@
+﻿l_english:
+
+### Parties ###
+ARM_totalist_party:0 "Komunistakan"
+ARM_totalist_party_long:0 "Komunistakan Kusaktsutyun"
+
+ARM_syndicalist_party:0 "Syndicalistakan"
+ARM_syndicalist_party_desc:0 "Syndicalistakan Kusaktsutvun"
+
+ARM_radical_socialist_party:0 "Hunchaks"
+ARM_radical_socialist_party_long:0 "Social Demokrat Hunchakian Kusaktsutyun (Social Democrat Hunchakian Party)"
+
+ARM_social_democrat_party:0 "Dashnaks"
+ARM_social_democrat_party_long:0 "Dashnaktsutyun (Armenian Revolutionary Federation)"
+
+ARM_social_liberal_party:0 "Veragazmial"
+ARM_social_liberal_party_long:0 "Veragazmial Hunchakianner"
+
+ARM_market_liberal_party:0 "Ramgavar"
+ARM_market_liberal_party_long:0 "Ramgavar Azatakan Kusaktsutyun (Armenian Democratic Liberal Party)"
+
+ARM_social_conservative_party:0 "Pahpanoghakan"
+ARM_social_conservative_party_long:0 "Pahpanoghakan Kusaktsutyun"
+
+ARM_authoritarian_democrat_party:0 "Byzantine Military Government"
+ARM_authoritarian_democrat_party_long:0 "Byzantine Military Government"
+
+ARM_paternal_autocrat_party:0 "ANLM"
+ARM_paternal_autocrat_party_long:0 "Armenian National Liberation Movement"
+
+ARM_national_populist_party:0 "Tseghakronutyun"
+ARM_national_populist_party_long:0 "Tseghakronutyun"
+
+### Ideas ###
+arm_ottoman_occupation:0 "Byzantine Military Government"
+arm_ottoman_occupation_desc:0 "Ever since its occupation at the tail end of the Weltkrieg, Armenia has been buckled under the stress of the Byzantine army who even though the severe repression of the Weltkrieg has stopped, continue to be a daily presence in the life of the Armenian citizens. Besides the occupation, severe restrictions have also been imposed on its legislative assemblies and armament production barring the 'Vilayet of Armenia' from ever being a threat to the Turkish state."
+ ####################
+ #### TECHNOLOGY ####
+ ####################
+
+ ###  ###
+ 
+ # Infantry
+
+ ARM_motorized_equipment_1:1 "Minótavros" # Minotaur
+
+ ARM_motorized_rocket_equipment_1:0 "C6-2 Chímaira" # Chimera
+ ARM_motorized_rocket_equipment_1_short:0 "Chímaira"
+
+ ARM_mechanized_equipment_1:0 "Kéntavros Transporter"
+ ARM_mechanized_equipment_1_short:0 "Kéntavros"
+ ARM_mechanized_equipment_2:0 "Kéntavros II Transporter"
+ ARM_mechanized_equipment_2_short:0 "Kéntavros II"
+ ARM_mechanized_equipment_3:0 "Kéntavros III Transporter"
+ ARM_mechanized_equipment_3_short:0 "Kéntavros III"
+ 
+ ARM_gw_armored_car_equipment:0 "Katapéra"
+ ARM_gw_armored_car_equipment:0 "Katapéra"
+ ARM_armored_car_equipment_1:0 "Katapéra II"
+ ARM_armored_car_equipment_1:0 "Katapéra II"
+ ARM_armored_car_equipment_2:0 "Katapéra III"
+ ARM_armored_car_equipment_2:0 "Katapéra III"
+
+ # Armor
+
+ ARM_gw_tank_equipment:0 "Panoplía Katapéra"
+ ARM_gw_tank_equipment_short:0 "Katapéra"
+
+ ARM_light_tank_equipment_1:0 "Távros Cavalry Tank"
+ ARM_light_tank_equipment_1_short:0 "Távros"
+ ARM_light_tank_equipment_1_desc:0 "The first armored vehicles were purchased from England and copied by companies like Glavanis & Azazis."
+ ARM_light_tank_equipment_2:0 "Kataphraktoi Cavalry Tank"
+ ARM_light_tank_equipment_2_short:0 "Kataphraktoi"
+ ARM_light_tank_equipment_2_desc:0 "Like other countries the early concept of tank warfare included two types. A lighter 'cavalry' version and heavier 'infantry' version."
+ ARM_light_tank_equipment_3:0 "Ippéfs Strike Tank"
+ ARM_light_tank_equipment_3_short:0 "Ippéfs"
+ ARM_light_tank_equipment_3_desc:0 "Advancing technology brought a new class of tank to the war.  Relegating the light tanks to scout roles."
+
+ ARM_light_tank_destroyer_equipment_1:0 "Távros Medium KD"
+ ARM_light_tank_destroyer_equipment_1_short:0 "Távros KD"
+ ARM_light_tank_destroyer_equipment_1_desc:0 "The Katastroféas Dexamenón sacrificed the tank turret in order to mount a more powerful main cannon."
+ ARM_light_tank_destroyer_equipment_2:0 "Kataphraktoi Cavalry KD"
+ ARM_light_tank_destroyer_equipment_2_short:0 "Kataphraktoi KD"
+ ARM_light_tank_destroyer_equipment_3:0 "Ippéfs Strike KD"
+ ARM_light_tank_destroyer_equipment_3_short:0 "Ippéfs KD"
+ 
+ ARM_light_tank_artillery_equipment_1:0 "Távros Medium AP"
+ ARM_light_tank_artillery_equipment_1_short:0 "Távros AP"
+ ARM_light_tank_artillery_equipment_1_desc:0 "The Aftoproothoúmeno Pyrovolikó made fire support more mobile by mounting artillery pieces on tanks."
+ ARM_light_tank_artillery_equipment_2:0 "Kataphraktoi Cavalry AP"
+ ARM_light_tank_artillery_equipment_2_short:0 "Kataphraktoi AP"
+ ARM_light_tank_artillery_equipment_3:0 "Ippéfs Strike AP"
+ ARM_light_tank_artillery_equipment_3_short:0 "Ippéfs AP"
+
+ ARM_light_tank_aa_equipment_1:0 "Távros Medium AA"
+ ARM_light_tank_aa_equipment_1_short:0 "Távros AA"
+ ARM_light_tank_aa_equipment_1_desc:0 "The Anti Aeroskáfi provided mobile air defense by mounting anti-aircraft cannon on tanks."
+ ARM_light_tank_aa_equipment_2:0 "Kataphraktoi AA"
+ ARM_light_tank_aa_equipment_2_short:0 "Kataphraktoi Cavalry AA"
+ ARM_light_tank_aa_equipment_3:0 "Ippéfs Strike AA"
+ ARM_light_tank_aa_equipment_3_short:0 "Ippéfs AA"
+
+ ARM_medium_tank_equipment_1:0 "Lykóskylo Cavalry Tank"
+ ARM_medium_tank_equipment_1_short:0 "Lykóskylo"
+ ARM_medium_tank_equipment_2:0 "Spathí Battle Tank"
+ ARM_medium_tank_equipment_2_short:0 "Spathí"
+ ARM_medium_tank_equipment_2_desc:0 "Stronger engines and bigger guns lead to a new breed of tank. Almost as mobile as lights with almost as much armor and firepower as heavies."
+ ARM_medium_tank_equipment_3:0 "Asvós Battle Tank"
+ ARM_medium_tank_equipment_3_short:0 "Asvós"
+
+ ARM_medium_tank_destroyer_equipment_1:0 "Lykóskylo Cavalry KD"
+ ARM_medium_tank_destroyer_equipment_1_short:0 "Lykóskylo KD"
+ ARM_medium_tank_destroyer_equipment_2:0 "Spathí Battle KD"
+ ARM_medium_tank_destroyer_equipment_2_short:0 "Spathí KD"
+ ARM_medium_tank_destroyer_equipment_3:0 "Asvós Battle KD"
+ ARM_medium_tank_destroyer_equipment_3_short:0 "Asvós KD"
+
+ ARM_medium_tank_artillery_equipment_1:0 "Lykóskylo Cavalry AP"
+ ARM_medium_tank_artillery_equipment_1_short:0 "Lykóskylo AP"
+ ARM_medium_tank_artillery_equipment_2:0 "Spathí Battle AP"
+ ARM_medium_tank_artillery_equipment_2_short:0 "Spathí AP"
+ ARM_medium_tank_artillery_equipment_3:0 "Asvós Battle AP"
+ ARM_medium_tank_artillery_equipment_3_short:0 "Asvós AP"
+
+ ARM_medium_tank_aa_equipment_1:0 "Lykóskylo Cavalry AA"
+ ARM_medium_tank_aa_equipment_1_short:0 "Lykóskylo AA"
+ ARM_medium_tank_aa_equipment_2:0 "Spathí Battle AA"
+ ARM_medium_tank_aa_equipment_2_short:0 "Spathí  AA"
+ ARM_medium_tank_aa_equipment_3:0 "Asvós Battle AA"
+ ARM_medium_tank_aa_equipment_3_short:0 "Asvós AA"
+
+ ARM_heavy_tank_equipment_1:0 "Eléfantas Infantry Tank"
+ ARM_heavy_tank_equipment_1_short:0 "Eléfantas"
+ ARM_heavy_tank_equipment_1_desc:0 "The first heavy 'infantry' tanks were also copied from English designs. Their expense and low mobility kept them from being popular with offensive minded commanders."
+ ARM_heavy_tank_equipment_2:0 "Arkoúda Assault Tank"
+ ARM_heavy_tank_equipment_2_short:0 "Arkoúda"
+ ARM_heavy_tank_equipment_2_desc:0 "With the development of medium tanks the heavies became even heavier with thicker armor and larger guns to survive the more dangerous battlefield."
+ ARM_heavy_tank_equipment_3:0 "Kontári Assault Tank"
+ ARM_heavy_tank_equipment_3_short:0 "Kontári"
+
+ ARM_heavy_tank_destroyer_equipment_1:0 "Eléfantas Infantry KD"
+ ARM_heavy_tank_destroyer_equipment_1_short:0 "Eléfantas KD"
+ ARM_heavy_tank_destroyer_equipment_2:0 "Arkoúda Assault KD"
+ ARM_heavy_tank_destroyer_equipment_2_short:0 "Arkoúda KD"
+ ARM_heavy_tank_destroyer_equipment_3:0 "Kontári Assault KD"
+ ARM_heavy_tank_destroyer_equipment_3_short:0 "Kontári KD"
+
+ ARM_heavy_tank_artillery_equipment_1:0 "Eléfantas Infantry AP"
+ ARM_heavy_tank_artillery_equipment_1_short:0 "Eléfantas AP"
+ ARM_heavy_tank_artillery_equipment_2:0 "Arkoúda Assault AP"
+ ARM_heavy_tank_artillery_equipment_2_short:0 "Arkoúda AP"
+ ARM_heavy_tank_artillery_equipment_3:0 "Kontári Assault AP"
+ ARM_heavy_tank_artillery_equipment_3_short:0 "Kontári AP"
+
+ ARM_heavy_tank_aa_equipment_1:0 "Eléfantas Infantry AA"
+ ARM_heavy_tank_aa_equipment_1_short:0 "Eléfantas AA"
+ ARM_heavy_tank_aa_equipment_2:0 "Arkoúda Assault AA"
+ ARM_heavy_tank_aa_equipment_2_short:0 "Arkoúda AA"
+ ARM_heavy_tank_aa_equipment_3:0 "Kontári Assault AA"
+ ARM_heavy_tank_aa_equipment_3_short:0 "Kontári AA"
+
+ ARM_super_heavy_tank_equipment_1:0 "Titán Siege Tank"
+ ARM_super_heavy_tank_equipment_1_short:0 "Titán"
+ ARM_super_heavy_tank_equipment_1_desc:0 "With an endless arms race between armor and firepower, the super heavy could be seen as the ultimate expression of armored warfare."
+
+ ARM_super_heavy_tank_destroyer_equipment_1:0 "Titán Siege KD"
+ ARM_super_heavy_tank_destroyer_equipment_1_short:0 "Titán KD"
+
+ ARM_super_heavy_tank_artillery_equipment_1:0 "Titán Siege AP"
+ ARM_super_heavy_tank_artillery_equipment_1_short:0 "Titán AP"
+
+ ARM_super_heavy_tank_aa_equipment_1:0 "Titán Siege AA"
+ ARM_super_heavy_tank_aa_equipment_1_short:0 "Titán AA"
+
+ ARM_modern_tank_equipment_1:0 "Velissários Battle Tank"
+ ARM_modern_tank_equipment_1_short:0 "Velissários"
+ ARM_modern_tank_equipment_1_desc:0 "Originally a hybrid, the medium eventually replaced both the light and heavy models. Usurping their roles in the combat zones."
+
+ ARM_modern_tank_destroyer_equipment_1:0 "Velissários Battle KD"
+ ARM_modern_tank_destroyer_equipment_1_short:0 "Velissários KD"
+
+ ARM_modern_tank_artillery_equipment_1:0 "Velissários Battle AP"
+ ARM_modern_tank_artillery_equipment_1_short:0 "Velissários AP"
+
+ ARM_modern_tank_aa_equipment_1:0 "Velissários Battle AA"
+ ARM_modern_tank_aa_equipment_1_short:0 "Velissários AA"
+
+ # Artillery
+
+ ARM_anti_air_equipment_1:0 "Danglis 3.5 cm Kanóni"
+ ARM_anti_air_equipment_1_short:0 "3.5 cm Kanóni"
+ ARM_anti_air_equipment_2:0 "7.5 cm Kanóni"
+ ARM_anti_air_equipment_3:0 "9 cm Kanóni"
+
+ ARM_artillery_equipment_1:0 "Danglis 8 cm Kanóni"
+ ARM_artillery_equipment_1_short:0 "8 cm Kanóni"
+ ARM_artillery_equipment_2:0 "10.5 cm Kanóni"
+ ARM_artillery_equipment_3:0 "15 cm Olmovólo"
+
+ ARM_rocket_artillery_equipment_1:0 "Danglis Type 1 Ektoxeftís Rouketón"
+ ARM_rocket_artillery_equipment_1_short:0 "ER-1"
+ ARM_rocket_artillery_equipment_2:0 "Danglis Type 5 Ektoxeftís Rouketón"
+ ARM_rocket_artillery_equipment_2_short:0 "ER-5"
+
+ ARM_anti_tank_equipment_1:0 "Danglis 3.5 cm Kanóni"
+ ARM_anti_tank_equipment_1_short:0 "3.5 cm Kanóni"
+ ARM_anti_tank_equipment_2:0 "5 cm Kanóni"
+ ARM_anti_tank_equipment_3:0 "7.5 cm Kanóni"
+
+ # Naval
+
+ ARM_light_cruiser_2:0 "Kórinthos Class"
+# ARM_light_cruiser_2_desc:0 "Post-war treaties put restrictions on cruisers, but well-armed light vessels can be developed while remaining within these limits."
+ ARM_light_cruiser_3:0 "Spárti Class"
+# ARM_light_cruiser_3_desc:0 "Now skirting the limits of treaties, larger and more heavily armored cruisers can be built, still with light enough weaponry to be classified as light cruisers."
+ ARM_light_cruiser_4:0 "Thíva Class"
+# ARM_light_cruiser_4_desc:0 "Tactically employed to protect larger ships, the modern generation of light cruisers can shake off most past restrictions and be better armed to handle aerial attacks."
+
+ ARM_heavy_cruiser_2:0 "Kríti Class"
+# ARM_heavy_cruiser_2_desc:0 "Despite new efforts at treaties, refitting lighter cruisers with heavier weaponry remains efficient, although armor is still limited."
+ ARM_heavy_cruiser_3:0 "Smýrni Class"
+# ARM_heavy_cruiser_3_desc:0 "As restrictions are increasingly ignored worldwide, more balanced heavy cruiser designs with more priority on armor can be built. Better anti-air guns allow these ships to cooperate in naval air warfare."
+ ARM_heavy_cruiser_4:0 "Trapezoúntos Class"
+# ARM_heavy_cruiser_4_desc:0 "Upscaled, longer and heavier designs with rapid-fire armaments are features in these final stages of heavy cruiser development."
+
+ ARM_battle_cruiser_1:0 "Kanaris Class"
+# ARM_battle_cruiser_1_desc:0 "The post-war battlecruiser arms race resulted in several heavily armed designs, sacrificing armor for speed compared to battleships."
+ ARM_battle_cruiser_2:0 "Kountouriotis Class"
+# ARM_battle_cruiser_2_desc:0 "Rebuilt and repurposed battlecruisers continue to outrun even modern battleship designs by lighter protection, but have developed better systems for fire control, detection and aerial defenses."
+
+ ARM_battleship_2:0 "Konstantínos Class"
+# ARM_battleship_2_desc:0 "With improved stability and range, a new generation of battleships improve upon previous designs while remaining within limits stipulated by naval treaties."
+ ARM_battleship_3:0 "Vasíleios Class"
+# ARM_battleship_3_desc:0 "Thicker armor, stronger engines, a battery of high-caliber guns and improved anti-air capabilities can allow battleships to remain relevant, if correctly employed, in a world where naval warfare is increasingly dominated by aerial support."
+ ARM_battleship_4:0 "Kallinikos Class"
+# ARM_battleship_4_desc:0 "As the world sees what may be the last major battleship confrontations, the importance of heavy armaments and anti-air turrets is greater than ever."
+
+ ARM_SH_battleship_1:0 "Pantokrátora Class"
+# ARM_SH_battleship_1_desc:0 "The current state of the world no longer has any room for abiding by naval treaties. Without these limitations, we can focus entirely on creating the heaviest, most well-armed battleships of all time, able to engage multiple lesser vessels."
+ ARM_SH_battleship_2:0 "Endoxos Class"
+# ARM_SH_battleship_2_desc:0 "An improvement on our earlier super heavy design with stronger weapons and improved fire control systems."
+
+ ARM_carrier_1:0 "Theodóra Class"
+# ARM_carrier_1_desc:0 "Many military theorists believe that naval aviation is the future. Converting old capital ships and ocean liners to carry aircraft will be the first step towards utilizing these new doctrines."
+ ARM_carrier_2:0 "Konstantína Class"
+# ARM_carrier_2_desc:0 "As work begins on the first keel-up carrier designs, we must ensure that these ships have the range and speed to keep up with the rest of our navy, while respecting the post-war naval treaties."
+ ARM_carrier_3:0 "Ánna Class"
+# ARM_carrier_3_desc:0 "Improved construction methods and more specialized systems like deck edge elevators allow these carriers to transport more planes more efficiently."
+ ARM_carrier_4:0 "María Class"
+# ARM_carrier_4_desc:0 "With many naval treaties now increasingly ignored, we can proceed to build carriers capable of transporting more planes than ever to secure air superiority cover."
+
+ ARM_submarine_3:0 "Poseidónas Class"
+# ARM_submarine_3_desc:0 "The role of the submarine in the fleet outside of convoy attacks is still under debate. Achieving a balance between combination of speed, range and weaponry will be key to the necessary model."
+
+ # Air
+
+ ARM_CAS_equipment_1:0 "Peristéri"
+ ARM_CAS_equipment_1_short:0 "Peristéri"
+ ARM_CAS_equipment_2:0 "Dryokoláptis"
+ ARM_CAS_equipment_2_short:0 "Dryokoláptis"
+ ARM_CAS_equipment_3:0 "Odikó Ptinó"
+ ARM_CAS_equipment_3_short:0 "Odikó Ptinó"
+
+ ARM_cv_CAS_equipment_1:0 "Alkyóna"
+ ARM_cv_CAS_equipment_1_short:0 "Alkyóna"
+ ARM_cv_CAS_equipment_2:0 "Chelidóni"
+ ARM_cv_CAS_equipment_2_short:0 "Chelidóni"
+ ARM_cv_CAS_equipment_3:0 "Flóros"
+ ARM_cv_CAS_equipment_3_short:0 "Flóros"
+
+ ARM_fighter_equipment_0:0 "Astrapí"
+ ARM_fighter_equipment_0_short:0 "Astrapí"
+ ARM_fighter_equipment_0_desc:0 ""
+ ARM_fighter_equipment_1:0 "Aetós"
+ ARM_fighter_equipment_1_short:0 "Aetós"
+ ARM_fighter_equipment_2:0 "Foínix II"
+ ARM_fighter_equipment_2_short:0 "Foínix II"
+ ARM_fighter_equipment_3:0 "Geráki"
+ ARM_fighter_equipment_3_short:0 "Geráki"
+
+ ARM_cv_fighter_equipment_0:0 "Astrapí"
+ ARM_cv_fighter_equipment_0_short:0 "Astrapí"
+ ARM_cv_fighter_equipment_0_desc:0 "Purchased from the English and copied by local companies."
+ ARM_cv_fighter_equipment_1:0 "Aetós"
+ ARM_cv_fighter_equipment_1_short:0 "Aetós"
+ ARM_cv_fighter_equipment_2:0 "Tachýs"
+ ARM_cv_fighter_equipment_2_short:0 "Tachýs"
+ ARM_cv_fighter_equipment_3:0 "Spourgítis"
+ ARM_cv_fighter_equipment_3_short:0 "Spourgítis"
+
+ ARM_nav_bomber_equipment_1:0 "Pápia"
+ ARM_nav_bomber_equipment_1_short:0 "Pápia"
+ ARM_nav_bomber_equipment_2:0 "Pelekános"
+ ARM_nav_bomber_equipment_2_short:0 "Pelekános"
+ ARM_nav_bomber_equipment_3:0 "Kýknos"
+ ARM_nav_bomber_equipment_3_short:0 "Kýknos"
+
+ ARM_cv_nav_bomber_equipment_1:0 "Erodiós"
+ ARM_cv_nav_bomber_equipment_1_short:0 "Erodiós"
+ ARM_cv_nav_bomber_equipment_2:0 "Grýpas"
+ ARM_cv_nav_bomber_equipment_2_short:0 "Grýpas"
+ ARM_cv_nav_bomber_equipment_3:0 "Foínix"
+ ARM_cv_nav_bomber_equipment_3_short:0 "Foínix"
+
+ ARM_heavy_fighter_equipment_1:0 "Koráki"
+ ARM_heavy_fighter_equipment_1_short:0 "Koráki"
+ ARM_heavy_fighter_equipment_2:0 "Kollyríon"
+ ARM_heavy_fighter_equipment_2_short:0 "Kollyríon"
+ ARM_heavy_fighter_equipment_3:0 "Koukouvágia"
+ ARM_heavy_fighter_equipment_3_short:0 "Koukouvágia"
+
+ ARM_tac_bomber_equipment_0:0 "Ornio"
+ ARM_tac_bomber_equipment_0_short:0 "Ornio"
+ ARM_tac_bomber_equipment_1:0 "Pelargós"
+ ARM_tac_bomber_equipment_1_short:0 "Pelargós"
+ ARM_tac_bomber_equipment_2:0 "Foinikópteros"
+ ARM_tac_bomber_equipment_2_short:0 "Foinikópteros"
+ ARM_tac_bomber_equipment_3:0 "Iérax"
+ ARM_tac_bomber_equipment_3_short:0 "Iérax"
+
+ ARM_strat_bomber_equipment_1:0 "Vomvardistís"
+ ARM_strat_bomber_equipment_1_short:0 "Vomvardistís"
+ ARM_strat_bomber_equipment_2:0 "Almpatrós"
+ ARM_strat_bomber_equipment_2_short:0 "Almpatrós"
+ ARM_strat_bomber_equipment_3:0 "Vrontí"
+ ARM_strat_bomber_equipment_3_short:0 "Vrontí"
+
+ ARM_jet_fighter_equipment_1:0 "Drákon"
+ ARM_jet_fighter_equipment_1_short:0 "Drákon"
+ ARM_jet_fighter_equipment_2:0 "Pígasos"
+ ARM_jet_fighter_equipment_2_short:0 "Pígasos"
+
+ ARM_jet_tac_bomber_equipment_1:0 "Kataigída"
+ ARM_jet_tac_bomber_equipment_1_short:0 "Kataigída"
+ ARM_jet_tac_bomber_equipment_2:0 "Iérax II"
+ ARM_jet_tac_bomber_equipment_2_short:0 "Iérax II"
+
+ ARM_jet_strat_bomber_equipment_1:0 "Vrychithmós"
+ ARM_jet_strat_bomber_equipment_1_short:0 "Vrychithmós"

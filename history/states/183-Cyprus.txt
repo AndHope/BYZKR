@@ -1,0 +1,31 @@
+state = {
+	id = 183
+	name = "STATE_183"
+	manpower = 447959
+	state_category = four
+
+	resources = {
+		chromium = 3
+	}
+
+	history = {
+		owner = GRE
+		add_core_of = GRE
+		buildings = {
+			infrastructure = 6
+			air_base = 2
+			industrial_complex = 2
+			dockyard = 1
+			anti_air_building = 1
+			radar_station = 1
+			11984 = {
+				naval_base = 3
+				coastal_bunker = 3
+			}
+		}
+		victory_points = {
+			11984 1
+		}
+	}
+	provinces = { 7193 11984 }
+}

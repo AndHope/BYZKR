@@ -1,0 +1,25 @@
+state = { #Khasab
+	id = 347
+	name = "STATE_347"
+
+	history = {
+		owner = PER
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			radar_station = 1
+			7960 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = OMA
+		add_claim_by = PER
+	}
+
+	provinces = {
+		7960
+	}
+	manpower = 23873
+	state_category = wasteland
+}
+

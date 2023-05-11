@@ -1,0 +1,817 @@
+﻿##########################
+#### BYZANTIUM EVENTS ####
+##########################
+
+add_namespace = byzantium
+
+### Choose your flag
+
+country_event = {
+	id = byzantium.76
+	title = byzantium.76.t
+	desc = byzantium.76.d
+	picture = GFX_report_event_byzflag1
+
+	is_triggered_only = yes
+
+	option = {
+		name = byzantium.76.a # I'll check the St. George and Palaiologos aisle.
+		ai_chance = { factor = 25 }
+		country_event = byzantium.77
+	}
+
+	option = {
+		name = byzantium.76.b # What's in the double headed eagle aisle?
+		ai_chance = { factor = 25 }
+		country_event = byzantium.78
+	}
+
+	option = {
+		name = byzantium.76.c # I'm in the mood for some red, black, and blue.
+		ai_chance = { factor = 25 }
+		country_event = byzantium.79
+	}
+
+	option = {
+		name = byzantium.76.e # Oh look, a special on a straight Palaiologos.
+		ai_chance = { factor = 25 }
+		set_cosmetic_tag = BYZ
+	}
+}
+
+country_event = {
+	id = byzantium.77
+	title = byzantium.77.t
+	desc = byzantium.77.d
+	picture = GFX_report_event_byzflag2
+
+	is_triggered_only = yes
+
+	option = {
+		name = byzantium.77.a # Approved for Victoria 3, whoops, better hide that label.
+		ai_chance = { factor = 25 }
+		set_cosmetic_tag = BYZ_1A
+	}
+
+	option = {
+		name = byzantium.77.b # They left the B's off this one.
+		ai_chance = { factor = 25 }
+		set_cosmetic_tag = BYZ_1B
+	}
+
+	option = {
+		name = byzantium.77.c # And no crosses on this one. That's different.
+		ai_chance = { factor = 25 }
+		set_cosmetic_tag = BYZ_1C
+	}
+
+	option = {
+		name = byzantium.77.e # I'll check another aisle.
+		ai_chance = { factor = 0 }
+		country_event = byzantium.76
+	}
+}
+
+country_event = {
+	id = byzantium.78
+	title = byzantium.78.t
+	desc = byzantium.78.d
+	picture = GFX_report_event_byzflag3
+
+	is_triggered_only = yes
+
+	option = {
+		name = byzantium.78.a # Eagle, wreaths, and a chi rho? Wow!
+		ai_chance = { factor = 25 }
+		set_cosmetic_tag = BYZ_2A
+	}
+
+	option = {
+		name = byzantium.78.b # A crowned double eagle? Interesting.
+		ai_chance = { factor = 25 }
+		set_cosmetic_tag = BYZ_2B
+	}
+
+	option = {
+		name = byzantium.78.c # Red white and black with a german style. Nice.
+		ai_chance = { factor = 25 }
+		set_cosmetic_tag = BYZ_2C
+	}
+
+	option = {
+		name = byzantium.78.e # Hmmm. What's in the stripes aisle?
+		ai_chance = { factor = 25 }
+		country_event = byzantium.80
+	}
+}
+
+country_event = {
+	id = byzantium.79
+	title = byzantium.79.t
+	desc = byzantium.79.d
+	picture = GFX_report_event_byzflag5
+
+	is_triggered_only = yes
+
+	option = {
+		name = byzantium.79.a # Blue white and gold? Classy.
+		ai_chance = { factor = 25 }
+		set_cosmetic_tag = BYZ_3A
+	}
+
+	option = {
+		name = byzantium.79.b # Eagle, gear, and wheat? Aunt Syndie would love this one.
+		ai_chance = { factor = 25 }
+		set_cosmetic_tag = BYZ_3B
+	}
+
+	option = {
+		name = byzantium.79.c # Black and white? That's kind of stark.
+		ai_chance = { factor = 25 }
+		set_cosmetic_tag = BYZ_3C
+	}
+
+	option = {
+		name = byzantium.77.e # I'll check another aisle.
+		ai_chance = { factor = 0 }
+		country_event = byzantium.76
+	}
+}
+
+country_event = {
+	id = byzantium.80
+	title = byzantium.80.t
+	desc = byzantium.80.d
+	picture = GFX_report_event_byzflag4
+
+	is_triggered_only = yes
+
+	option = {
+		name = byzantium.80.a # Three horizontal stripes? Well it is popular.
+		ai_chance = { factor = 25 }
+		set_cosmetic_tag = BYZ_2D1
+	}
+
+	option = {
+		name = byzantium.80.b # One big and two little stripes. How very fashion forward.
+		ai_chance = { factor = 25 }
+		set_cosmetic_tag = BYZ_2D2
+	}
+
+	option = {
+		name = byzantium.80.c # These are more blocks than stripes. Wrong aisle?
+		ai_chance = { factor = 25 }
+		set_cosmetic_tag = BYZ_2D3
+	}
+
+	option = {
+		name = byzantium.77.e # I'll check another aisle.
+		ai_chance = { factor = 0 }
+		country_event = byzantium.76
+	}
+}
+
+
+# Varangian Guard Recruitment
+
+country_event = {
+	id = byzantium.70
+	title = byzantium.70.t	
+	desc = byzantium.70.d
+	picture = GFX_report_event_german_volunteers
+
+	is_triggered_only = yes
+
+	option = { 
+		name = byzantium.70.a
+		ai_chance = {
+			base = 100
+		}
+
+		VG_set_templates = yes
+
+		if = {
+			limit = {
+				has_country_flag = varangian_armored_imp
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 341 }
+				create_unit = {
+					division = "name = \"Varángōn Thráki\" division_template = \"Varangon Tethorakismeni Velti\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_mechanized_upg
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 341 }
+				create_unit = {
+					division = "name = \"Varángōn Thráki\" division_template = \"Varangon Michanokiniti Anav\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_mechanized
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 341 }
+				create_unit = {
+					division = "name = \"Varángōn Thráki\" division_template = \"Varangon Michanokiniti\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_armored_upg
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 341 }
+				create_unit = {
+					division = "name = \"Varángōn Thráki\" division_template = \"Varangon Tethorakismeni Anav\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_armored
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 341 }
+				create_unit = {
+					division = "name = \"Varángōn Thráki\" division_template = \"Varangon Tethorakismeni\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_motorized
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 341 }
+				create_unit = {
+					division = "name = \"Varángōn Thráki\" division_template = \"Varangon Michanopoiimeni\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else = {
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 341 }
+				create_unit = {
+					division = "name = \"Varángōn Thráki\" division_template = \"Varangon Pezikou\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = byzantium.71
+	title = byzantium.71.t	
+	desc = byzantium.71.d
+	picture = GFX_report_event_german_volunteers
+
+	is_triggered_only = yes
+
+	option = { 
+		name = byzantium.71.a
+		ai_chance = {
+			base = 100
+		}
+
+		VG_set_templates = yes
+
+		if = {
+			limit = {
+				has_country_flag = varangian_armored_imp
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 47 }
+				create_unit = {
+					division = "name = \"Varángōn Attikí\" division_template = \"Varangon Tethorakismeni Velti\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_mechanized_upg
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 47 }
+				create_unit = {
+					division = "name = \"Varángōn Attikí\" division_template = \"Varangon Michanokiniti Anav\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_mechanized
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 47 }
+				create_unit = {
+					division = "name = \"Varángōn Attikí\" division_template = \"Varangon Michanokiniti\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_armored_upg
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 47 }
+				create_unit = {
+					division = "name = \"Varángōn Attikí\" division_template = \"Varangon Tethorakismeni Anav\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_armored
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 47 }
+				create_unit = {
+					division = "name = \"Varángōn Attikí\" division_template = \"Varangon Tethorakismeni\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_motorized
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 47 }
+				create_unit = {
+					division = "name = \"Varángōn Attikí\" division_template = \"Varangon Michanopoiimeni\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else = {
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 47 }
+				create_unit = {
+					division = "name = \"Varángōn Attikí\" division_template = \"Varangon Pezikou\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = byzantium.72
+	title = byzantium.72.t	
+	desc = byzantium.72.d
+	picture = GFX_report_event_german_volunteers
+
+	is_triggered_only = yes
+
+	option = { 
+		name = byzantium.72.a
+		ai_chance = {
+			base = 100
+		}
+
+		VG_set_templates = yes
+
+		if = {
+			limit = {
+				has_country_flag = varangian_armored_imp
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 211 }
+				create_unit = {
+					division = "name = \"Varángōn Voúlgar\" division_template = \"Varangon Tethorakismeni Velti\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_mechanized_upg
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 211 }
+				create_unit = {
+					division = "name = \"Varángōn Voúlgar\" division_template = \"Varangon Michanokiniti Anav\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_mechanized
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 211 }
+				create_unit = {
+					division = "name = \"Varángōn Voúlgar\" division_template = \"Varangon Michanokiniti\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_armored_upg
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 211 }
+				create_unit = {
+					division = "name = \"Varángōn Voúlgar\" division_template = \"Varangon Tethorakismeni Anav\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_armored
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 211 }
+				create_unit = {
+					division = "name = \"Varángōn Voúlgar\" division_template = \"Varangon Tethorakismeni\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_motorized
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 211 }
+				create_unit = {
+					division = "name = \"Varángōn Voúlgar\" division_template = \"Varangon Michanopoiimeni\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else = {
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 211 }
+				create_unit = {
+					division = "name = \"Varángōn Voúlgar\" division_template = \"Varangon Pezikou\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = byzantium.73
+	title = byzantium.73.t	
+	desc = byzantium.73.d
+	picture = GFX_report_event_german_volunteers
+
+	is_triggered_only = yes
+
+	option = { 
+		name = byzantium.73.a
+		ai_chance = {
+			base = 100
+		}
+
+		VG_set_templates = yes
+
+		if = {
+			limit = {
+				has_country_flag = varangian_armored_imp
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 106 }
+				create_unit = {
+					division = "name = \"Varángōn Makedón\" division_template = \"Varangon Tethorakismeni Velti\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_mechanized_upg
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 106 }
+				create_unit = {
+					division = "name = \"Varángōn Makedón\" division_template = \"Varangon Michanokiniti Anav\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_mechanized
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 106 }
+				create_unit = {
+					division = "name = \"Varángōn Makedón\" division_template = \"Varangon Michanokiniti\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_armored_upg
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 106 }
+				create_unit = {
+					division = "name = \"Varángōn Makedón\" division_template = \"Varangon Tethorakismeni Anav\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_armored
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 106 }
+				create_unit = {
+					division = "name = \"Varángōn Makedón\" division_template = \"Varangon Tethorakismeni\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_motorized
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 106 }
+				create_unit = {
+					division = "name = \"Varángōn Makedón\" division_template = \"Varangon Michanopoiimeni\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else = {
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 106 }
+				create_unit = {
+					division = "name = \"Varángōn Makedón\" division_template = \"Varangon Pezikou\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = byzantium.74
+	title = byzantium.74.t	
+	desc = byzantium.74.d
+	picture = GFX_report_event_german_volunteers
+
+	is_triggered_only = yes
+
+	option = { 
+		name = byzantium.74.a
+		ai_chance = {
+			base = 100
+		}
+
+		VG_set_templates = yes
+
+		if = {
+			limit = {
+				has_country_flag = varangian_armored_imp
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 354 }
+				create_unit = {
+					division = "name = \"Varángōn Póntos\" division_template = \"Varangon Tethorakismeni Velti\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_mechanized_upg
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 354 }
+				create_unit = {
+					division = "name = \"Varángōn Póntos\" division_template = \"Varangon Michanokiniti Anav\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_mechanized
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 354 }
+				create_unit = {
+					division = "name = \"Varángōn Póntos\" division_template = \"Varangon Michanokiniti\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_armored_upg
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 354 }
+				create_unit = {
+					division = "name = \"Varángōn Póntos\" division_template = \"Varangon Tethorakismeni Anav\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_armored
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 354 }
+				create_unit = {
+					division = "name = \"Varángōn Póntos\" division_template = \"Varangon Tethorakismeni\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_motorized
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 354 }
+				create_unit = {
+					division = "name = \"Varángōn Póntos\" division_template = \"Varangon Michanopoiimeni\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else = {
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 354 }
+				create_unit = {
+					division = "name = \"Varángōn Póntos\" division_template = \"Varangon Pezikou\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = byzantium.75
+	title = byzantium.75.t	
+	desc = byzantium.75.d
+	picture = GFX_report_event_german_volunteers
+
+	is_triggered_only = yes
+
+	option = { 
+		name = byzantium.75.a
+		ai_chance = {
+			base = 100
+		}
+
+		VG_set_templates = yes
+
+		if = {
+			limit = {
+				has_country_flag = varangian_armored_imp
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 339 }
+				create_unit = {
+					division = "name = \"Varángōn Kivyrrai\" division_template = \"Varangon Tethorakismeni Velti\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_mechanized_upg
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 339 }
+				create_unit = {
+					division = "name = \"Varángōn Kivyrrai\" division_template = \"Varangon Michanokiniti Anav\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_mechanized
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 339 }
+				create_unit = {
+					division = "name = \"Varángōn Kivyrrai\" division_template = \"Varangon Michanokiniti\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_armored_upg
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 339 }
+				create_unit = {
+					division = "name = \"Varángōn Kivyrrai\" division_template = \"Varangon Tethorakismeni Anav\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_armored
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 339 }
+				create_unit = {
+					division = "name = \"Varángōn Kivyrrai\" division_template = \"Varangon Tethorakismeni\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = varangian_motorized
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 339 }
+				create_unit = {
+					division = "name = \"Varángōn Kivyrrai\" division_template = \"Varangon Michanopoiimeni\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+		else = {
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 339 }
+				create_unit = {
+					division = "name = \"Varángōn Kivyrrai\" division_template = \"Varangon Pezikou\" start_experience_factor = 1.0 start_equipment_factor = 1" 
+					owner = GRE
+				}
+			}
+		}
+	}
+}

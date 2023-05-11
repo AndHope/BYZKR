@@ -1,0 +1,19 @@
+﻿###OOB File for ARM.txt
+units = {
+	fleet = {
+		name = "Mávri Thálassa Stólos"
+		naval_base = 3653 ###Change to proper province number
+		task_force = {
+			name = "Mávri Thálassa Stólos"
+			location = 3653 ###Change to proper province number
+			ship = { name = "Fidonisi" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ARM creator = GRE  version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "Gadzhibey" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ARM creator = GRE  version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "Nakhchivan" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ARM creator = GRE  version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "Manzakert" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ARM creator = GRE  version_name = "Katsonis Class" } } start_experience_factor = 0.5 }
+			ship = { name = "Batumi" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ARM creator = GRE  version_name = "Katsonis Class" } } start_experience_factor = 0.5 }
+			ship = { name = "Van " definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ARM creator = GRE  version_name = "Katsonis Class" } } start_experience_factor = 0.5 }
+			ship = { name = "Evivan" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ARM creator = GRE  version_name = "Katsonis Class" } } start_experience_factor = 0.5 }
+			ship = { name = "Ani" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ARM creator = GRE  version_name = "Katsonis Class" } } start_experience_factor = 0.5 }
+		}
+	}
+}

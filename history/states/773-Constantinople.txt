@@ -1,0 +1,32 @@
+state = {
+	id = 773
+	name = "STATE_773"
+	manpower = 6372378
+	state_category = twelve
+
+	history = {
+		owner = GRE
+		add_core_of = GRE
+		victory_points = {
+			9833 30
+		}
+		buildings = {
+			infrastructure = 10
+			industrial_complex = 10
+			arms_factory = 4
+			dockyard = 6
+			air_base = 10
+			anti_air_building = 5
+			radar_station = 2
+			9833 = {
+				naval_base = 10
+				coastal_bunker = 10
+				bunker = 10
+			}
+		}
+	}
+
+	provinces = {
+		9833 11829
+	}
+}

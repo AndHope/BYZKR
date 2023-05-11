@@ -1,0 +1,159 @@
+﻿###OOB File for GRE.txt
+units = {
+	fleet = {
+		name = "Karabisianoi Stólos"
+		naval_base = 9833 ###Change to proper province number
+		task_force = {
+			name = "1. Karabisianoi Stólos"
+			location = 9833 ###Change to proper province number
+			ship = { name = "BRS Avrilianós" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GRE version_name = "Konstantine Class" } } start_experience_factor = 0.8 }
+			ship = { name = "BRS Klávdios" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GRE version_name = "Konstantine Class" } } start_experience_factor = 0.8 }
+			ship = { name = "BRS Aléxios" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GRE version_name = "Konstantine Class" } } start_experience_factor = 0.8 }
+			ship = { name = "BRS Konstantínos" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = GRE version_name = "Mega Konstantine Class" } } start_experience_factor = 1.0 }
+			ship = { name = "BRS Georgios" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GRE version_name = "Konstantine Class" } } start_experience_factor = 0.8 }
+			}
+		task_force = {
+			name = "2. Karabisianoi Stólos"
+			location = 9833 ###Change to proper province number
+			ship = { name = "BRS Archimedes" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Herakles" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Perseas" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Miltiades" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Artemis" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Edessa" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Ionia" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Korinthos" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Sparti" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Athenai" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Messina" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Argo" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Parmenion" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Thyella" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			}
+		task_force = {
+			name = "1. Narkothétis Stólos"
+			location = 9833 ###Change to proper province number
+			ship = { name = "BRS Poseidon" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Elli Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Achilleas" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Elli Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Mermidon" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Elli Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Lakedemon" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Elli Class" } } start_experience_factor = 0.5 }
+		}
+	}
+	
+	fleet = {
+		name = "Aigaiou Pelagous Stólos"
+		naval_base = 4109 ###Change to proper province number
+		task_force = {
+			name = "1. Aigaiou Pelagous Stólos"
+			location = 4109 ###Change to proper province number
+			ship = { name = "BRS Ioustinianós" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = GRE version_name = "Ioustinianós Class" } } start_experience_factor = 1.0 }
+			ship = { name = "BRS Kríti" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GRE version_name = "Kríti Class" } } start_experience_factor = 0.6 }
+			ship = { name = "BRS Leonidas" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GRE version_name = "Kríti Class" } } start_experience_factor = 0.6 }
+			ship = { name = "BRS Sinope" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GRE version_name = "Kríti Class" } } start_experience_factor = 0.6 }
+			}
+		task_force = {
+			name = "2. Aigaiou Pelagous Stólos"
+			location = 4109 ###Change to proper province number
+			ship = { name = "BRS Tripolis" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Thassos" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Pella" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Neapolis" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Odessos" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Aetos Class" } } start_experience_factor = 0.4 }
+			ship = { name = "BRS Helioupolis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Aetos Class" } } start_experience_factor = 0.4 }
+			ship = { name = "BRS Doryaion" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Aetos Class" } } start_experience_factor = 0.4 }
+			ship = { name = "BRS Ithaki" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Aetos Class" } } start_experience_factor = 0.4 }
+			ship = { name = "BRS Neaplis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Aetos Class" } } start_experience_factor = 0.4 }
+			ship = { name = "BRS Athenia" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Aetos Class" } } start_experience_factor = 0.4 }
+		}
+		task_force = {
+			name = "2. Narkothétis Stólos"
+			location = 9833 ###Change to proper province number
+			ship = { name = "BRS Rhódos" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GRE version_name = "Rhódos Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Crete" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Elli Class" } } start_experience_factor = 0.4 }
+			ship = { name = "BRS Cyprus" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Elli Class" } } start_experience_factor = 0.4 }
+			ship = { name = "BRS Salamis" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Elli Class" } } start_experience_factor = 0.4 }
+		}
+	}
+	
+	fleet = {
+		name = "Kibyrrhaiotōn Stólos"
+		naval_base = 11818 ###Change to proper province number
+		task_force = {
+			name = "1. Kibyrrhaiotōn Stólos"
+			location = 11818 ###Change to proper province number
+			ship = { name = "BRS Feneos" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GRE version_name = "Konstantine Class" } } start_experience_factor = 0.8 }
+			ship = { name = "BRS Apostolis" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Póntos Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Kriezis" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Póntos Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Olympiakos" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Póntos Class" } } start_experience_factor = 0.5 }
+			}
+		task_force = {
+			name = "2. Kibyrrhaiotōn Stólos"
+			location = 11818 ###Change to proper province number
+			ship = { name = "BRS Adrias" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Aigaion" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Astings" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Kanaris" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Aetos" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Aetos Class" } } start_experience_factor = 0.4 }
+			ship = { name = "BRS Miaoulis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Aetos Class" } } start_experience_factor = 0.4 }
+			ship = { name = "BRS Pindos" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Aetos Class" } } start_experience_factor = 0.4 }
+			ship = { name = "BRS Themistoklis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Aetos Class" } } start_experience_factor = 0.4 }
+			ship = { name = "BRS Apollonia" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Aetos Class" } } start_experience_factor = 0.4 }
+			ship = { name = "BRS Antiocheia" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Aetos Class" } } start_experience_factor = 0.4 }
+		}
+		task_force = {
+			name = "3. Narkothétis Stólos"
+			location = 9833 ###Change to proper province number
+			ship = { name = "BRS Dyrrachion" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GRE version_name = "Rhódos Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Ragusa" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Elli Class" } } start_experience_factor = 0.4 }
+			ship = { name = "BRS Lesbos" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Elli Class" } } start_experience_factor = 0.4 }
+			ship = { name = "BRS Samos" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Elli Class" } } start_experience_factor = 0.4 }
+		}
+	}
+	fleet = {
+	name = "Stolískou Ypovrychíon"
+	naval_base = 4112 ###Change to proper province number
+	task_force = {					
+			name = "1. Ypovrychíon Stólos"				
+			location = 4112 # Athens
+			ship = { name = "BRS Katonis" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Katsonis Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Hades" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Katsonis Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Patra" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Katsonis Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Kastoria" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Katsonis Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Katsonis" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Katsonis Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Papanikolis" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Katsonis Class" } } start_experience_factor = 0.5 }		
+		}	
+		task_force = {					
+			name = "2. Narkothétis Ypovrychíon Stólos"				
+			location = 4112 # Athens
+			ship = { name = "BRS Glafkos" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = GRE version_name = "Glafkos Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Nirefs" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = GRE version_name = "Glafkos Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Protefs" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = GRE version_name = "Glafkos Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Triton" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = GRE version_name = "Glafkos Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Kaffa" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = GRE version_name = "Glafkos Class" } } start_experience_factor = 0.5 }
+			ship = { name = "BRS Axios" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = GRE version_name = "Glafkos Class" } } start_experience_factor = 0.5 }		
+		}	
+}
+fleet = {
+	name = "Mávri Thálassa Stólos"
+	naval_base = 3686 ###Change to proper province number
+	task_force = {
+		name = "Mávri Thálassa Stólos"
+		location = 3686 ###Change to proper province number
+		ship = { name = "BRS Theodóra" definition = carrier equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = GRE version_name = "Theodóra Class" } } start_experience_factor = 0.5
+				air_wings = {
+					cv_fighter_equipment_0 = { owner = "GRE" amount = 15 }
+				}
+				start_experience_factor = 0.5
+				air_wings = {
+					cv_nav_bomber_equipment_1 = { owner = "GRE" amount = 25 }
+				}
+				start_experience_factor = 0.5
+			}
+		ship = { name = "BRS Komnenos" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GRE version_name = "Rhódos Class" } } start_experience_factor = 0.5 }
+		ship = { name = "BRS Alexios" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GRE version_name = "Rhódos Class" } } start_experience_factor = 0.5 }
+		ship = { name = "BRS Cherson" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE  version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+		ship = { name = "BRS Trebizond" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE  version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+		ship = { name = "BRS Nakhchivan" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRE  version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+	}
+}
+}

@@ -1,0 +1,33 @@
+##removed for now
+state={
+	id=1089
+	name="STATE_1089"
+
+	manpower = 443928
+	state_category = six
+
+	history = {
+		owner = TAR
+		victory_points = {
+			3686 20 #Sevastopol
+		}
+		buildings = {
+			infrastructure = 6
+			dockyard = 1
+			air_base = 4
+			industrial_complex = 2
+			radar_station = 2
+			3686 = {
+				naval_base = 8
+				bunker = 4
+				coastal_bunker = 4
+			}
+		}
+		#add_claim_by = GRE
+		add_core_of = TAR
+	}
+
+	provinces = {
+	 3686
+	}
+}

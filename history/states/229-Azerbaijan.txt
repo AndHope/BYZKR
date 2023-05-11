@@ -1,0 +1,38 @@
+
+state={
+	id=229
+	name="STATE_229"
+	resources={
+		oil=30.000
+	}
+
+	history={
+		owner = PER
+		add_core_of = AZR
+		add_claim_by = PER
+		add_claim_by = ARM
+		start_resistance = yes
+		set_resistance = 45
+		set_compliance = 25
+		victory_points = {
+			11674 3 
+		}
+		victory_points = {
+			4473 2 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 1
+			radar_station = 1
+		}
+
+	}
+
+	provinces={
+		1610 4458 4473 4477 4545 4614 11645 11674 11704 12434 
+	}
+	manpower=1348529
+	buildings_max_level_factor=1.000
+	state_category=four
+}

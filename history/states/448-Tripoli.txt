@@ -1,0 +1,44 @@
+state = {
+	id = 448
+	name = "STATE_448"
+	manpower = 1206000
+	state_category = four
+
+	resources = {
+		oil = 8
+	}
+
+	history = {
+		owner = EGY
+		add_core_of = TRP
+		victory_points = {
+			1149 5
+		}
+		buildings = {
+			infrastructure = 4
+			air_base = 3
+			radar_station = 1
+			industrial_complex = 3
+			fuel_silo = 1
+			anti_air_building = 1
+			1149 = {
+				naval_base = 5
+				coastal_bunker = 3
+				bunker = 3
+			}
+			12039 = {
+				bunker = 3
+			}
+			10067 = {
+				bunker = 2
+			}
+			7154 = {
+				bunker = 1
+			}
+		}
+	}
+
+	provinces = {
+		1041 1057 1118 1149 1174 1189 4047 4117 4176 4194 7066 7136 7154 7194 7209 9980 10037 10046 10067 10117 11940 12009 12039 12088 13073
+	}
+}

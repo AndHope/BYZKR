@@ -1,0 +1,29 @@
+state = {
+	id = 765
+	name = "STATE_765"
+	manpower = 870000
+	state_category = four
+
+	resources = {
+		chromium = 13
+	}
+
+	history = {
+		owner = SER
+
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+		}
+
+		add_core_of = SER
+		add_claim_by = ALB
+		victory_points = {
+			9874 3
+		}
+	}
+
+	provinces = {
+		9849 6940 9874
+	}
+}

@@ -1,0 +1,56 @@
+﻿# Names are based on equipment types (picking equipment with highest amount from the pool)
+# Generic are used for countries that are not scripted in.
+GRE = {
+	submarine = {
+		prefix = "BRS"	
+		generic = { "Ypobrychio" }
+		unique = {
+			"Katsonis" "Papanikolis" "Protefs" "Nirefs" "Triton" "Glafkos" "Mastrozos" "Pipinos" "Delfin" "Argonautis" "Triaina" "Amfitriti" "Xifias" 
+			"Poseidon" "Okeanos" 
+		}
+	}
+	destroyer = {
+		prefix = "BRS"	
+		generic = { "Metafero" }
+		unique = {
+			"Aetos" "Ierax" "Leon" "Panthir" "Kountouriotis" "Hydra" "Psara" "Spetsai" "Vasilefs Georgios I" "Vasilissa Olga" "Salamis" "Navarinon"
+			"Aspis" "Kimon" "Lonchi" "Nearchos" "Sfendoni" "Theyella" "Themistocles" "Kriti" "Pindos" "Adrias" "Hastings" "Kanaris" "Miaoulis" "Amalia"
+			"Niki" "Doxa" "Velos"
+		}
+	}
+	light_cruiser = {
+		prefix = "BRS"
+		generic = { "Elafri Katadromiko" }
+		unique = {
+			"Elli" "Apostolis" "Kriezis" "Sakhtouris" "Tompazis" "Ellis" "Piraievs" "Kikladhes" "Alexandros" "Pátrai" "Salamis"
+		}
+	}
+	heavy_cruiser = {
+		prefix = "BRS"
+		generic = { "Vari Katadromiko" }
+		unique = {
+			"Georgios Averof" "Piraievs" "Kikladhes" "Alexandros" "Pátrai" "Kríti" "Nísoi Aiyaíou" "Kithira" "Kefallinia" "Hellas"
+		}
+	}
+	battle_cruiser = {
+		prefix = "BRS"
+		generic = { "Thoriktou" }
+		unique = {
+			"Athinai" "Thessalia" "Ipiros" "Peloponnisos" "Kilkis" "Limnos"
+		}
+	}
+	battleship = {
+		prefix = "BRS"	
+		generic = { "Thorikto" }
+		unique = {
+			"Megas Konstantinos" "Theodosius" "Leo" "Justinian" "Heraclius" "Nikephoros" "Basil" "Alexios" "Andronikos" "Isaac"
+		}
+	}
+	carrier = {
+		prefix = "BRS"
+		generic = { "Aeroplanoforo" }
+		unique = {
+			"Theodora" "Zoe Porphyrogenita" "Anna Komnene" "Theodora Doukaina" "Euphrosyne" "Prokopia" "Anastasia"
+		}
+	}
+}

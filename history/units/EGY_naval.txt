@@ -1,0 +1,236 @@
+﻿###OOB File for EGY.txt
+units = {
+	fleet = {
+		name = "Royal Egyptian Fleet"
+		naval_base = 4076 ###Change to proper province number
+		task_force = {
+			name = "Royal Egyptian Fleet"
+			location = 4076 ###Change to proper province number
+			ship = { name = "Abo Qir" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "Gowind" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "Al Nasser" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "Domyat" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "Rashid" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "Sharm El-Sheikh" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "Alexandra" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "Fremm" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "Mistral" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "Taba" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "Toskha" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "Al Fayyum" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "Allshkandariyah" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "Ibrahim Pasha" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "Koni" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "Cairo" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = EGY version_name = "Abo Qir Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = EGY version_name = "Allshkandariyah Class" } } start_experience_factor = 0.6 }
+			ship = { name = "Allah" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = EGY version_name = "Muhammad Ali Pasha Class" } } start_experience_factor = 0.6  }
+			ship = { name = "Akbar" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = EGY version_name = "Muhammad Ali Pasha Class" } } start_experience_factor = 0.6  }
+			ship = { name = "Muhamid" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = EGY version_name = "Muhammad Ali Pasha Class" } } start_experience_factor = 0.6  }
+			ship = { name = "Rashid" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = EGY version_name = "Muhammad Ali Pasha Class" } } start_experience_factor = 0.6  }
+			ship = { name = "Pasha" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = EGY version_name = "Muhammad Ali Pasha Class" } } start_experience_factor = 0.6  }
+		}
+	}
+	fleet = {
+		name = "11. Unterseebootsflotte"
+		naval_base = 4076 ###Change to proper province number
+		task_force = {
+			name = "11. Unterseebootsflotte"
+			location = 4076 ###Change to proper province number
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EGY creator = GER  version_name = "Type VII Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EGY creator = GER  version_name = "Type VII Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EGY creator = GER  version_name = "Type VII Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EGY creator = GER  version_name = "Type VII Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EGY creator = GER  version_name = "Type VII Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EGY creator = GER  version_name = "Type VII Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EGY creator = GER  version_name = "Type VII Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EGY creator = GER  version_name = "Type VII Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EGY creator = GER  version_name = "Type VII Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EGY creator = GER  version_name = "Type VII Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EGY creator = GER  version_name = "Type VII Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EGY creator = GER  version_name = "Type VII Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EGY creator = GER  version_name = "Type VII Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EGY creator = GER  version_name = "Type VII Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EGY creator = GER  version_name = "Type VII Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EGY creator = GER  version_name = "Type VII Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EGY creator = GER  version_name = "Type VII Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EGY creator = GER  version_name = "Type VII Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EGY creator = GER  version_name = "Type VII Class" } } start_experience_factor = 0.6 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EGY creator = GER  version_name = "Type VII Class" } } start_experience_factor = 0.6 }
+		}
+	}
+}
+
+instant_effect = {
+### Navy - MtG ###
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+
+		early_ship_hull_light = 1
+		basic_naval_mines = 1
+		basic_ship_hull_light = 1
+		#improved_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		#improved_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		#improved_ship_hull_submarine = 1
+		early_ship_hull_carrier = 1
+		#basic_ship_hull_carrier = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		ship_hull_super_heavy = 1
+		improved_ship_hull_heavy = 1
+		cruiser_submarines = 1
+		panzerschiffe = 1
+
+		## Modules##
+
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		dp_secondary_battery = 1
+		improved_ship_torpedo_launcher = 1
+		improved_airplane_launcher = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		submarine_mine_laying = 1
+		pre_dreadnoughts = 1
+		sonar = 1
+		snorkel_one = 1
+
+		### Transport ###
+		mtg_transport = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_technology = {
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_battleship = 1
+		basic_battleship = 1
+		early_submarine = 1
+		basic_submarine = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battlecruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		heavy_battleship = 1
+		early_carrier = 1
+
+		### Transport ###
+		transport = 1
+	}
+}
+}

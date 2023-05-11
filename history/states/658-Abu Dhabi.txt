@@ -1,0 +1,32 @@
+state={
+	id=658
+	name="STATE_658"
+
+	history={
+		owner = PER
+		add_claim_by = SAU
+		add_core_of = TRU
+		add_claim_by = PER
+		start_resistance = yes
+		set_resistance = 45
+		set_compliance = 25
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			2048 = {
+				naval_base = 3
+
+			}
+
+		}
+		victory_points = {
+			2048 1
+		}
+	}
+
+	provinces={
+		2048 10904
+	}
+	manpower=208000
+	state_category=one
+}

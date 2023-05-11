@@ -1,0 +1,292 @@
+﻿division_template = {
+	name = "Thémata infántry" 				
+	division_names_group = GRE_GAR_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	template_counter = 67
+	priority = 0
+}
+division_template = {
+	name = "Thémata Polikí"
+	division_names_group = GRE_CAV_01
+	regiments = {
+		armored_car = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Áravas Auxilla"
+	#foreign_template_tag="BSR"
+	division_names_group = GRE_CAV_01
+	regiments = {
+		camelry = { x = 0 y = 0 }
+		camelry = { x = 0 y = 1 }
+		camelry = { x = 0 y = 2 }
+
+		camelry = { x = 1 y = 0 }
+		camelry = { x = 1 y = 1 }
+		camelry = { x = 1 y = 2 }
+
+		camelry = { x = 2 y = 0 }
+		camelry = { x = 2 y = 1 }
+		camelry = { x = 2 y = 2 }
+
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+	}
+	#origin_type=subject
+}
+
+units = {
+
+	division = {
+		name = "1. Aigýptios Themata"
+		location = 12029
+		division_template = "Áravas Auxilla"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		name = "2. Aigýptios Themata"
+		location = 12029
+		division_template = "Áravas Auxilla"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		name = "3. Aigýptios Themata"
+		location = 12029
+		division_template = "Thémata infántry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "GRE" } }
+	}
+		division = {
+		name = "4. Aigýptios Themata"
+		location = 12029
+		division_template = "Thémata infántry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		name = "5. Aigýptios Themata"
+		location = 12029
+		division_template = "Thémata infántry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		name = "6. Aigýptios Themata"
+		location = 12029
+		division_template = "Thémata infántry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		name = "7. Aigýptios Themata"
+		location = 12029
+		division_template = "Thémata infántry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		name = "8. Aigýptios Themata"
+		location = 12029
+		division_template = "Thémata infántry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		name = "9. Aigýptios Themata"
+		location = 12029
+		division_template = "Thémata infántry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		name = "10. Aigýptios Themata"
+		location = 12029
+		division_template = "Thémata infántry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "GRE" } }
+	}
+}
+air_wings = {
+	##### Elliniki Polemiki Aeroporia #####
+	344 = { 
+		fighter_equipment_1 = {
+			owner = "AGY"
+			creator = "GRE" 
+			amount = 20
+		}
+		start_experience_factor = 0.1
+		tac_bomber_equipment_1 = {
+			owner = "AGY"
+			creator = "GRE" 
+			amount = 20
+		}
+		start_experience_factor = 0.1
+		fighter_equipment_0 = {
+			owner = "AGY" 
+			creator = "GRE" 
+			amount = 40
+		}
+		start_experience_factor = 0.1
+		tac_bomber_equipment_0 = {
+			owner = "AGY" 
+			creator = "GRE" 
+			amount = 40
+		}
+		start_experience_factor = 0.1
+	}
+}
+
+instant_effect = {
+
+	add_manpower = 175000
+	add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 5000 producer = GRE }
+	add_equipment_to_stockpile = { type = gw_tank_equipment amount = 50 producer = GRE }
+	add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 producer = GRE }
+	add_equipment_to_stockpile = { type = support_equipment_1 amount = 200 producer = GRE }
+	add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 100 producer = GRE }
+	add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 15 producer = GRE }
+	add_equipment_to_stockpile = { type = nav_bomber_equipment_1 amount = 5 producer = GRE }
+	add_equipment_to_stockpile = { type = tac_bomber_equipment_0 amount = 15 producer = GRE }
+	add_equipment_to_stockpile = { type = scout_plane_equipment_1 amount = 25 producer = GRE }
+	add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 25 producer = GRE }
+	add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 25 producer = GRE }
+	add_equipment_to_stockpile = { type = gw_armored_car_equipment amount = 100 producer = GRE }
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = GRE
+		}
+		requested_factories = 2
+		progress = 0.82
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = GRE
+		}
+		requested_factories = 1
+		progress = 0.83
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = GRE
+		}
+		requested_factories = 1
+		progress = 0.44
+		efficiency = 100
+	}
+	if = {
+		limit = {
+			has_dlc = "La Resistance"
+		}
+		add_equipment_production = {
+			equipment = {
+				type = gw_armored_car_equipment
+				creator = GRE
+			}
+			requested_factories = 1
+			progress = 0.59
+			efficiency = 100
+		}
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+			creator = GRE
+		}
+		requested_factories = 1
+		progress = 0.59
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = GRE
+		}
+		requested_factories = 1
+		progress = 0.29
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_1
+			creator = GRE
+		}
+		requested_factories = 1
+		progress = 0.29
+		efficiency = 100
+	}
+}

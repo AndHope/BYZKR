@@ -1,0 +1,47 @@
+
+state={
+	id=352
+	name="STATE_352"
+	resources={
+		tungsten=6.000
+	}
+
+	history={
+		owner = TUR
+		add_core_of = ARM
+		add_core_of = KUR
+		start_resistance = yes
+		set_resistance = 45
+		set_compliance = 25
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 1
+			radar_station = 1
+			7470 = {
+				bunker = 1
+
+			}
+			4583 = {
+				bunker = 1
+
+			}
+			6935 = {
+				bunker = 2
+
+			}
+
+		}
+		victory_points = {
+			6935 2 
+		}
+
+	}
+
+	provinces={
+		864 1636 4583 6935 7470 10497 11880 12318 13121 
+	}
+	manpower=870542
+	buildings_max_level_factor=1.000
+	state_category=three
+}

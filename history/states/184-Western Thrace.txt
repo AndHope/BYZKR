@@ -1,0 +1,40 @@
+
+state={
+	id=184
+	name="STATE_184"
+
+	history={
+		owner = BUL
+		add_core_of = GRE
+		start_resistance = yes
+		set_resistance = 45
+		set_compliance = 25
+		victory_points = {
+			11905 1 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			anti_air_building = 1
+			11905 = {
+				naval_base = 3
+				bunker = 2
+				coastal_bunker = 1
+
+			}
+			13633 = {
+				bunker = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+	  11774 11905 13633 
+	}
+	manpower=375000
+	buildings_max_level_factor=1.000
+	state_category=two
+}

@@ -1,0 +1,41 @@
+state = {
+	id = 47
+	name = "STATE_47" # Thessaly
+	manpower = 2512500
+	state_category = six
+
+	resources = {
+		steel = 3
+		chromium = 18
+		tungsten = 16
+	}
+
+	history = {
+		owner = GRE
+		victory_points = {
+			4109 25
+		}
+		victory_points = {
+			976 2
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 4
+			air_base = 4
+			dockyard = 2
+			anti_air_building = 2
+			#synthetic_refinery = 1
+			fuel_silo = 1
+			4109 = {
+				naval_base = 10
+				coastal_bunker = 6
+			}
+		}
+		add_core_of = GRE
+	}
+
+	provinces = {
+		976 1109 1205 3988 4109 7127 11895 12001
+	}
+}

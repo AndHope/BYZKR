@@ -1,0 +1,31 @@
+
+state={
+	id=754
+	name="STATE_754"
+
+	resources = {
+		steel = 3
+		oil = 2
+	}
+
+	history={
+		owner = EGY
+		add_core_of = HEJ
+		victory_points = {
+			10835 5
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			10835 = {
+				bunker = 2
+			}
+		}
+	}
+
+	provinces={
+		1033 2027 2033 2095 4115 8092 10835 11976 12101 13668
+	}
+	manpower=434510
+	state_category=two
+}

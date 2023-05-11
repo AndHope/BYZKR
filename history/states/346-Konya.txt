@@ -1,0 +1,42 @@
+
+state={
+	id=346
+	name="STATE_346"
+
+	history={
+		owner = GRE
+		add_core_of = GRE
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 1
+			anti_air_building = 2
+			1005 = {
+				naval_base = 3
+				coastal_bunker = 3
+			}
+			4127 = {
+				bunker = 2
+			}
+			4124 = {
+				bunker = 2
+			}
+		}
+		victory_points = {
+			940 5
+		}
+		victory_points = {
+			1005 3
+		}
+		victory_points = {
+			10056 3
+		}
+	}
+
+	provinces={
+		784 869 940 961 1005 1119 1122 3788 3876 4008 4124 4127 4962 6807 6894 7026 7143 9755 9763 9830 9861 10056 11792 11810 11860 12013 12016 13122
+	}
+	manpower=2227903
+	state_category=four
+}

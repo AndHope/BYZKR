@@ -1,0 +1,30 @@
+state = {
+	id = 419
+	name = "STATE_419"
+
+	resources = {
+		steel = 16
+		tungsten = 6
+	}
+
+	history = {
+		owner = PER
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			arms_factory = 1
+			anti_air_building = 1
+		}
+		victory_points = {
+			1896 8
+		}
+		add_core_of = PER
+		add_core_of = AZR
+	}
+
+	provinces = {
+		1896 2071 4553 4755 4825 4901 10454 10523 12793
+	}
+	manpower = 2550641
+	state_category = five
+}

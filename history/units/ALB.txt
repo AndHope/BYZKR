@@ -1,0 +1,245 @@
+﻿division_template = {
+	name = "Këmbësori Pjesëtim"
+	division_names_group = ALB_INF_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+		mountaineers = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+	template_counter = 67
+}
+
+units = {
+	division = {
+		#name = "Divizioni i këmbesorisë Nr.1"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9914
+		division_template = "Këmbësori Pjesëtim"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+
+	division = {
+		#name = "Divizioni i këmbesorisë Nr.2"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9914
+		division_template = "Këmbësori Pjesëtim"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+
+	division = {
+		#name = "Divizioni i këmbesorisë Nr.3"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3448
+		division_template = "Këmbësori Pjesëtim"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		#name = "Divizioni i këmbesorisë Nr.1"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9914
+		division_template = "Këmbësori Pjesëtim"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+
+	division = {
+		#name = "Divizioni i këmbesorisë Nr.2"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9914
+		division_template = "Këmbësori Pjesëtim"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+
+	division = {
+		#name = "Divizioni i këmbesorisë Nr.3"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3448
+		division_template = "Këmbësori Pjesëtim"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+}
+
+air_wings = {
+
+	44 = {
+		fighter_equipment_0 = {
+			owner = "ALB"
+			amount = 50
+			create_if_missing = yes
+		}
+		CAS_equipment_1 =  {
+			owner = "ALB" 
+			amount = 50
+			create_if_missing = yes
+		}
+	}
+}
+
+instant_effect = {
+	add_manpower = 175000
+	add_political_power = 1000
+### Offsite Factories ###
+add_offsite_building = {
+	type = arms_factory
+	level = 2
+}
+add_offsite_building = {
+	type = dockyard
+	level = 1
+}
+
+set_politics = {
+	ruling_party = national_populist
+	elections_allowed = no
+	}
+
+	set_technology = {
+		### General ###
+		tech_support = 1
+		tech_recon = 1
+		tech_engineers = 1
+		gw_artillery = 1
+		gwtank = 1
+		scout_plane1 = 1
+		armored_car1 = 1
+		tech_military_police = 1
+		early_fighter = 1
+		early_bomber = 1
+		naval_bomber1 = 1
+		CAS1 = 1
+
+		trench_warfare = 1
+		mass_assault = 1
+		infiltration_in_depth = 1
+		guerilla_warfare = 1
+
+		trade_interdiction = 1
+		
+		#air
+		formation_flying = 1
+	}
+	#add_ideas = BYZ_increased_volunteer_size
+add_equipment_production = {
+	equipment = {
+		type = infantry_equipment_1
+		creator = GRE
+	}
+	requested_factories = 2
+	progress = 0.82
+	efficiency = 100
+}
+add_equipment_production = {
+	equipment = {
+		type = artillery_equipment_1
+		creator = GRE
+	}
+	requested_factories = 1
+	progress = 0.83
+	efficiency = 100
+}
+add_equipment_production = {
+	equipment = {
+		type = support_equipment_1
+		creator = GRE
+	}
+	requested_factories = 1
+	progress = 0.44
+	efficiency = 100
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	add_equipment_production = {
+		equipment = {
+			type = gw_armored_car_equipment
+			creator = GRE
+		}
+		requested_factories = 1
+		progress = 0.59
+		efficiency = 100
+	}
+}
+add_equipment_production = {
+	equipment = {
+		type = light_tank_equipment_1
+		creator = GRE
+	}
+	requested_factories = 1
+	progress = 0.59
+	efficiency = 100
+}
+add_equipment_production = {
+	equipment = {
+		type = fighter_equipment_1
+		creator = GRE
+	}
+	requested_factories = 1
+	progress = 0.29
+	efficiency = 100
+}
+add_equipment_production = {
+	equipment = {
+		type = tac_bomber_equipment_1
+		creator = GRE
+	}
+	requested_factories = 1
+	progress = 0.29
+	efficiency = 100
+}
+}
+

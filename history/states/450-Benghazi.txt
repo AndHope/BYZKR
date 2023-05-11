@@ -1,0 +1,33 @@
+state = {
+	id = 450
+	name = "STATE_450"
+	manpower = 368213
+	state_category = three
+
+
+	history = {
+		owner = EGY
+		#add_core_of = EGY
+		add_core_of = LBA
+
+		victory_points = {
+			11954 2
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			air_base = 2
+			radar_station = 1
+			fuel_silo = 1
+			11954 = {
+				naval_base = 5
+				coastal_bunker = 2
+				bunker = 2
+			}
+		}
+	}
+
+	provinces = {
+		11954
+	}
+}

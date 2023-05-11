@@ -1,0 +1,35 @@
+
+state={
+	id=677
+	name="STATE_677"
+	resources={
+		oil=16.000
+	}
+
+	history={
+		owner = EGY
+		add_core_of = SYR
+		victory_points = {
+			12473 8 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			air_base = 1
+			anti_air_building = 1
+			12473 = {
+				bunker = 5
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		901 1578 1606 1634 2013 3942 6883 7140 7671 9823 10882 11871 12473 13741 13743 
+	}
+	manpower=1395075
+	buildings_max_level_factor=1.000
+	state_category=four
+}

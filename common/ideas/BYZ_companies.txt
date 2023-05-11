@@ -1,0 +1,349 @@
+### Greek Ideas
+
+ideas = {
+	##############
+	# Companies
+	##############
+
+	#### General ####
+	industrial_concern = {
+
+		kontoyiannis = {
+		picture = generic_industrial_concern_2
+		allowed = { original_tag = GRE
+		
+		 }
+        
+		traits = { industrial_manufacturer }
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.05
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+		oasa = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea oasa"}
+			allowed = { original_tag = GRE }
+			traits = { industrial_manufacturer }
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				country_resource_steel = 10
+				local_resources_factor = 0.05
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+
+		ntua = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ntua"}
+			allowed = { original_tag = GRE }
+			traits = { electronics_manufacturer }
+			modifier = {
+				production_speed_radar_station_factor = 0.2
+			}
+			research_bonus = {
+				electronics = 0.2
+				industry = 0.1
+			}
+		}
+
+		chropei = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea chropei"}
+			allowed = { original_tag = GRE }
+			traits = { chemical_producer }
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.1
+				country_resource_oil = 10
+				local_resources_factor = 0.05
+			}
+			research_bonus = {
+				synth_resources = 0.1
+				industry = 0.1
+			}
+		}
+	}
+
+	#### Weapons Manufacturer ####
+	weapons_manufacturer = {
+		designer = yes
+
+		pyrkal = {
+
+picture = byz_pyrkal
+
+allowed = { original_tag = GRE }
+
+research_bonus = {
+	infantry_weapons = 0.10
+}
+
+traits = { infantry_equipment_producer_defense_2 }
+
+equipment_bonus = {
+	# generic?
+}
+
+modifier = {
+}
+
+ai_will_do = {
+	factor = 1
+}
+}
+
+chropei = {
+
+picture = generic_motorized_equipment_manufacturer_2
+
+allowed = { original_tag = GRE }
+			
+research_bonus = {
+	motorized_equipment = 0.10
+}
+
+traits = { motorised_equipment_producer_defense_2 }
+
+equipment_bonus = {
+	# generic?
+}
+
+modifier = {
+}
+
+ai_will_do = {
+	factor = 1
+}
+}
+
+danglis = {
+
+picture = generic_artillery_manufacturer_3
+
+allowed = { original_tag = GRE }
+
+research_bonus = {
+	artillery = 0.10
+}
+
+traits = { artillery_producer_defense_2 }
+
+equipment_bonus = {
+	# generic?
+}
+
+modifier = {
+}
+
+ai_will_do = {
+	factor = 1
+}
+}
+
+		greek_powder = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea greek_powder"}
+			allowed = { original_tag = GRE }
+			traits = { infantry_equipment_producer_offense_2 }
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+		}
+
+		tangalakis_temax = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea tangalakis_temax"}
+			allowed = { original_tag = GRE }
+			traits = { motorised_equipment_producer_offense_1 }
+			research_bonus = {
+				motorized_equipment = 0.1
+			}
+		}
+
+	}
+
+	#### Heavy Equipment Manufacturer ####
+	tank_manufacturer = {
+		designer = yes
+
+		glavanis_azazis = {
+		
+		picture = generic_tank_manufacturer_3
+		
+		allowed = {
+			original_TAG = GRE
+		}
+		
+		research_bonus = {
+			armor = 0.10
+		}
+		
+		traits = { small_tank_producer_defense_2 }
+
+		equipment_bonus = {
+			# generic?
+		}
+		
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+		spap = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea spap"}
+			allowed = { original_tag = GRE }
+			traits = { small_tank_producer_mass_1 }
+			research_bonus = {
+				armor = 0.1
+			}
+		}
+	}
+
+	#### Air and Naval Manufacturer ####
+	naval_manufacturer = {
+		designer = yes
+
+		basileiades = {
+
+picture = byz_basileiades
+
+allowed = { original_tag = GRE }
+
+research_bonus = {
+	naval_equipment = 0.10
+}
+
+traits = { capital_ship_producer_defense_2 }
+
+equipment_bonus = {
+	# generic?
+}
+
+modifier = {
+}
+
+ai_will_do = {
+	factor = 1
+}
+}
+
+neorion = {
+
+picture = byz_neorion
+
+allowed = { original_tag = GRE }
+
+research_bonus = {
+	naval_equipment = 0.10
+}
+
+traits = { capital_ship_producer_offense_2 }
+
+equipment_bonus = {
+	# generic?
+}
+
+modifier = {
+}
+
+ai_will_do = {
+	factor = 1
+}
+}
+
+		hellenic_shipyard = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea hellenic_shipyard"}
+			allowed = { original_tag = GRE }
+			traits = { cruiser_producer_mass_1 }
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+		}
+
+	}
+
+	aircraft_manufacturer = {
+		designer = yes
+
+		aekkea = {
+			
+			picture = byz_aekkea
+			
+			allowed = {
+				original_tag = GRE
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { fighter_producer_offense_2 }
+
+			equipment_bonus = {
+				# generic?
+			}
+
+			modifier = {
+			}
+				
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		eaf = {
+			
+			picture = generic_air_manufacturer_3
+
+			allowed = {
+				original_tag = GRE
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { nav_cas_producer_defense_2 }
+
+			equipment_bonus = {
+				# generic?
+			}
+
+			modifier = {
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		aekkea_raab = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea aekkea_raab"}
+			allowed = { original_tag = GRE }
+			traits = { bomber_producer_offense_1 }
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+
+		kea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea kea"}
+			allowed = { original_tag = GRE }
+			traits = { nav_cas_producer_mass_1 }
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+
+	}
+
+}

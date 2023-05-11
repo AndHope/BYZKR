@@ -1,0 +1,28 @@
+state = {
+	id = 343
+	name = "STATE_343"
+	manpower = 1572575
+	state_category = four
+
+	resources = {
+		chromium = 107
+	}
+
+	history = {
+		owner = GRE
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			air_base = 1
+			anti_air_building = 2
+		}
+		add_core_of = GRE
+		victory_points = {
+			909 3
+		}
+	}
+
+	provinces = {
+		856 909 981 3856 3951 3983 6877 6945 9811 9878 10041 11796 11831 11898 11907
+	}
+}

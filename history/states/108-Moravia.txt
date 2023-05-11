@@ -1,0 +1,26 @@
+state = {
+	id = 108
+	name = "STATE_108" # Morava
+	manpower = 1101975
+	state_category = three
+
+	resources = {
+		steel = 6
+	}
+
+	history = {
+		owner = SER
+		add_core_of = SER
+		victory_points = {
+			3939 2
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+		}
+	}
+
+	provinces = {
+		937 3922 3939 6953 6970 6998
+	}
+}

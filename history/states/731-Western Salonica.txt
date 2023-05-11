@@ -1,0 +1,35 @@
+state = {
+	id = 731
+	name = "STATE_731"
+	manpower = 912700
+
+	state_category = three
+
+	history = {
+		owner = BUL
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 2
+			anti_air_building = 1
+			10163 = {
+				bunker = 3
+			}
+			9837 = {
+				bunker = 2
+			}
+		}
+		victory_points = {
+			9837 1 #Florina
+		}
+		add_core_of = GRE
+		start_resistance = yes
+		set_resistance = 45
+		set_compliance = 25
+	}
+
+	provinces = {
+		936 3526 10163 9837
+	}
+}

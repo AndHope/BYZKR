@@ -1,0 +1,229 @@
+﻿division_template = {
+	name = "Royal Guard"
+	division_names_group = AFG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Militia"
+	division_names_group = AFG_MIL_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	}
+	template_counter = 68
+}
+division_template = {
+	name = "Tribal Riders"
+	division_names_group = AFG_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+
+units = {
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2078
+		division_template = "Tribal Riders"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 2078
+		division_template = "Tribal Riders"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10737
+		division_template = "Tribal Riders"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10737
+		division_template = "Militia"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10737
+		division_template = "Militia"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 2078
+		division_template = "Militia"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 2078
+		division_template = "Militia"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10737
+		division_template = "Militia"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10737
+		division_template = "Militia"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 2078
+		division_template = "Militia"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 2078
+		division_template = "Militia"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 100
+		}
+		location = 10737
+		division_template = "Royal Guard"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+}
+
+air_wings = {
+
+	445 = {
+		fighter_equipment_0 = {
+			owner = "AFG"
+			creator = "PER" 
+			amount = 50
+		}
+		tac_bomber_equipment_0 = {
+			owner = "AFG"
+			creator = "PER" 
+			amount = 25
+		}
+		scout_plane_equipment_1 = {
+			owner = "AFG"
+			creator = "GRE" 
+			amount = 25
+		}
+	}
+}
+
+instant_effect = {
+
+	add_manpower = 175000
+	add_political_power = 2000
+
+	add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 8000 producer = PER }
+	add_equipment_to_stockpile = { type = support_equipment_1 amount = 200 producer = PER }
+	add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 200 producer = PER }
+	
+	add_war_support = 0.50
+	add_stability = 0.10
+
+	set_technology = {
+		### General ###
+		tech_support = 1
+		tech_recon = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		support_weapons3 = 1
+
+		#mobile_warfare = 1
+		trench_warfare = 1
+		mass_assault = 1
+		infiltration_in_depth = 1
+		guerilla_warfare = 1
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+		}
+		requested_factories = 2
+		progress = 0.82
+		efficiency = 100
+	}
+}
+

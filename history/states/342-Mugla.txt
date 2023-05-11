@@ -1,0 +1,36 @@
+
+state={
+	id=342
+	name="STATE_342"
+	resources={
+		chromium=63.000
+	}
+
+	history={
+		owner = GRE
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			air_base = 1
+			anti_air_building = 1
+			10122 = {
+				naval_base = 1
+				coastal_bunker = 1
+
+			}
+
+		}
+		add_core_of = GRE
+		victory_points = {
+			10122 3 
+		}
+
+	}
+
+	provinces={
+		9941 10122 11917 12096 
+	}
+	manpower=397118
+	buildings_max_level_factor=1.000
+	state_category=two
+}

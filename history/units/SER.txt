@@ -1,0 +1,446 @@
+﻿division_template = {
+	name = "Pesadijska Divizija"
+	division_names_group = SER_INF_01
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Konjicka Divizija"
+	division_names_group = SER_CAV_01
+	is_locked = yes
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		#light_armor = { x = 0 y = 1 }
+		#light_armor = { x = 0 y = 2 }
+
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+
+		#mot_artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }      # Motorized recon inf bn
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Thémata infántry" 				
+	division_names_group = GRE_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	template_counter = 67
+}
+division_template = {
+	name = "Thémata Polikí"
+	division_names_group = GRE_CAV_01
+	regiments = {
+		armored_car = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11586
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3939
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9874
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3939
+		division_template = "Konjicka Divizija"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { gw_tank_equipment = { owner = "GRE" } }
+		force_equipment_variants = { gw_armored_car_equipment = { owner = "GRE" } }
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11586
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3939
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9874
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3939
+		division_template = "Konjicka Divizija"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { gw_tank_equipment = { owner = "GRE" } }
+		force_equipment_variants = { gw_armored_car_equipment = { owner = "GRE" } }
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11586
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3939
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9874
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11818
+		division_template = "Konjicka Divizija"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { gw_tank_equipment = { owner = "GRE" } }
+		force_equipment_variants = { gw_armored_car_equipment = { owner = "GRE" } }
+	}
+}
+### Air Wings
+air_wings = {
+
+	107 = {
+		fighter_equipment_1 = {
+			owner = "SER"
+			creator = "GRE" 
+			amount = 25
+		}
+		tac_bomber_equipment_1 = {
+			owner = "SER"
+			creator = "GRE" 
+			amount = 25
+		}
+		fighter_equipment_0 = {
+			owner = "SER"
+			creator = "GRE" 
+			amount = 75
+		}
+		tac_bomber_equipment_0 = {
+			owner = "SER"
+			creator = "GRE" 
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "ROM"
+			creator = "GRE" 
+			amount = 25
+		}
+		scout_plane_equipment_1 = {
+			owner = "ROM"
+			creator = "GRE" 
+			amount = 25
+		}
+		scout_plane_equipment_1 = {
+			owner = "ROM"
+			creator = "GRE" 
+			amount = 25
+		}
+	}
+}
+instant_effect = {
+
+
+	add_manpower = 375000
+	add_political_power = 600
+	set_fuel_ratio = 0
+	### Offsite Factories ###
+	add_offsite_building = {
+		type = arms_factory
+		level = 2
+	}
+	add_offsite_building = {
+		type = dockyard
+		level = 2
+	}
+	
+	#add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 8000 producer = GRE }
+	#add_equipment_to_stockpile = { type = gw_tank_equipment amount = 200 producer = GRE }
+	#add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 producer = GRE }
+	#add_equipment_to_stockpile = { type = support_equipment_1 amount = 200 producer = GRE }
+	#add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = GRE }
+	#add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 100 producer = GRE }
+	#add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 100 producer = GRE }
+	#add_equipment_to_stockpile = { type = gw_armored_car_equipment amount = 200 producer = GRE }
+	
+		#set_country_flag = SER_founded_belgradepact
+		#create_faction = Belgrade_Pact
+		#add_to_faction = SER
+		#add_to_faction = ROM
+
+	set_politics = {
+		ruling_party = national_populist
+		elections_allowed = no
+		}
+
+		set_popularities = {
+			totalist = 10
+			radical_socialist = 5
+			syndicalist = 5
+			social_democrat = 5
+			social_liberal = 5
+			market_liberal = 5
+			social_conservative = 5
+			authoritarian_democrat = 5
+			paternal_autocrat = 5
+			national_populist = 40
+		}
+
+		set_technology = {
+			### General ###
+			scout_plane1 = 1
+			armored_car1 = 1
+			interwar_antiair = 1
+			interwar_antitank = 1
+	
+			#trench_warfare = 1
+			mass_assault = 1
+			#infiltration_in_depth = 1
+			guerilla_warfare = 1
+			
+			#air
+			formation_flying = 1		
+		}
+
+		complete_national_focus = SER_Vidovdan_Speech
+		complete_national_focus = SER_raise_reserve_divisions
+		complete_national_focus = SER_leave_free_trade_area
+		complete_national_focus = SER_conscription
+		complete_national_focus = SER_The_Congress_Of_Belgrade
+
+		complete_national_focus = SER_resistance_behind_lines
+		complete_national_focus = SER_national_mobilization
+
+		if = {
+			limit = { has_dlc = "La Resistance" }
+			create_intelligence_agency = yes
+			upgrade_intelligence_agency = upgrade_economy_civilian
+			upgrade_intelligence_agency = upgrade_army_department
+		
+			upgrade_intelligence_agency = upgrade_passive_defense
+			upgrade_intelligence_agency = upgrade_anti_partisan
+		
+			upgrade_intelligence_agency = upgrade_form_department
+			upgrade_intelligence_agency = upgrade_crypto_strength
+			upgrade_intelligence_agency = upgrade_crypto_strength_2
+		}
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = GRE
+		}
+		requested_factories = 2
+		progress = 0.82
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = GRE
+		}
+		requested_factories = 1
+		progress = 0.83
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = GRE
+		}
+		requested_factories = 1
+		progress = 0.44
+		efficiency = 100
+	}
+	if = {
+		limit = {
+			has_dlc = "La Resistance"
+		}
+		add_equipment_production = {
+			equipment = {
+				type = gw_armored_car_equipment
+				creator = GRE
+			}
+			requested_factories = 1
+			progress = 0.59
+			efficiency = 100
+		}
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+			creator = GRE
+		}
+		requested_factories = 1
+		progress = 0.59
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = GRE
+		}
+		requested_factories = 1
+		progress = 0.29
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_1
+			creator = GRE
+		}
+		requested_factories = 1
+		progress = 0.29
+		efficiency = 100
+	}
+}
+

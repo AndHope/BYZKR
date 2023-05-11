@@ -1,0 +1,283 @@
+#	Example:
+# 
+#	example_effect = {
+#		add_political_power = 66
+#		add_popularity = {
+#			ideology = fascism
+#			popularity = 0.33
+#		}
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+#
+
+VG_set_templates = {
+	if = {
+		limit = {
+			NOT = { has_country_flag = varangian_infantry }
+		}
+		VG_infantry_division = yes # available with focus
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = varangian_motorized }
+			has_tech = motorised_infantry
+		}
+		VG_motorised_division = yes # earliest 1936
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = varangian_armored }
+			has_tech = improved_light_tank
+			has_tech = motorised_infantry
+		}
+		VG_armored_division_early = yes # earliest 1936
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = varangian_armored_upg }
+			has_tech = basic_medium_tank
+			has_tech = motorised_infantry
+		}
+		VG_armored_division_improved = yes # earliest 1939
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = varangian_mechanized }
+			has_tech = mechanised_infantry	
+		}
+		VG_mechanised_division_early = yes # earliest 1940
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = varangian_mechanized_upg }
+			has_tech = mechanised_infantry2
+			has_tech = improved_medium_td
+			has_tech = improved_medium_art
+		}
+		VG_mechanised_division_late = yes # earliet 1942
+	}
+	if = {
+		limit = {
+			AND = {
+				NOT = { has_country_flag = varangian_armored_imp }
+				has_tech = basic_medium_tank
+				has_tech = mechanised_infantry2
+			}
+		}
+		VG_armored_division_late = yes # earliest 1942
+	}
+}
+
+VG_infantry_division = {
+	set_country_flag = varangian_infantry
+	division_template = {
+			name = "Varangon Pezikou"
+			priority = 2
+			division_names_group = GRE_VG_01
+		regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 0 y = 2 }
+		
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 1 y = 1 }
+			infantry = { x = 1 y = 2 }
+
+			infantry = { x = 2 y = 0 }
+			artillery_brigade = { x = 2 y = 1 }
+			artillery_brigade = { x = 2 y = 2 }
+		}
+		support = {
+			armored_car_recon = { x = 0 y = 0 }      # Motorized recon inf bn
+			engineer = { x = 0 y = 1 }
+			field_hospital = { x = 0 y = 2 }
+			maintenance_company = { x = 0 y = 3 }
+			logistics_company = { x = 0 y = 4 }
+		}
+	}
+}
+VG_motorised_division = {
+	set_country_flag = varangian_motorized
+	division_template = {
+			name = "Varangon Michanopoiimeni"
+			priority = 2
+			division_names_group = GRE_VG_01
+		regiments = {
+			motorized = { x = 0 y = 0 }
+			motorized = { x = 0 y = 1 }
+			motorized = { x = 0 y = 2 }
+			motorized = { x = 0 y = 3 }
+
+			motorized = { x = 1 y = 0 }
+			motorized = { x = 1 y = 1 }
+			motorized = { x = 1 y = 2 }
+
+			motorized = { x = 2 y = 0 }
+			motorized = { x = 2 y = 1 }
+			motorized = { x = 2 y = 2 }
+		}
+		support = {
+			armored_car_recon = { x = 0 y = 0 }      # Motorized recon inf bn
+			engineer = { x = 0 y = 1 }
+			field_hospital = { x = 0 y = 2 }
+			maintenance_company = { x = 0 y = 3 }
+			logistics_company = { x = 0 y = 4 }
+		}
+	}
+}
+VG_mechanised_division_early = {
+	set_country_flag = varangian_mechanized
+	division_template = {
+			name = "Varangon Michanokiniti"
+			priority = 2
+			division_names_group = GRE_VG_01
+		regiments = {
+			mechanized = { x = 0 y = 0 }
+			mechanized = { x = 0 y = 1 }
+			mechanized = { x = 0 y = 2 }
+			mechanized = { x = 0 y = 3 }
+
+			mechanized = { x = 1 y = 0 }
+			mechanized = { x = 1 y = 1 }
+			mechanized = { x = 1 y = 2 }
+			
+			mechanized = { x = 2 y = 0 }
+			mechanized = { x = 2 y = 1 }
+			mechanized = { x = 2 y = 2 }
+		}
+		support = {
+			armored_car_recon = { x = 0 y = 0 }      # Motorized recon inf bn
+			engineer = { x = 0 y = 1 }
+			field_hospital = { x = 0 y = 2 }
+			maintenance_company = { x = 0 y = 3 }
+			logistics_company = { x = 0 y = 4 }
+		}
+	}
+}
+
+VG_mechanised_division_late = {
+	set_country_flag = varangian_mechanized_upg
+	division_template = {
+			name = "Varangon Michanokiniti Anav"
+			priority = 2
+			division_names_group = GRE_VG_01
+		regiments = {
+			mechanized = { x = 0 y = 0 }
+			mechanized = { x = 0 y = 1 }
+			mechanized = { x = 0 y = 2 }
+
+			mechanized = { x = 1 y = 0 }
+			mechanized = { x = 1 y = 1 }
+			mechanized = { x = 1 y = 2 }
+
+			medium_tank_destroyer_brigade = { x = 2 y = 0 }
+			medium_sp_artillery_brigade= { x = 2 y = 1 }
+			medium_sp_artillery_brigade = { x = 2 y = 2 }
+		}
+		support = {
+			armored_car_recon = { x = 0 y = 0 }      # Motorized recon inf bn
+			engineer = { x = 0 y = 1 }
+			field_hospital = { x = 0 y = 2 }
+			maintenance_company = { x = 0 y = 3 }
+			logistics_company = { x = 0 y = 4 }
+		}
+	}
+}
+
+VG_armored_division_early = {
+	set_country_flag = varangian_armored
+	division_template = {
+			name = "Varangon Tethorakismeni"
+			priority = 2
+			division_names_group = GRE_VG_01
+		regiments = {
+			light_armor = { x = 0 y = 0 }
+			light_armor = { x = 0 y = 1 }
+			light_armor = { x = 0 y = 2 }
+			light_armor = { x = 0 y = 3 }
+
+			motorized = { x = 1 y = 0 }
+			motorized = { x = 1 y = 1 }
+			motorized = { x = 1 y = 2 }
+
+			motorized = { x = 2 y = 0 }
+			motorized = { x = 2 y = 1 }
+			motorized = { x = 2 y = 2 }
+
+			mot_artillery_brigade = { x = 3 y = 0 }
+			mot_artillery_brigade = { x = 3 y = 0 }
+		}
+		support = {
+			armored_car_recon = { x = 0 y = 0 }      # Motorized recon inf bn
+			engineer = { x = 0 y = 1 }
+			field_hospital = { x = 0 y = 2 }
+			maintenance_company = { x = 0 y = 3 }
+			logistics_company = { x = 0 y = 4 }
+		}
+	}
+}
+
+VG_armored_division_improved = {
+	set_country_flag = varangian_armored_upg
+	division_template = {
+			name = "Varangon Tethorakismeni Anav"
+			priority = 2
+			division_names_group = GRE_VG_01
+		regiments = {
+			medium_armor = { x = 0 y = 0 }
+			medium_armor = { x = 0 y = 1 }
+			medium_armor = { x = 0 y = 2 }
+			medium_armor = { x = 0 y = 3 }
+
+			motorized = { x = 1 y = 0 }
+			motorized = { x = 1 y = 1 }
+			motorized = { x = 1 y = 2 }
+
+			motorized = { x = 2 y = 0 }
+			motorized = { x = 2 y = 1 }
+			motorized = { x = 2 y = 2 }
+		}
+		support = {
+			armored_car_recon = { x = 0 y = 0 }      # Motorized recon inf bn
+			engineer = { x = 0 y = 1 }
+			field_hospital = { x = 0 y = 2 }
+			maintenance_company = { x = 0 y = 3 }
+			logistics_company = { x = 0 y = 4 }
+		}
+	}
+}
+VG_armored_division_late = {
+	set_country_flag = varangian_armored_imp
+	division_template = {
+			name = "Varangon Tethorakismeni Velti"
+			priority = 2
+			division_names_group = GRE_VG_01
+		regiments = {
+			medium_armor = { x = 0 y = 0 }
+			medium_armor = { x = 0 y = 1 }
+			medium_armor = { x = 0 y = 2 }
+			medium_armor = { x = 0 y = 3 }
+
+			mechanized = { x = 1 y = 0 }
+			mechanized = { x = 1 y = 1 }
+			mechanized = { x = 1 y = 2 }
+
+			mechanized = { x = 2 y = 0 }
+			mechanized = { x = 2 y = 1 }
+			mechanized = { x = 2 y = 2 }
+		}
+		support = {
+			armored_car_recon = { x = 0 y = 0 }      # Motorized recon inf bn
+			engineer = { x = 0 y = 1 }
+			field_hospital = { x = 0 y = 2 }
+			maintenance_company = { x = 0 y = 3 }
+			logistics_company = { x = 0 y = 4 }
+		}
+	}
+}

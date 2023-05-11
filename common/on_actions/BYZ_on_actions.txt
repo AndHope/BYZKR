@@ -1,0 +1,79 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			ALB = {
+				give_resource_rights = { state = 44 receiver = AUS }
+			}
+		}
+		effect = {
+			GEO = {
+				give_resource_rights = { state = 231 receiver = GRE }
+			}
+		}
+		effect = {
+			ARM = {
+				give_resource_rights = { state = 230 receiver = GRE }
+			}
+		}
+		effect = {
+			SER = {
+				give_resource_rights = { state = 765 receiver = AUS }
+			}
+		}
+		effect = {
+			SER = {
+				give_resource_rights = { state = 767 receiver = BUL }
+			}
+		}
+		effect = {
+			SER = {
+				give_resource_rights = { state = 765 receiver = BUL }
+			}
+		}
+		effect = {
+			SER = {
+				give_resource_rights = { state = 107 receiver = AUS }
+			}
+		}
+		effect = {
+			SER = {
+				give_resource_rights = { state = 105 receiver = AUS }
+			}
+		}
+		effect = {
+			SER = {
+				give_resource_rights = { state = 108 receiver = AUS }
+			}
+		}
+		effect = {
+			ETH = {
+				give_resource_rights = { state = 271 receiver = GRE }
+			}
+		}
+		effect = {
+			ETH = {
+				give_resource_rights = { state = 550 receiver = GRE }
+			}
+		}
+		effect = {
+			ETH = {
+				give_resource_rights = { state = 559 receiver = GRE }
+			}
+		}
+		effect = {
+			PER = {
+				give_resource_rights = { state = 229 receiver = GER }
+			}
+		}
+		effect = {
+			PER = {
+				give_resource_rights = { state = 990 receiver = GER }
+			}
+		}
+	}
+
+
+
+
+
+}

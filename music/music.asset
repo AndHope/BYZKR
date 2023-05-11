@@ -1,0 +1,324 @@
+
+# MAIN THEME
+music = {
+	name = "maintheme"
+	file = "maintheme.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "main_vanilla"
+	file = "hoi4mainthemeallies.ogg"
+	volume = 0.65
+}
+
+# General Peace:
+music = {
+	name = "general_peace_1"
+	file = "general_peace_heartsofmen.ogg"
+	volume = 0.65
+}
+music = {
+	name = "general_peace_2"
+	file = "thewarends.ogg"
+	volume = 0.65
+}
+music = {
+	name = "general_peace_3"
+	file = "asongforthechildrenofww2.ogg"
+	volume = 0.65
+}
+
+# General war:
+music = {
+	name = "general_war_1"
+	file = "general_war_bringforththetanks.ogg"
+	volume = 0.65
+}
+music = {
+	name = "general_war_2"
+	file = "general_war_theattack.ogg"
+	volume = 0.65
+}
+
+
+# Allies Peace:
+music = {
+	name = "allies_peace_1"
+	file = "allies_peace_morningofdday.ogg"
+	volume = 0.65
+}
+music = {
+	name = "allies_peace_2"
+	file = "endofthetour.ogg"
+	volume = 0.65
+}
+
+
+# Allies War:
+music = {
+	name = "allies_war_1"
+	file = "wearesoldiers.ogg"
+	volume = 0.65
+}
+music = {
+	name = "allies_war_2"
+	file = "allies_war_theroyalairforce.ogg"
+	volume = 0.65
+}
+
+
+# Axis Peace:
+music = {
+	name = "axis_peace_1"
+	file = "axis_peace_krakow.ogg"
+	volume = 0.65
+}
+music = {
+	name = "axis_peace_2"
+	file = "luftwaffemarch_reprise.ogg"
+	volume = 0.65
+}
+
+
+# Axis War:
+music = {
+	name = "axis_war_1"
+	file = "axistheme.ogg"
+	volume = 0.65
+}
+music = {
+	name = "axis_war_2"
+	file = "heavywater.ogg"
+	volume = 0.65
+}
+music = {
+	name = "axis_war_3"
+	file = "operationbarbarossa.ogg"
+	volume = 0.65
+}
+music = {
+	name = "axis_war_4"
+	file = "war_axis_1_daysofthunder.ogg"
+	volume = 0.65
+}
+
+
+# Comintern Peace:
+
+music = {
+	name = "comintern_peace_1"
+	file = "motherrussia.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "comintern_peace_2"
+	file = "theredarmy.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "comintern_peace_3"
+	file = "sovietvictory.ogg"
+	volume = 0.65
+}
+
+# Comintern War:
+
+music = {
+	name = "comintern_war_1"
+	file = "themightofsovietunion.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "comintern_war_2"
+	file = "cominterntheme.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "comintern_war_3"
+	file = "thegreatpatrioticwar.ogg"
+	volume = 0.65
+}
+
+# La Resistance:
+
+music = {
+	name = "resistance_spanish"
+	file = "La_Autocracia.ogg"
+	volume = 0.65
+}
+music = {
+	name = "resistance_french"
+	file = "La_Liberté.ogg"
+	volume = 0.65
+}
+music = {
+	name = "resistance_fascist"
+	file = "L'Autoritario.ogg"
+	volume = 0.65
+}
+music = {
+	name = "resistance_spying"
+	file = "Under_Veils_Of_Secrets.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "byz_freedom"
+	file = "audio/byz_freedom.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "byz_russia"
+	file = "audio/byz_russia.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "darkness"
+	file = "audio/darkness.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "horizon"
+	file = "audio/horizon.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "War_Music_byCEPHEI_Epic_music_empire"
+	file = "audio/War_Music_byCEPHEI_Epic_music_empire.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Crusaders_of_the_Light_Globus"
+	file = "audio/Crusaders_of_the_Light_Globus.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Ancient_Byzantine_Music_Byzantium"
+	file = "audio/Ancient_Byzantine_Music_Byzantium.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Elysian_Fields"
+	file = "audio/usa_strike_up_the_band.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Phos_Hilaron_Peace"
+	file = "audio/Phos_Hilaron_Peace.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Monogenes_Pais"
+	file = "audio/Monogenes_Pais.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Incarnation"
+	file = "audio/Incarnation.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Legions_of_Rome"
+	file = "audio/Legions_of_Rome.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Epitaph_to_Seikilos_War"
+	file = "audio/Epitaph_to_Seikilos_War.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Epitaph_to_Seikilos_Peace"
+	file = "audio/Epitaph_to_Seikilos_Peace.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Vineyards"
+	file = "audio/Vineyards.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Foederati"
+	file = "audio/Foederati.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Viking_Pagan_Folk_Song_Yggdrasill"
+	file = "audio/Viking_Pagan_Folk_Song_Yggdrasill.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Faun_Unda"
+	file = "audio/Faun_Unda.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Blod_ok_Dyrd"
+	file = "audio/Blod_ok_Dyrd.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Vandraren"
+	file = "audio/Vandraren.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Einherjer"
+	file = "audio/Einherjer.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Otrothinn"
+	file = "audio/Otrothinn.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Tyrkjaránid"
+	file = "audio/Tyrkjaránid.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Fehu"
+	file = "audio/Fehu.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Helvegen"
+	file = "audio/Helvegen.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "SS3Boss"
+	file = "audio/SS3Boss.ogg"
+	volume = 0.75
+}

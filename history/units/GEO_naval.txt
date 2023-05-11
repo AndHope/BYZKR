@@ -1,0 +1,22 @@
+﻿###OOB File for GEO.txt
+units = {
+	fleet = {
+		name = "Pirveli popularuli flotilla"
+		naval_base = 11599 ###Change to proper province number
+		task_force = {
+			name = "Pirveli popularuli flotilla"
+			location = 11599 ###Change to proper province number
+			ship = { name = "Exarch Aléxandros" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GEO creator = GRE version_name = "Póntos Class" } } start_experience_factor = 0.7 }
+			ship = { name = "Alexios IX" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GEO creator = GRE  version_name = "Elli Class" } } start_experience_factor = 0.6 }
+			ship = { name = "Konstantinios" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GEO creator = GRE  creator = GRE  version_name = "Elli Class" } } start_experience_factor = 0.6 }
+			ship = { name = "Fidonisi" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GEO creator = GRE  version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "Gadzhibey" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GEO creator = GRE  version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "Kerch" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GEO creator = GRE  version_name = "Hydra Class" } } start_experience_factor = 0.5 }
+			ship = { name = "Ayety" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GEO creator = GRE  version_name = "Katsonis Class" } } start_experience_factor = 0.5 }
+			ship = { name = "Batumi" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GEO creator = GRE  version_name = "Katsonis Class" } } start_experience_factor = 0.5 }
+			ship = { name = "Dioskuria " definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GEO creator = GRE  version_name = "Katsonis Class" } } start_experience_factor = 0.5 }
+			ship = { name = "Ochamchire" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GEO creator = GRE  version_name = "Katsonis Class" } } start_experience_factor = 0.5 }
+			ship = { name = "Tbilisi" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GEO creator = GRE  version_name = "Katsonis Class" } } start_experience_factor = 0.5 }
+		}
+	}
+}

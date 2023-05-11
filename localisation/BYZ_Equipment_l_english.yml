@@ -1,0 +1,325 @@
+﻿l_english:
+
+
+###
+### Greece ###
+###
+
+### Land ###
+GRE_infantry_equipment_0:0 "Sárisa M03"
+GRE_infantry_equipment_0_short:0 "Sárisa M03"
+GRE_infantry_equipment_1:0 "Chásta M24"
+GRE_infantry_equipment_1_short:0 "Chásta M24"
+GRE_infantry_equipment_2:0 "Orita Model 1941"
+GRE_infantry_equipment_2_short:0 "Orita M1941"
+GRE_infantry_equipment_3:0 "Pistolet-Pulemyet Shpagina mod.2"
+GRE_infantry_equipment_3_short:0 "PPSh-2"
+
+GEO_infantry_equipment_0:0 "Sárisa M03"
+GEO_infantry_equipment_0_short:0 "Sárisa M03"
+GEO_infantry_equipment_1:0 "Chásta M24"
+GEO_infantry_equipment_1_short:0 "Chásta M24"
+GEO_infantry_equipment_2:0 "Orita Model 1941"
+GEO_infantry_equipment_2_short:0 "Orita M1941"
+GEO_infantry_equipment_3:0 "Pistolet-Pulemyet Shpagina mod.2"
+GEO_infantry_equipment_3_short:0 "PPSh-2"
+
+ARM_infantry_equipment_0:0 "Sárisa M03"
+ARM_infantry_equipment_0_short:0 "Sárisa M03"
+ARM_infantry_equipment_1:0 "Chásta M24"
+ARM_infantry_equipment_1_short:0 "Chásta M24"
+ARM_infantry_equipment_2:0 "Orita Model 1941"
+ARM_infantry_equipment_2_short:0 "Orita M1941"
+ARM_infantry_equipment_3:0 "Pistolet-Pulemyet Shpagina mod.2"
+ARM_infantry_equipment_3_short:0 "PPSh-2"
+
+SER_infantry_equipment_0:0 "Sárisa M03"
+SER_infantry_equipment_0_short:0 "Sárisa M03"
+SER_infantry_equipment_1:0 "Chásta M24"
+SER_infantry_equipment_1_short:0 "Chásta M24"
+SER_infantry_equipment_2:0 "Orita Model 1941"
+SER_infantry_equipment_2_short:0 "Orita M1941"
+SER_infantry_equipment_3:0 "Pistolet-Pulemyet Shpagina mod.2"
+SER_infantry_equipment_3_short:0 "PPSh-2"
+
+ETH_infantry_equipment_0:0 "Sárisa M03"
+ETH_infantry_equipment_0_short:0 "Sárisa M03"
+ETH_infantry_equipment_1:0 "Chásta M24"
+ETH_infantry_equipment_1_short:0 "Chásta M24"
+ETH_infantry_equipment_2:0 "Orita Model 1941"
+ETH_infantry_equipment_2_short:0 "Orita M1941"
+ETH_infantry_equipment_3:0 "Pistolet-Pulemyet Shpagina mod.2"
+ETH_infantry_equipment_3_short:0 "PPSh-2"
+
+ ####################
+ #### TECHNOLOGY ####
+ ####################
+
+ ### GREEK ###
+ 
+ # Infantry
+
+ GRE_motorized_equipment_1:1 "Minótavros" # Minotaur
+
+ GRE_motorized_rocket_equipment_1:0 "C6-2 Chímaira" # Chimera
+ GRE_motorized_rocket_equipment_1_short:0 "Chímaira"
+
+ GRE_mechanized_equipment_1:0 "Kéntavros Transporter"
+ GRE_mechanized_equipment_1_short:0 "Kéntavros"
+ GRE_mechanized_equipment_2:0 "Kéntavros II Transporter"
+ GRE_mechanized_equipment_2_short:0 "Kéntavros II"
+ GRE_mechanized_equipment_3:0 "Kéntavros III Transporter"
+ GRE_mechanized_equipment_3_short:0 "Kéntavros III"
+ 
+ GRE_gw_armored_car_equipment:0 "Fos Katapéra"
+ GRE_gw_armored_car_equipment:0 "Fos Katapéra"
+ GRE_armored_car_equipment_1:0 "Fos Katapéra II"
+ GRE_armored_car_equipment_1:0 "Fos Katapéra II"
+ GRE_armored_car_equipment_2:0 "Fos Katapéra III"
+ GRE_armored_car_equipment_2:0 "Fos Katapéra III"
+
+ 
+ ARM_motorized_equipment_1:1 "Minótavros" # Minotaur
+
+ ARM_motorized_rocket_equipment_1:0 "C6-2 Chímaira" # Chimera
+ ARM_motorized_rocket_equipment_1_short:0 "Chímaira"
+
+ ARM_mechanized_equipment_1:0 "Kéntavros Transporter"
+ ARM_mechanized_equipment_1_short:0 "Kéntavros"
+ ARM_mechanized_equipment_2:0 "Kéntavros II Transporter"
+ ARM_mechanized_equipment_2_short:0 "Kéntavros II"
+ ARM_mechanized_equipment_3:0 "Kéntavros III Transporter"
+ ARM_mechanized_equipment_3_short:0 "Kéntavros III"
+ 
+ ARM_gw_armored_car_equipment:0 "Katapéra"
+ ARM_gw_armored_car_equipment:0 "Katapéra"
+ ARM_armored_car_equipment_1:0 "Katapéra II"
+ ARM_armored_car_equipment_1:0 "Katapéra II"
+ ARM_armored_car_equipment_2:0 "Katapéra III"
+ ARM_armored_car_equipment_2:0 "Katapéra III"
+
+ ARM_gw_tank_equipment:0 "Panoplía Katapéra"
+ ARM_gw_tank_equipment_short:0 "Panoplía Katapéra"
+
+ ARM_light_tank_equipment_1:0 "Távros Cavalry Tank"
+ ARM_light_tank_equipment_1_short:0 "Távros"
+ ARM_light_tank_equipment_1_desc:0 "The first armored vehicles were purchased from England and copied by companies like Glavanis & Azazis."
+ ARM_light_tank_equipment_2:0 "Kataphraktoi Cavalry Tank"
+ ARM_light_tank_equipment_2_short:0 "Kataphraktoi"
+
+ 
+ GEO_motorized_equipment_1:1 "Minótavros" # Minotaur
+
+ GEO_motorized_rocket_equipment_1:0 "C6-2 Chímaira" # Chimera
+ GEO_motorized_rocket_equipment_1_short:0 "Chímaira"
+
+ GEO_mechanized_equipment_1:0 "Kéntavros Transporter"
+ GEO_mechanized_equipment_1_short:0 "Kéntavros"
+ GEO_mechanized_equipment_2:0 "Kéntavros II Transporter"
+ GEO_mechanized_equipment_2_short:0 "Kéntavros II"
+ GEO_mechanized_equipment_3:0 "Kéntavros III Transporter"
+ GEO_mechanized_equipment_3_short:0 "Kéntavros III"
+ 
+ GEO_gw_armored_car_equipment:0 "Katapéra"
+ GEO_gw_armored_car_equipment:0 "Katapéra"
+ GEO_armored_car_equipment_1:0 "Katapéra II"
+ GEO_armored_car_equipment_1:0 "Katapéra II"
+ GEO_armored_car_equipment_2:0 "Katapéra III"
+ GEO_armored_car_equipment_2:0 "Katapéra III"
+
+ GEO_gw_tank_equipment:0 "Panoplía Katapéra"
+ GEO_gw_tank_equipment_short:0 "Panoplía Katapéra"
+
+ GEO_light_tank_equipment_1:0 "Távros Cavalry Tank"
+ GEO_light_tank_equipment_1_short:0 "Távros"
+ GEO_light_tank_equipment_1_desc:0 "The first armored vehicles were purchased from England and copied by companies like Glavanis & Azazis."
+ GEO_light_tank_equipment_2:0 "Kataphraktoi Cavalry Tank"
+ GEO_light_tank_equipment_2_short:0 "Kataphraktoi"
+
+ # Armor
+
+ GRE_gw_tank_equipment:0 "Panoplía Katapéra"
+ GRE_gw_tank_equipment_short:0 "Panoplía Katapéra"
+
+ GRE_light_tank_equipment_1:0 "Távros Cavalry Tank"
+ GRE_light_tank_equipment_1_short:0 "Távros"
+ GRE_light_tank_equipment_1_desc:0 "The first armored vehicles were purchased from England and copied by companies like Glavanis & Azazis."
+ GRE_light_tank_equipment_2:0 "Kataphraktoi Cavalry Tank"
+ GRE_light_tank_equipment_2_short:0 "Kataphraktoi"
+ GRE_light_tank_equipment_2_desc:0 "Like other countries the early concept of tank warfare included two types. A lighter 'cavalry' version and heavier 'infantry' version."
+ GRE_light_tank_equipment_3:0 "Ippéfs Strike Tank"
+ GRE_light_tank_equipment_3_short:0 "Ippéfs"
+ GRE_light_tank_equipment_3_desc:0 "Advancing technology brought a new class of tank to the war.  Relegating the light tanks to scout roles."
+
+ GRE_light_tank_destroyer_equipment_1:0 "Távros Medium KD"
+ GRE_light_tank_destroyer_equipment_1_short:0 "Távros KD"
+ GRE_light_tank_destroyer_equipment_1_desc:0 "The Katastroféas Dexamenón sacrificed the tank turret in order to mount a more powerful main cannon."
+ GRE_light_tank_destroyer_equipment_2:0 "Kataphraktoi Cavalry KD"
+ GRE_light_tank_destroyer_equipment_2_short:0 "Kataphraktoi KD"
+ GRE_light_tank_destroyer_equipment_3:0 "Ippéfs Strike KD"
+ GRE_light_tank_destroyer_equipment_3_short:0 "Ippéfs KD"
+ 
+ GRE_light_tank_artillery_equipment_1:0 "Távros Medium AP"
+ GRE_light_tank_artillery_equipment_1_short:0 "Távros AP"
+ GRE_light_tank_artillery_equipment_1_desc:0 "The Aftoproothoúmeno Pyrovolikó made fire support more mobile by mounting artillery pieces on tanks."
+ GRE_light_tank_artillery_equipment_2:0 "Kataphraktoi Cavalry AP"
+ GRE_light_tank_artillery_equipment_2_short:0 "Kataphraktoi AP"
+ GRE_light_tank_artillery_equipment_3:0 "Ippéfs Strike AP"
+ GRE_light_tank_artillery_equipment_3_short:0 "Ippéfs AP"
+
+ GRE_light_tank_aa_equipment_1:0 "Távros Medium AA"
+ GRE_light_tank_aa_equipment_1_short:0 "Távros AA"
+ GRE_light_tank_aa_equipment_1_desc:0 "The Anti Aeroskáfi provided mobile air defense by mounting anti-aircraft cannon on tanks."
+ GRE_light_tank_aa_equipment_2:0 "Kataphraktoi AA"
+ GRE_light_tank_aa_equipment_2_short:0 "Kataphraktoi Cavalry AA"
+ GRE_light_tank_aa_equipment_3:0 "Ippéfs Strike AA"
+ GRE_light_tank_aa_equipment_3_short:0 "Ippéfs AA"
+
+ GRE_medium_tank_equipment_1:0 "Lykóskylo Cavalry Tank"
+ GRE_medium_tank_equipment_1_short:0 "Lykóskylo"
+ GRE_medium_tank_equipment_2:0 "Spathí Battle Tank"
+ GRE_medium_tank_equipment_2_short:0 "Spathí"
+ GRE_medium_tank_equipment_2_desc:0 "Stronger engines and bigger guns lead to a new breed of tank. Almost as mobile as lights with almost as much armor and firepower as heavies."
+ GRE_medium_tank_equipment_3:0 "Asvós Battle Tank"
+ GRE_medium_tank_equipment_3_short:0 "Asvós"
+
+ GRE_medium_tank_destroyer_equipment_1:0 "Lykóskylo Cavalry KD"
+ GRE_medium_tank_destroyer_equipment_1_short:0 "Lykóskylo KD"
+ GRE_medium_tank_destroyer_equipment_2:0 "Spathí Battle KD"
+ GRE_medium_tank_destroyer_equipment_2_short:0 "Spathí KD"
+ GRE_medium_tank_destroyer_equipment_3:0 "Asvós Battle KD"
+ GRE_medium_tank_destroyer_equipment_3_short:0 "Asvós KD"
+
+ GRE_medium_tank_artillery_equipment_1:0 "Lykóskylo Cavalry AP"
+ GRE_medium_tank_artillery_equipment_1_short:0 "Lykóskylo AP"
+ GRE_medium_tank_artillery_equipment_2:0 "Spathí Battle AP"
+ GRE_medium_tank_artillery_equipment_2_short:0 "Spathí AP"
+ GRE_medium_tank_artillery_equipment_3:0 "Asvós Battle AP"
+ GRE_medium_tank_artillery_equipment_3_short:0 "Asvós AP"
+
+ GRE_medium_tank_aa_equipment_1:0 "Lykóskylo Cavalry AA"
+ GRE_medium_tank_aa_equipment_1_short:0 "Lykóskylo AA"
+ GRE_medium_tank_aa_equipment_2:0 "Spathí Battle AA"
+ GRE_medium_tank_aa_equipment_2_short:0 "Spathí  AA"
+ GRE_medium_tank_aa_equipment_3:0 "Asvós Battle AA"
+ GRE_medium_tank_aa_equipment_3_short:0 "Asvós AA"
+
+ GRE_heavy_tank_equipment_1:0 "Eléfantas Infantry Tank"
+ GRE_heavy_tank_equipment_1_short:0 "Eléfantas"
+ GRE_heavy_tank_equipment_1_desc:0 "The first heavy 'infantry' tanks were also copied from English designs. Their expense and low mobility kept them from being popular with offensive minded commanders."
+ GRE_heavy_tank_equipment_2:0 "Arkoúda Assault Tank"
+ GRE_heavy_tank_equipment_2_short:0 "Arkoúda"
+ GRE_heavy_tank_equipment_2_desc:0 "With the development of medium tanks the heavies became even heavier with thicker armor and larger guns to survive the more dangerous battlefield."
+ GRE_heavy_tank_equipment_3:0 "Kontári Assault Tank"
+ GRE_heavy_tank_equipment_3_short:0 "Kontári"
+
+ GRE_heavy_tank_destroyer_equipment_1:0 "Eléfantas Infantry KD"
+ GRE_heavy_tank_destroyer_equipment_1_short:0 "Eléfantas KD"
+ GRE_heavy_tank_destroyer_equipment_2:0 "Arkoúda Assault KD"
+ GRE_heavy_tank_destroyer_equipment_2_short:0 "Arkoúda KD"
+ GRE_heavy_tank_destroyer_equipment_3:0 "Kontári Assault KD"
+ GRE_heavy_tank_destroyer_equipment_3_short:0 "Kontári KD"
+
+ GRE_heavy_tank_artillery_equipment_1:0 "Eléfantas Infantry AP"
+ GRE_heavy_tank_artillery_equipment_1_short:0 "Eléfantas AP"
+ GRE_heavy_tank_artillery_equipment_2:0 "Arkoúda Assault AP"
+ GRE_heavy_tank_artillery_equipment_2_short:0 "Arkoúda AP"
+ GRE_heavy_tank_artillery_equipment_3:0 "Kontári Assault AP"
+ GRE_heavy_tank_artillery_equipment_3_short:0 "Kontári AP"
+
+ GRE_heavy_tank_aa_equipment_1:0 "Eléfantas Infantry AA"
+ GRE_heavy_tank_aa_equipment_1_short:0 "Eléfantas AA"
+ GRE_heavy_tank_aa_equipment_2:0 "Arkoúda Assault AA"
+ GRE_heavy_tank_aa_equipment_2_short:0 "Arkoúda AA"
+ GRE_heavy_tank_aa_equipment_3:0 "Kontári Assault AA"
+ GRE_heavy_tank_aa_equipment_3_short:0 "Kontári AA"
+
+ GRE_super_heavy_tank_equipment_1:0 "Titán Siege Tank"
+ GRE_super_heavy_tank_equipment_1_short:0 "Titán"
+ GRE_super_heavy_tank_equipment_1_desc:0 "With an endless arms race between armor and firepower, the super heavy could be seen as the ultimate expression of armored warfare."
+
+ GRE_super_heavy_tank_destroyer_equipment_1:0 "Titán Siege KD"
+ GRE_super_heavy_tank_destroyer_equipment_1_short:0 "Titán KD"
+
+ GRE_super_heavy_tank_artillery_equipment_1:0 "Titán Siege AP"
+ GRE_super_heavy_tank_artillery_equipment_1_short:0 "Titán AP"
+
+ GRE_super_heavy_tank_aa_equipment_1:0 "Titán Siege AA"
+ GRE_super_heavy_tank_aa_equipment_1_short:0 "Titán AA"
+
+ GRE_modern_tank_equipment_1:0 "Velissários Battle Tank"
+ GRE_modern_tank_equipment_1_short:0 "Velissários"
+ GRE_modern_tank_equipment_1_desc:0 "Originally a hybrid, the medium eventually replaced both the light and heavy models. Usurping their roles in the combat zones."
+
+ GRE_modern_tank_destroyer_equipment_1:0 "Velissários Battle KD"
+ GRE_modern_tank_destroyer_equipment_1_short:0 "Velissários KD"
+
+ GRE_modern_tank_artillery_equipment_1:0 "Velissários Battle AP"
+ GRE_modern_tank_artillery_equipment_1_short:0 "Velissários AP"
+
+ GRE_modern_tank_aa_equipment_1:0 "Velissários Battle AA"
+ GRE_modern_tank_aa_equipment_1_short:0 "Velissários AA"
+
+ # Artillery
+
+ GRE_anti_air_equipment_1:0 "Danglis 3.5 cm Kanóni"
+ GRE_anti_air_equipment_1_short:0 "3.5 cm Kanóni"
+ GRE_anti_air_equipment_2:0 "7.5 cm Kanóni"
+ GRE_anti_air_equipment_3:0 "9 cm Kanóni"
+
+ GRE_artillery_equipment_1:0 "Danglis 8 cm Kanóni"
+ GRE_artillery_equipment_1_short:0 "8 cm Kanóni"
+ GRE_artillery_equipment_2:0 "10.5 cm Kanóni"
+ GRE_artillery_equipment_3:0 "15 cm Olmovólo"
+
+ GRE_rocket_artillery_equipment_1:0 "Danglis Type 1 Ektoxeftís Rouketón"
+ GRE_rocket_artillery_equipment_1_short:0 "ER-1"
+ GRE_rocket_artillery_equipment_2:0 "Danglis Type 5 Ektoxeftís Rouketón"
+ GRE_rocket_artillery_equipment_2_short:0 "ER-5"
+
+ GRE_anti_tank_equipment_1:0 "Danglis 3.5 cm Kanóni"
+ GRE_anti_tank_equipment_1_short:0 "3.5 cm Kanóni"
+ GRE_anti_tank_equipment_2:0 "5 cm Kanóni"
+ GRE_anti_tank_equipment_3:0 "7.5 cm Kanóni"
+
+
+  ARM_anti_air_equipment_1:0 "Danglis 3.5 cm Kanóni"
+ ARM_anti_air_equipment_1_short:0 "3.5 cm Kanóni"
+ ARM_anti_air_equipment_2:0 "7.5 cm Kanóni"
+ ARM_anti_air_equipment_3:0 "9 cm Kanóni"
+
+ ARM_artillery_equipment_1:0 "Danglis 8 cm Kanóni"
+ ARM_artillery_equipment_1_short:0 "8 cm Kanóni"
+ ARM_artillery_equipment_2:0 "10.5 cm Kanóni"
+ ARM_artillery_equipment_3:0 "15 cm Olmovólo"
+
+ ARM_rocket_artillery_equipment_1:0 "Danglis Type 1 Ektoxeftís Rouketón"
+ ARM_rocket_artillery_equipment_1_short:0 "ER-1"
+ ARM_rocket_artillery_equipment_2:0 "Danglis Type 5 Ektoxeftís Rouketón"
+ ARM_rocket_artillery_equipment_2_short:0 "ER-5"
+
+ ARM_anti_tank_equipment_1:0 "Danglis 3.5 cm Kanóni"
+ ARM_anti_tank_equipment_1_short:0 "3.5 cm Kanóni"
+ ARM_anti_tank_equipment_2:0 "5 cm Kanóni"
+ ARM_anti_tank_equipment_3:0 "7.5 cm Kanóni"
+
+  GEO_anti_air_equipment_1:0 "Danglis 3.5 cm Kanóni"
+ GEO_anti_air_equipment_1_short:0 "3.5 cm Kanóni"
+ GEO_anti_air_equipment_2:0 "7.5 cm Kanóni"
+ GEO_anti_air_equipment_3:0 "9 cm Kanóni"
+
+ GEO_artillery_equipment_1:0 "Danglis 8 cm Kanóni"
+ GEO_artillery_equipment_1_short:0 "8 cm Kanóni"
+ GEO_artillery_equipment_2:0 "10.5 cm Kanóni"
+ GEO_artillery_equipment_3:0 "15 cm Olmovólo"
+
+ GEO_rocket_artillery_equipment_1:0 "Danglis Type 1 Ektoxeftís Rouketón"
+ GEO_rocket_artillery_equipment_1_short:0 "ER-1"
+ GEO_rocket_artillery_equipment_2:0 "Danglis Type 5 Ektoxeftís Rouketón"
+ GEO_rocket_artillery_equipment_2_short:0 "ER-5"
+
+ GEO_anti_tank_equipment_1:0 "Danglis 3.5 cm Kanóni"
+ GEO_anti_tank_equipment_1_short:0 "3.5 cm Kanóni"
+ GEO_anti_tank_equipment_2:0 "5 cm Kanóni"
+ GEO_anti_tank_equipment_3:0 "7.5 cm Kanóni"
+

@@ -1,0 +1,343 @@
+﻿
+GRE_INF_01 = {
+	name = "Tágmata infántry" # Triangular Infantry Division
+
+	for_countries = { GRE }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%s Tágmata infántry"
+
+	ordered = {
+		1 = { "%s Tágmata infántry" }
+		2 = { "%s Tágmata infántry" }
+		3 = { "%s Tágmata infántry" }
+		4 = { "%s Tágmata infántry" }
+		5 = { "%s Tágmata infántry" }
+		6 = { "%s Tágmata infántry" }
+		7 = { "%s Tágmata infántry" }
+		8 = { "%s Tágmata infántry" }
+		9 = { "%s Tágmata infántry" }
+		10 = { "%s Tágmata infántry" }
+		11 = { "%s Tágmata infántry" }
+		12 = { "%s Tágmata infántry" }
+		13 = { "%s Tágmata infántry" }
+		14 = { "%s Tágmata infántry" }
+		15 = { "%s Tágmata infántry" }
+		16 = { "%s Tágmata infántry" }
+		17 = { "%s Tágmata infántry" }
+		18 = { "%s Tágmata infántry" }
+		19 = { "%s Tágmata infántry" }
+		20 = { "%s Tágmata infántry" }		
+		21 = { "%s Tágmata infántry" }		
+		22 = { "%s Tágmata infántry" }		
+		23 = { "%s Tágmata infántry" }		
+		24 = { "%s Tágmata infántry" }		
+		25 = { "%s Tágmata infántry" }		
+		26 = { "%s Tágmata infántry" }		
+		27 = { "%s Tágmata infántry" }		
+		28 = { "%s Tágmata infántry" }		
+		29 = { "%s Tágmata infántry" }		
+		30 = { "%s Tágmata infántry" }		
+	}
+}
+
+GRE_CAV_01 = {
+	name = "Thémata Kataphraktoi" # Cavalry Division
+
+	for_countries = { GRE }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	fallback_name = "%s Thémata Kataphraktoi"
+
+	ordered = {
+		1 = { "%s Thémata Kataphraktoi" }
+		2 = { "%s Thémata Kataphraktoi" }
+		3 = { "%s Thémata Kataphraktoi" }
+		4 = { "%s Thémata Kataphraktoi" }
+		5 = { "%s Thémata Kataphraktoi" }
+		6 = { "%s Thémata Kataphraktoi" }
+		7 = { "%s Thémata Kataphraktoi" }
+		8 = { "%s Thémata Kataphraktoi" }
+		9 = { "%s Thémata Kataphraktoi" }
+		10 = { "%s Thémata Kataphraktoi" }
+	}
+}
+
+GRE_MOT_01 = {
+	name = "Michanopoiiméni Tágmata" # Motorized Infantry Division
+
+	for_countries = { GRE }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	link_numbering_with = { GRE_INF_01 }
+
+	fallback_name = "%s Michanopoiiméni Tágmata"
+
+	ordered = {
+		19 = { "%s Michanopoiiméni Tágmata" }
+		1 = { "%s Michanopoiiméni Tágmata" }
+		2 = { "%s Michanopoiiméni Tágmata" }
+		3 = { "%s Michanopoiiméni Tágmata" }
+		4 = { "%s Michanopoiiméni Tágmata" }
+		5 = { "%s Michanopoiiméni Tágmata" }
+		6 = { "%s Michanopoiiméni Tágmata" }
+		7 = { "%s Michanopoiiméni Tágmata" }
+		8 = { "%s Michanopoiiméni Tágmata" }
+		9 = { "%s Michanopoiiméni Tágmata" }
+		10 = { "%s Michanopoiiméni Tágmata" }
+	}
+}
+
+GRE_MEC_01 = {
+	name = "Michanokíniti Tágmata" # Mechanized Division
+
+	for_countries = { GRE }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized" }
+
+	link_numbering_with = { GRE_INF_01 }
+
+	fallback_name = "%s Michanokíniti Tágmata"
+
+	ordered = {
+		19 = { "%s Michanokíniti Tágmata" }
+		1 = { "%s Michanokíniti Tágmata" }
+		2 = { "%s Michanokíniti Tágmata" }
+		3 = { "%s Michanokíniti Tágmata" }
+		4 = { "%s Michanokíniti Tágmata" }
+		5 = { "%s Michanokíniti Tágmata" }
+		6 = { "%s Michanokíniti Tágmata" }
+		7 = { "%s Michanokíniti Tágmata" }
+		8 = { "%s Michanokíniti Tágmata" }
+		9 = { "%s Michanokíniti Tágmata" }
+		10 = { "%s Michanokíniti Tágmata" }
+	}
+}
+
+GRE_ARM_01 = {
+	name = "Tágmata Kataphraktoi" # Armored Division
+
+	for_countries = { GRE }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	fallback_name = "%s Tágmata Kataphraktoi"
+
+	ordered = {
+		20 = { "%s Tágmata Kataphraktoi" }
+		1 = { "%s Tágmata Kataphraktoi" }
+		2 = { "%s Tágmata Kataphraktoi" }
+		3 = { "%s Tágmata Kataphraktoi" }
+		4 = { "%s Tágmata Kataphraktoi" }
+		5 = { "%s Tágmata Kataphraktoi" }
+		6 = { "%s Tágmata Kataphraktoi" }
+		7 = { "%s Tágmata Kataphraktoi" }
+		8 = { "%s Tágmata Kataphraktoi" }
+		9 = { "%s Tágmata Kataphraktoi" }
+		10 = { "%s Tágmata Kataphraktoi" }
+	}
+}
+
+GRE_PAR_01 = {
+	name = "Tágmata Alexiptotiston" # Paratrooper Division
+
+	for_countries = { GRE }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	fallback_name = "%s Tágmata Alexiptotiston"
+
+	ordered = {
+		1 = { "%s 'Gerákia' Tágmata" }
+		2 = { "%s Tágmata Alexiptotiston" }
+		3 = { "%s Tágmata Alexiptotiston" }
+		4 = { "%s Tágmata Alexiptotiston" }
+		5 = { "%s Tágmata Alexiptotiston" }
+		6 = { "%s Tágmata Alexiptotiston" }
+		7 = { "%s Tágmata Alexiptotiston" }
+		8 = { "%s Tágmata Alexiptotiston" }
+		9 = { "%s Tágmata Alexiptotiston" }
+		10 = { "%s Tágmata Alexiptotiston" }
+	}
+}
+
+GRE_MAR_01 = {
+	name = "Tessarakontarioi" # Marine Division
+
+	for_countries = { GRE }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	fallback_name = "%s Tessarakontarioi"
+
+	ordered = {
+		1 = { "%s 'Krokódeiloi'" }
+		2 = { "%s Tessarakontarioi " }
+		3 = { "%s Tessarakontarioi " }
+		4 = { "%s Tessarakontarioi " }
+		5 = { "%s Tessarakontarioi " }
+		6 = { "%s Tessarakontarioi " }
+		7 = { "%s Tessarakontarioi " }
+		8 = { "%s Tessarakontarioi " }
+		9 = { "%s Tessarakontarioi " }
+		10 = { "%s Tessarakontarioi " }
+	}
+}
+
+GRE_MNT_01 = {
+	name = "Tágmata Alpikós" # Mountain Division
+
+	for_countries = { GRE }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	link_numbering_with = { GRE_INF_01 }
+
+	fallback_name = "%s Tágmata infántry"
+
+	ordered = {
+		1 = { "%s Tágmata Alpikós" }
+		2 = { "%s Tágmata Alpikós" }
+		3 = { "%s Tágmata Alpikós" }
+		4 = { "%s Tágmata Alpikós" }
+		5 = { "%s Tágmata Alpikós" }
+		6 = { "%s Tágmata Alpikós" }
+		7 = { "%s Tágmata Alpikós" }
+		8 = { "%s Tágmata Alpikós" }
+		9 = { "%s Tágmata Alpikós" }
+		10 = { "%s Tágmata Alpikós" }
+		11 = { "%s Tágmata Alpikós" }
+		12 = { "%s Tágmata Alpikós" }
+		13 = { "%s Tágmata Alpikós" }
+		14 = { "%s Tágmata Alpikós" }
+		15 = { "%s Tágmata Alpikós" }
+		16 = { "%s Tágmata Alpikós" }
+		17 = { "%s Tágmata Alpikós" }
+		18 = { "%s Tágmata Alpikós" }
+		19 = { "%s Tágmata Alpikós" }
+		20 = { "%s Tágmata Alpikós" }		
+		21 = { "%s Tágmata Alpikós" }		
+		22 = { "%s Tágmata Alpikós" }		
+		23 = { "%s Tágmata Alpikós" }		
+		24 = { "%s Tágmata Alpikós" }		
+		25 = { "%s Tágmata Alpikós" }		
+		26 = { "%s Tágmata Alpikós" }		
+		27 = { "%s Tágmata Alpikós" }		
+		28 = { "%s Tágmata Alpikós" }		
+		29 = { "%s Tágmata Alpikós" }		
+		30 = { "%s Tágmata Alpikós" }		
+	}
+}
+
+GRE_GAR_01 = {
+	name = "Thémata infántry" # Garrison Division
+
+	for_countries = { GRE }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	link_numbering_with = { GRE_INF_01 }
+
+	fallback_name = "%s Thémata infántry"
+
+	ordered = {
+		21 = { "%s Thémata infántry" }		
+		22 = { "%s Thémata infántry" }		
+		23 = { "%s Thémata infántry" }		
+		24 = { "%s Thémata infántry" }		
+		25 = { "%s Thémata infántry" }		
+		26 = { "%s Thémata infántry" }		
+		27 = { "%s Thémata infántry" }		
+		28 = { "%s Thémata infántry" }		
+		29 = { "%s Thémata infántry" }		
+		30 = { "%s Thémata infántry" }		
+		1 = { "%s Thémata infántry" }
+		2 = { "%s Thémata infántry" }
+		3 = { "%s Thémata infántry" }
+		4 = { "%s Thémata infántry" }
+		5 = { "%s Thémata infántry" }
+		6 = { "%s Thémata infántry" }
+		7 = { "%s Thémata infántry" }
+		8 = { "%s Thémata infántry" }
+		9 = { "%s Thémata infántry" }
+		10 = { "%s Thémata infántry" }
+		11 = { "%s Thémata infántry" }
+		12 = { "%s Thémata infántry" }
+		13 = { "%s Thémata infántry" }
+		14 = { "%s Thémata infántry" }
+		15 = { "%s Thémata infántry" }
+		16 = { "%s Thémata infántry" }
+		17 = { "%s Thémata infántry" }
+		18 = { "%s Thémata infántry" }
+		19 = { "%s Thémata infántry" }
+		20 = { "%s Thémata infántry" }		
+	}
+}
+
+GRE_VG_01 = {
+	name = "Varángōn Kataphraktoi" # Varangian Guard
+
+	for_countries = { GRE }
+
+	#can_use = {
+	#	has_completed_focus = BYZ_varangian_guard
+	#}
+
+	division_types = { "infantry" "motorized" "medium_armor" "mechanized" }
+
+	fallback_name = "%s Varángōn Kataphraktoi"
+
+	ordered = {
+		1 = { "%s Varángōn Kataphraktoi" }
+		2 = { "%s Varángōn Kataphraktoi" }
+		3 = { "%s Varángōn Kataphraktoi" }
+		4 = { "%s Varángōn Kataphraktoi" }
+		5 = { "%s Varángōn Kataphraktoi" }
+		6 = { "%s Varángōn Kataphraktoi" }
+		7 = { "%s Varángōn Kataphraktoi" }
+		8 = { "%s Varángōn Kataphraktoi" }
+		9 = { "%s Varángōn Kataphraktoi" }
+		10 = { "%s Varángōn Kataphraktoi" }
+		11 = { "%s Varángōn Kataphraktoi" }
+		12 = { "%s Varángōn Kataphraktoi" }
+		13 = { "%s Varángōn Kataphraktoi" }
+		14 = { "%s Varángōn Kataphraktoi" }
+		15 = { "%s Varángōn Kataphraktoi" }
+		16 = { "%s Varángōn Kataphraktoi" }
+		17 = { "%s Varángōn Kataphraktoi" }
+		18 = { "%s Varángōn Kataphraktoi" }
+		19 = { "%s Varángōn Kataphraktoi" }
+		20 = { "%s Varángōn Kataphraktoi" }
+		21 = { "%s Varángōn Kataphraktoi" }		
+		22 = { "%s Varángōn Kataphraktoi" }		
+		23 = { "%s Varángōn Kataphraktoi" }		
+		24 = { "%s Varángōn Kataphraktoi" }		
+		25 = { "%s Varángōn Kataphraktoi" }		
+		26 = { "%s Varángōn Kataphraktoi" }		
+		27 = { "%s Varángōn Kataphraktoi" }		
+		28 = { "%s Varángōn Kataphraktoi" }		
+		29 = { "%s Varángōn Kataphraktoi" }		
+		30 = { "%s Varángōn Kataphraktoi" }		
+	}
+}

@@ -1,0 +1,165 @@
+ideas = {	
+
+	
+	country = {
+		
+		BYZ_idea_riotslow = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BYZ_idea_riotslow"}
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = raj_marginalized_muslim_community
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		BYZ_aristocrat = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BYZ_aristocrat" }
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = -0.1
+				consumer_goods_factor = 0.1
+				local_resources_factor = -0.1
+			}
+			picture = ROM_king_carol_ii_hedonist
+		}
+
+		
+		BYZ_idea_riotshigh = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BYZ_idea_riotshigh"}
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = raj_marginalized_muslim_community_angry
+			modifier = {
+				stability_factor = -0.15
+				consumer_goods_factor = 0.15
+			}
+		}
+		
+		BYZ_idea_immigrant_benefits = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BYZ_idea_immigrant_benefits"}
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = BYZ_immigrant_economy
+			modifier = {
+				consumer_goods_factor = -0.02
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		BYZ_resurgent_byzantium = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BYZ_resurgent_byzantium"}
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = BYZ_resurgent_byzantium
+			modifier = {
+				army_core_defence_factor = 0.10
+				army_core_attack_factor = 0.10
+				land_reinforce_rate = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+
+		BYZ_minority_problem = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GEO_minority_problem"}
+			picture = prc_low_popular_support2
+			modifier = {
+				non_core_manpower = 0.2
+				political_power_gain = -0.2
+				stability_factor = -0.2
+				resistance_growth = 0.2
+			}
+		}
+
+		BYZ_reformed_conscription = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BYZ_reformed_conscription"}
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.02
+				conscription_factor = 0.2
+				non_core_manpower = 0.2
+			}
+		}
+
+		BYZ_authoritarian_constitution = {
+			picture = generic_constitutional_guarantees
+			modifier = {
+				political_power_factor = 0.10
+				paternal_autocrat_drift = 0.03
+				authoritarian_democrat_drift = 0.02
+				social_conservative_drift = 0.01
+				national_populist_drift = 0.01
+				totalist_drift = 0.01
+			}
+		}
+		BYZ_liberal_constitution = {
+			picture = generic_constitutional_guarantees
+			modifier = {
+				political_power_factor = -0.10
+				authoritarian_democrat_drift = 0.05
+				market_liberal_drift = 0.04
+				social_liberal_drift = 0.04
+				social_democrat_drift = 0.04
+				radical_socialist_drift = 0.02
+				syndicalist_drift = 0.02
+			}
+		}
+
+	BYZ_turk_opposition = {
+		picture = byz_turk_opp
+		allowed = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = -1
+		modifier = {
+			stability_factor = -0.2
+			political_advisor_cost_factor = 0.1
+			trade_laws_cost_factor = 0.1
+			mobilization_laws_cost_factor = 0.1
+			economy_cost_factor = 0.1
+			production_factory_efficiency_gain_factor = -0.1
+			political_power_factor = -0.2
+		}
+	}
+
+	BYZ_turk_discontent = {
+		picture = byz_turk_opp
+		allowed = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = -1
+		modifier = {
+			stability_factor = -0.1
+			political_advisor_cost_factor = 0.05
+			trade_laws_cost_factor = 0.05
+			mobilization_laws_cost_factor = 0.05
+			economy_cost_factor = 0.05
+			production_factory_efficiency_gain_factor = -0.05
+			political_power_factor = -0.1
+		}
+	}	
+		BUL_GER_Alliance_Balkan_War = { #given to OTT at 4th Balkan war, allows them to send BUL extra volunteers
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BUL_OTT_Alliance_Balkan_War" }
+			picture = advisors_bulgaria
+			name = BUL_OTT_Aliiance
+			
+			modifier = {
+				send_volunteer_size = 3
+			}
+		}
+
+
+
+}
+}

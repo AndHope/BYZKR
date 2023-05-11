@@ -1,0 +1,155 @@
+﻿###OOB File for BUL.txt
+units = {
+	fleet = {
+		name = "3-va Razrushitelova flotilija"
+		naval_base = 11837 ###Change to proper province number
+		task_force = {
+			name = "3-va Razrushitelova flotilija"
+			location = 11837 ###Change to proper province number
+			ship = { name = "Khrabri" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "Letyashchi" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "Smeli" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "Strogi" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+		}
+	}
+	fleet = {
+		name = "Belomorska Flota"
+		naval_base = 11837 ###Change to proper province number
+		task_force = {
+			name = "Belomorska Flota"
+			location = 11837 ###Change to proper province number
+			ship = { name = "Petrovskiy" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "Briz" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "Dobrotich" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "Gordi" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "Iskar" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "Malnyi" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "Verni" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "Dobrotich Class" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "Hrabar" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = BUL  version_name = "Hrabar Class" } } start_experience_factor = 1.0 }
+			ship = { name = "Benkovski" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = BUL  version_name = "Hrabar Class" } } start_experience_factor = 1.0 }
+			ship = { name = "Konstantinov" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = BUL  version_name = "Hrabar Class" } } start_experience_factor = 1.0 }
+			ship = { name = "Ivan Rilski" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = BUL  version_name = "Ivan Rilski Class" } } start_experience_factor = 1.0 }
+			ship = { name = "Kaloyan" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = BUL  version_name = "Ivan Rilski Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BUL  version_name = "Dobrotich Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = BUL  version_name = "Hrabar Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = BUL  version_name = "Hrabar Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = BUL  version_name = "Hrabar Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = BUL  version_name = "Ivan Rilski Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = BUL  version_name = "Ivan Rilski Class" } } start_experience_factor = 1.0 }
+		}
+	}
+	fleet = {
+		name = "1. Undersea flotilija"
+		naval_base = 11837 ###Change to proper province number
+		task_force = {
+			name = "1. Undersea flotilija"
+			location = 11837 ###Change to proper province number
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BUL  version_name = "Akula Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BUL  version_name = "Akula Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BUL  version_name = "Akula Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BUL  version_name = "Akula Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BUL  version_name = "Akula Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BUL  version_name = "Akula Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BUL  version_name = "Akula Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BUL  version_name = "Akula Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BUL  version_name = "Akula Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BUL  version_name = "Akula Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BUL  version_name = "Akula Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BUL  version_name = "Akula Class" } } start_experience_factor = 1.0 }
+			ship = { name = "" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BUL  version_name = "Akula Class" } } start_experience_factor = 1.0 }
+		}
+	}
+}
+
+
+instant_effect = {
+### Navy - MtG ###
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+
+		early_ship_hull_light = 1
+		basic_naval_mines = 1
+		basic_ship_hull_light = 1
+		#improved_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		#improved_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		#improved_ship_hull_submarine = 1
+		early_ship_hull_carrier = 1
+		#basic_ship_hull_carrier = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		ship_hull_super_heavy = 1
+		improved_ship_hull_heavy = 1
+		cruiser_submarines = 1
+		panzerschiffe = 1
+
+		## Modules##
+
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		dp_secondary_battery = 1
+		improved_ship_torpedo_launcher = 1
+		improved_airplane_launcher = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		submarine_mine_laying = 1
+		pre_dreadnoughts = 1
+		sonar = 1
+		snorkel_one = 1
+
+		### Transport ###
+		mtg_transport = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_technology = {
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_submarine = 1
+		basic_submarine = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battlecruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		heavy_battleship = 1
+		early_carrier = 1
+
+		### Transport ###
+		transport = 1
+	}
+}
+}

@@ -1,0 +1,526 @@
+
+music_station = "base_music"
+
+music = {
+	song = "main_vanilla"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}
+	}
+}
+
+# PEACE SONGS ##################
+music = {
+	song = "general_peace_1"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "general_peace_2"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "general_peace_3"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "allies_peace_1"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+			has_democratic_government = yes
+		}
+	}
+}
+
+music = {
+	song = "allies_peace_2"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+			has_democratic_government = yes
+		}
+	}
+}
+
+music = {
+	song = "axis_peace_1"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+			has_dictatorship_government = yes
+		}
+	}
+}
+
+music = {
+	song = "axis_peace_2"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+			has_dictatorship_government = yes
+		}
+	}
+}
+
+# WAR SONGS ####################
+
+music = {
+	song = "general_war_1"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "general_war_2"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "axis_war_1"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+			has_dictatorship_government = yes
+		}
+	}
+}
+
+music = {
+	song = "axis_war_2"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+			has_dictatorship_government = yes
+		}
+	}
+}
+
+music = {
+	song = "axis_war_3"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+			has_dictatorship_government = yes
+		}
+	}
+}
+
+music = {
+	song = "axis_war_4"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+			has_dictatorship_government = yes
+		}
+	}
+}
+
+music = {
+	song = "allies_war_1"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+			has_democratic_government = yes
+		}
+	}
+}
+
+music = {
+	song = "allies_war_2"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+			has_democratic_government = yes
+		}
+	}
+}
+
+music = {
+	song = "comintern_peace_1"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+			has_socialist_government = yes
+		}
+	}
+}
+
+music = {
+	song = "comintern_peace_2"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+			has_socialist_government = yes
+		}
+	}
+}
+
+music = {
+	song = "comintern_peace_3"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+			has_socialist_government = yes
+		}
+	}
+}
+
+
+music = {
+	song = "comintern_war_1"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+			has_socialist_government = yes
+		}
+	}
+}
+
+music = {
+	song = "comintern_war_2"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+			has_socialist_government = yes
+		}
+	}
+}
+
+music = {
+	song = "comintern_war_3"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+			has_socialist_government = yes
+		}
+	}
+}
+
+
+music = {
+	song = "byz_freedom"
+	chance = {
+		modifier = {
+			factor = 2
+		}
+	}
+}
+
+music = {
+	song = "byz_russia"
+	chance = {
+		modifier = {
+			factor = 2
+		}
+	}
+}
+
+music = {
+	song = "darkness"
+	chance = {
+		modifier = {
+			factor = 2
+		}
+	}
+}
+
+music = {
+	song = "horizon"
+	chance = {
+		modifier = {
+			factor = 2
+		}
+	}
+}
+
+music = {
+	song = "War_Music_byCEPHEI_Epic_music_empire"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "Crusaders_of_the_Light_Globus"
+	chance = {
+		modifier = {
+			factor = 2
+		}
+	}
+}
+
+music = {
+	song = "Ancient_Byzantine_Music_Byzantium"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "Elysian_Fields"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "Phos_Hilaron_Peace"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "Monogenes_Pais"
+	chance = {
+		modifier = {
+			factor = 2
+		}
+	}
+}
+
+music = {
+	song = "Incarnation"
+	chance = {
+		modifier = {
+			factor = 2
+		}
+	}
+}
+
+music = {
+	song = "Legions_of_Rome"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "Epitaph_to_Seikilos_War"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "Epitaph_to_Seikilos_Peace"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "Vineyards"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "Foederati"
+	chance = {
+		modifier = {
+			factor = 2
+		}
+	}
+}
+
+music = {
+	song = "Viking_Pagan_Folk_Song_Yggdrasill"
+	chance = {
+		modifier = {
+			factor = 2
+		}
+	}
+}
+
+music = {
+	song = "Faun_Unda"
+	chance = {
+		modifier = {
+			factor = 2
+		}
+	}
+}
+
+music = {
+	song = "Blod_ok_Dyrd"
+	chance = {
+		modifier = {
+			factor = 2
+		}
+	}
+}
+
+music = {
+	song = "Vandraren"
+	chance = {
+		modifier = {
+			factor = 2
+		}
+	}
+}
+
+music = {
+	song = "Einherjer"
+	chance = {
+		modifier = {
+			factor = 2
+		}
+	}
+}
+
+music = {
+	song = "Otrothinn"
+	chance = {
+		modifier = {
+			factor = 2
+		}
+	}
+}
+
+#music = {
+#	song = "Tyrkjaránid"
+#	chance = {
+#		modifier = {
+#			factor = 2
+#		}
+#	}
+#}
+
+music = {
+	song = "Fehu"
+	chance = {
+		modifier = {
+			factor = 2
+		}
+	}
+}
+
+music = {
+	song = "Helvegen"
+	chance = {
+		modifier = {
+			factor = 2
+		}
+	}
+}
+
+music = {
+	song = "SS3Boss"
+	chance = {
+		modifier = {
+			factor = 2
+		}
+	}
+}

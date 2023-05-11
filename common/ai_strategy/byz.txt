@@ -1,0 +1,536 @@
+
+GRE_guard_bosporous = {
+	allowed = { tag = GRE }
+
+	enable = {
+		OR = {
+			owns_state = 773
+			owns_state = 341
+			owns_state = 339
+			owns_state = 47
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.2
+		states = { 773 341 339 47 340}
+		subtract_invasions_from_need = no
+	}
+}
+GRE_guard_islands = {
+	allowed = { tag = GRE }
+
+	enable = {
+		OR = {
+			owns_state = 182
+			owns_state = 187
+			owns_state = 183
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.1
+		states = { 182 187 183 }
+		subtract_invasions_from_need = no
+	}
+}
+ARM_guard = {
+	allowed = { tag = ARM }
+
+	enable = {
+		ARM = { owns_state = 230 } #
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = area_priority
+		id = west_russia
+		value = 100
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 250
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.2
+		states = { 230 1000 1001 }
+		subtract_invasions_from_need = no
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire
+		id = GRE
+		target = send_expeditionary_force
+		value = 1000
+	}
+
+}
+GEO_guard = {
+	allowed = { tag = GEO }
+
+	enable = {
+		GEO = { owns_state = 231 } #
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = area_priority
+		id = west_russia
+		value = 250
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 250
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.2
+		states = { 231 1080 }
+		subtract_invasions_from_need = no
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire
+		id = GRE
+		target = send_expeditionary_force
+		value = 1000
+	}
+
+}
+EGY_guard_egypt = {
+	allowed = { tag = EGY }
+
+	enable = {
+		OR = {
+			owns_state = 447
+			owns_state = 446
+			owns_state = 753
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = area_priority
+		id = west_africa
+		value = 300
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 200
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = east_africa
+		value = 100
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.25
+		states = { 447 446 753}
+		subtract_invasions_from_need = no
+	}
+}
+EGY_guard_syria = {
+	allowed = { tag = EGY }
+
+	enable = {
+		OR = {
+			owns_state = 553
+			owns_state = 454
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.15
+		states = { 553 554 454 667 }
+		subtract_invasions_from_need = no
+	}
+}
+EGY_guard_libya = {
+	allowed = { tag = EGY }
+
+	enable = {
+		OR = {
+			owns_state = 448
+			owns_state = 450
+			owns_state = 451
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.15
+		states = { 448 450 451}
+		subtract_invasions_from_need = no
+	}
+}
+BUL_guard_core = {
+	allowed = { tag = BUL }
+
+	enable = {
+		OR = {
+			owns_state = 48
+			owns_state = 212
+			owns_state = 211
+			owns_state = 771
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.15
+		states = { 48 212 211 771 }
+		subtract_invasions_from_need = no
+	}
+}
+ALB_guard_core = {
+	allowed = { tag = ALB }
+
+	enable = {
+		OR = {
+			owns_state = 44
+			owns_state = 766
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.5
+		states = { 44 766 }
+		subtract_invasions_from_need = no
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = GRE
+		value = 150
+	}
+
+}
+
+egypt_focus_on_abyssina = {
+	allowed = {
+		OR = {
+			tag = EGY
+			tag = GER
+			tag = AUS
+			tag = SAU
+			tag = PER
+		}
+	}
+	enable = {
+		ETH = { controls_state = 271 } #NIS
+		EGY = { has_war_with = GRE } 
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+
+		country_trigger = {
+			tag = GRE
+		}
+
+		execute_order = no
+		manual_attack = no
+	}
+
+}
+AGY_guard_egypt = {
+	allowed = { tag = AGY }
+
+	enable = {
+		OR = {
+			owns_state = 447
+			owns_state = 446
+			owns_state = 753
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = area_priority
+		id = west_africa
+		value = 300
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = east_africa
+		value = 150
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.5
+		states = { 447 446 753}
+		subtract_invasions_from_need = no
+	}
+}
+BSR_guard_syria = {
+	allowed = { tag = BSR }
+
+	enable = {
+		OR = {
+			owns_state = 553
+			owns_state = 554
+			owns_state = 454
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 200
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.5
+		states = { 553 554 454 667 }
+		subtract_invasions_from_need = no
+	}
+}
+AGY_guard_libya = {
+	allowed = { tag = AGY }
+
+	enable = {
+		OR = {
+			owns_state = 448
+			owns_state = 450
+			owns_state = 451
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.2
+		states = { 448 450 451}
+		subtract_invasions_from_need = no
+	}
+}
+
+BYZ_ignore_allies = {
+	allowed = {
+		tag = GRE
+	}
+	enable = {
+		has_war_with = BUL
+	}
+
+	abort_when_not_enabled = yes
+
+		ai_strategy = {
+			type = dont_defend_ally_borders
+			id = "SER"
+			value = 1000
+		}
+		ai_strategy = {
+			type = dont_defend_ally_borders
+			id = "ROM"
+			value = 1000
+		}
+}
+
+SAU_guard_egypt = {
+	allowed = { tag = SAU }
+
+	enable = {
+		EGY = { has_war_with = GRE } 
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = diplo_action_desire
+		id = EGY
+		target = send_expeditionary_force
+		value = 10000
+	}
+}
+egypt_allies_support = {
+	allowed = {
+		OR = {
+			tag = GER
+			tag = AUS
+			tag = PER
+		}
+	}
+	enable = {
+		EGY = { has_war_with = GRE } 
+	}
+
+	abort_when_not_enabled = yes
+
+
+	ai_strategy = { 
+		type = send_lend_lease_desire 
+		id = "EGY" 
+		value = 500
+	}
+	ai_strategy = {
+		type = support 
+		id = "EGY" 
+		value = 500 
+	} 
+	ai_strategy = { 
+		type = diplo_action_desire 
+		id = "EGY" 
+		target = lend_lease 
+		value = 500
+	} 
+
+	ai_strategy = { 
+		type = send_lend_lease_desire 
+		id = "SAU" 
+		value = 200
+	}
+	ai_strategy = {
+		type = support 
+		id = "SAU" 
+		value = 200 
+	} 
+	ai_strategy = { 
+		type = diplo_action_desire 
+		id = "SAU" 
+		target = lend_lease 
+		value = 200
+	} 
+
+}
+
+
+bulgaria_focus_on_serbia = {
+	allowed = {
+		tag = BUL
+	}
+	enable = {
+		SER = { controls_state = 107 } #NIS
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+
+		country_trigger = {
+			tag = GRE
+		}
+
+		execute_order = no
+		manual_attack = no
+	}
+}
+bulgarian_allies_focus_on_defence = {
+	allowed = {
+		OR = {
+			tag = GER
+			tag = AUS
+			tag = ALB
+			tag = SIC
+			tag = PER
+			tag = EGY
+		}
+	}
+	enable = {
+		SER = { controls_state = 107 } #NIS
+		BUL = { has_war_with = GRE }
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+
+		country_trigger = {
+			tag = GRE
+		}
+
+		execute_order = no
+		manual_attack = no
+	}
+
+}
+bulgarian_allies_support = {
+	allowed = {
+		OR = {
+			tag = GER
+			tag = AUS
+		}
+	}
+	enable = {
+		BUL = { has_war_with = GRE } 
+	}
+
+	abort_when_not_enabled = yes
+
+
+	ai_strategy = { 
+		type = send_lend_lease_desire 
+		id = "BUL" 
+		value = 500
+	}
+	ai_strategy = {
+		type = support 
+		id = "BUL" 
+		value = 500 
+	}
+	ai_strategy = { 
+		type = diplo_action_desire 
+		id = "BUL" 
+		target = lend_lease 
+		value = 500
+	} 
+
+	ai_strategy = { 
+		type = send_lend_lease_desire 
+		id = "ALB" 
+		value = 200
+	}
+	ai_strategy = {
+		type = support 
+		id = "ALB" 
+		value = 200 
+	} 
+	ai_strategy = { 
+		type = diplo_action_desire 
+		id = "ALB" 
+		target = lend_lease 
+		value = 200
+	} 
+
+}

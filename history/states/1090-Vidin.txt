@@ -1,0 +1,35 @@
+state = {
+	id = 1090
+	name = "STATE_1090"
+	manpower = 944200
+
+	state_category = four
+
+	history = {
+		owner = BUL
+		add_claim_by = GRE
+		add_core_of = BUL
+		victory_points = {
+			9771 2
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			anti_air_building = 1
+			air_base = 1
+			9771 = {
+				bunker = 3
+			}
+			793 = {
+				bunker = 2
+			}
+			11754 = {
+				bunker = 2
+			}
+		}
+	}
+
+	provinces = {
+		793 965 9771 11754
+	}
+}

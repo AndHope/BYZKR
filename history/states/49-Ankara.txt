@@ -1,0 +1,38 @@
+state = {
+	id = 49
+	name = "STATE_49"
+
+	state_category = six
+
+	resources = {
+		steel = 24
+	}
+
+
+	history = {
+		owner = GRE
+		victory_points = {
+			11747 25
+		}
+		victory_points = {
+			921 4
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 3
+			air_base = 4
+			#synthetic_refinery = 1
+			fuel_silo = 1
+			11747 = {
+				bunker = 3
+			}
+		}
+		add_core_of = GRE
+	}
+
+	provinces = {
+		804 921 3807 3862 3870 3907 3964 6808 6908 6925 6977 9806 9901 11747 11784 11826 11839 11844 11897
+	}
+	manpower = 2323858
+}

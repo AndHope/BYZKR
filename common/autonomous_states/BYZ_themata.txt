@@ -1,0 +1,70 @@
+autonomy_state = {
+	id = byz_themata
+
+	is_puppet = yes
+	use_overlord_color = yes
+
+	min_freedom_level = 0.15
+
+	manpower_influence = 0.50
+
+	rule = {
+		can_not_declare_war = yes
+		can_decline_call_to_war = no
+		units_deployed_to_overlord = yes
+		can_be_spymaster = no
+		contributes_operatives = yes
+		can_create_collaboration_government = no
+	}
+
+	modifier = {
+		autonomy_manpower_share = 0.5
+		can_master_build_for_us = 1
+		extra_trade_to_overlord_factor = 0.5
+		overlord_trade_cost_factor = -0.5
+		cic_to_overlord_factor = 0.5
+		mic_to_overlord_factor = 0.5
+		license_subject_master_purchase_cost = -1.0
+	}
+
+	ai_subject_wants_higher = {
+		factor = 1.0
+	}
+
+	ai_overlord_wants_lower = {
+		factor = 0.0
+	}
+
+	ai_overlord_wants_garrison = {
+		always = yes
+	}
+
+	allowed = {
+		OR = {
+			tag = ARM
+			tag = GEO
+			tag = SER
+			tag = ROM
+			tag = AGY
+			tag = BSR
+			tag = TAR
+			tag = CYP
+		}
+		overlord = { tag = GRE }
+	}
+
+	can_take_level = {
+		custom_trigger_tooltip = {
+			tooltip = can_raise_autonomy_level
+			has_country_flag = no
+		}
+	}
+
+	can_lose_level = {
+		custom_trigger_tooltip = {
+			tooltip = puppet_can_be_annexed
+			always = yes
+		}
+	}
+}
+

@@ -1,0 +1,1382 @@
+﻿division_template = {
+	name = "Tágmata infántry" 				
+	division_names_group = GRE_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		#infantry = { x = 0 y = 3 }
+
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		#infantry = { x = 1 y = 3 }
+
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+
+		artillery_brigade = { x = 3 y = 0 }
+		
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }      
+		engineer = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+		#anti_tank = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "Tágmata Kataphraktoi"
+	division_names_group = GRE_ARM_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		#light_armor = { x = 0 y = 2 }
+
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+
+		mot_artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }      # Motorized recon inf bn
+		engineer = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+	}
+}
+	division_template = {
+		name = "Tágmata Varángōn Kataphraktoi"
+		priority = 2
+		division_names_group = GRE_VG_01
+		regiments = {
+			medium_armor = { x = 0 y = 0 }
+			#light_armor = { x = 0 y = 1 }
+			#light_armor = { x = 0 y = 2 }
+			#light_armor = { x = 0 y = 3 }
+
+			motorized = { x = 1 y = 0 }
+			motorized = { x = 1 y = 1 }
+			motorized = { x = 1 y = 2 }
+
+			motorized = { x = 2 y = 0 }
+			motorized = { x = 2 y = 1 }
+			motorized = { x = 2 y = 2 }
+
+			mot_artillery_brigade = { x = 3 y = 0 }
+			mot_artillery_brigade = { x = 3 y = 0 }
+		}
+		support = {
+			armored_car_recon = { x = 0 y = 0 }      # Motorized recon inf bn
+			engineer = { x = 0 y = 1 }
+			field_hospital = { x = 0 y = 2 }
+			logistics_company = { x = 0 y = 3 }
+		}
+		priority = 2
+		template_counter = 32
+	}
+	division_template = {
+		name = "Tágmata Alpikós" 				# Square Infantry Division
+		division_names_group = GRE_MNT_01
+		# Prior to 1940 mobilization = 1st, 2nd, 8th
+		regiments = {
+			mountaineers = { x = 0 y = 0 }
+			mountaineers = { x = 0 y = 1 }
+			mountaineers = { x = 0 y = 2 }
+			#mountaineers = { x = 0 y = 3 }
+
+			mountaineers = { x = 1 y = 0 }
+			mountaineers = { x = 1 y = 1 }
+			mountaineers = { x = 1 y = 2 }
+			#mountaineers = { x = 1 y = 3 }
+	
+			mountaineers = { x = 2 y = 0 }
+			mountaineers = { x = 2 y = 1 }
+			mountaineers = { x = 2 y = 2 }
+	
+			artillery_brigade = { x = 3 y = 0 }
+			#artillery_brigade = { x = 3 y = 1 }
+			#anti_tank_brigade = { x = 3 y = 2 }
+		}
+		support = {
+			recon = { x = 0 y = 0 }
+			engineer = { x = 0 y = 1 }
+			field_hospital = { x = 0 y = 2 }
+			logistics_company = { x = 0 y = 3 }
+		}
+	}
+	division_template = {
+		name = "Tágmata Naftikós Thalássia" 				# Square Infantry Division
+		division_names_group = GRE_MAR_01
+		# Prior to 1940 mobilization = 1st, 2nd, 8th
+		regiments = {
+			marine = { x = 0 y = 0 }
+			marine = { x = 0 y = 1 }
+			marine = { x = 0 y = 2 }
+			marine = { x = 1 y = 0 }
+			marine = { x = 1 y = 1 }
+			marine = { x = 1 y = 2 }
+			marine = { x = 2 y = 0 }
+			marine = { x = 2 y = 1 }
+			marine = { x = 2 y = 2 }
+		}
+		support = {
+			engineer = { x = 0 y = 0 }
+			artillery = { x = 0 y = 1 }
+			anti_air = { x = 0 y = 2 }
+			#anti_tank = { x = 0 y = 3 }
+		}
+		priority = 2
+	}
+	division_template = {
+		name = "Thémata infántry" 				
+		division_names_group = GRE_GAR_01
+		regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 0 y = 2 }
+	
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 1 y = 1 }
+			infantry = { x = 1 y = 2 }
+	
+			infantry = { x = 2 y = 0 }
+			infantry = { x = 2 y = 1 }
+			#artillery_brigade = { x = 2 y = 2 }
+		}
+		support = {
+			engineer = { x = 0 y = 0 }
+			artillery = { x = 0 y = 1 }
+		}
+		priority = 0
+		template_counter = 67
+	}
+	division_template = {
+		name = "Thémata Polikí"
+		division_names_group = GRE_CAV_01
+		regiments = {
+			armored_car = { x = 0 y = 0 }
+			cavalry = { x = 0 y = 1 }
+			cavalry = { x = 0 y = 2 }
+	
+			cavalry = { x = 1 y = 0 }
+			cavalry = { x = 1 y = 1 }
+			cavalry = { x = 1 y = 2 }
+		}
+		support = {
+			military_police = { x = 0 y = 0 }
+		}
+		priority = 0
+	}
+	division_template = {
+		name = "Áravas Auxilla"
+		foreign_template_tag="AGY"
+		division_names_group = GRE_GAR_01
+		regiments = {
+			camelry = { x = 0 y = 0 }
+			camelry = { x = 0 y = 1 }
+			camelry = { x = 0 y = 2 }
+	
+			camelry = { x = 1 y = 0 }
+			camelry = { x = 1 y = 1 }
+			camelry = { x = 1 y = 2 }
+	
+			camelry = { x = 2 y = 0 }
+			camelry = { x = 2 y = 1 }
+			camelry = { x = 2 y = 2 }
+	
+		}
+		support = {
+			recon = { x = 0 y = 0 }
+			engineer = { x = 0 y = 1 }
+			artillery = { x = 0 y = 2 }
+			logistics_company = { x = 0 y = 3 }
+		}
+		origin_type=subject
+		priority = 0
+	}
+
+units = {
+	######## Ellinikó Genikó Epiteleío ########
+	division = { # "V Merarchía Pezikoú"
+		name = "Tessarakontarioi"
+		location = 12058
+		division_template = "Tágmata Naftikós Thalássia" 
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		#force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+	division = { # "V Merarchía Pezikoú"
+		name = "Tágmata Naftikós Thalássia"
+		location = 12058
+		division_template = "Tágmata Naftikós Thalássia" 
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		#force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+	division = { # "VIII Merarchía Pezikoú"
+		name = "Tágmata Illyría Alpikós"
+		location = 3914
+		division_template = "Tágmata Alpikós" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+	division = { # "VIII Merarchía Pezikoú"
+		name = "Tágmata Illyría Alpikós"
+		location = 9805
+		division_template = "Tágmata Alpikós" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+	division = { # "VIII Merarchía Pezikoú"
+		name = "Tágmata Armenía Alpikós"
+		location = 9932
+		division_template = "Tágmata Alpikós" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+	division = { # "VIII Merarchía Pezikoú"
+		name = "Tágmata Armenía Alpikós"
+		location = 9932
+		division_template = "Tágmata Alpikós" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+	division = {
+		name = "Tágmata Kataphraktoi (Scholai)"
+		location = 11818
+		division_template = "Tágmata Kataphraktoi" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "GRE" } version_name = "Katapéra 30L" }
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+		
+
+	}
+	division = {
+		name = "Tágmata Kataphraktoi (Exkoubitoi)"
+		location = 863
+		division_template = "Tágmata Kataphraktoi" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "GRE" } version_name = "Katapéra 30L" }
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+		
+
+	}
+	division = {
+		name = "Tágmata Kataphraktoi (Arithmos)"
+		location = 3914
+		division_template = "Tágmata Kataphraktoi" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "GRE" } version_name = "Katapéra 30L" }
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+		
+
+	}
+	division = {
+		name = "Tágmata Kataphraktoi (Hikanatoi)"
+		location = 3893
+		division_template = "Tágmata Kataphraktoi" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "GRE" } version_name = "Katapéra 30L" }
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+		
+
+	}
+	division = {
+		name = "Tágmata Kataphraktoi (Optimatoi)"
+		location = 3893
+		division_template = "Tágmata Kataphraktoi" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "GRE" } version_name = "Katapéra 30L" }
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+		
+
+	}
+	division = {
+		name = "Tágmata Kataphraktoi (Hetaireia)"
+		location = 3893
+		division_template = "Tágmata Kataphraktoi" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "GRE" } }
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+
+	division = {
+		name = "Tagmata Varángōn (Makedónia)"
+		location = 11818
+		division_template = "Tágmata Varángōn Kataphraktoi" 
+		start_experience_factor = 1.0
+		force_equipment_variants = { light_tank_chassis_2 = { owner = "GRE" } version_name = "Katapéra 36L" }
+		force_equipment_variants = { medium_tank_chassis_1 = { owner = "GRE" } version_name = "Kataphraktoi 36M" }
+		#force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+
+	# A Sóma Stratoú
+	division = { # "II Merarchía Pezikoú"
+		name = "Tágmata Armenía Alpikós"
+		location = 9932
+		division_template = "Tágmata Alpikós" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+	division = { # "III Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 841
+		division_template = "Tágmata infántry" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+	division = { # "IV Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 3980
+		division_template = "Tágmata infántry" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+
+	# B Sóma Stratoú
+	division = { # "I Merarchía Pezikoú"
+		name = "Tágmata Armenía Alpikós"
+		location = 9932
+		division_template = "Tágmata Alpikós" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+	division = { # "IX Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 966
+		division_template = "Tágmata infántry" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+
+	# C Sóma Stratoú
+	division = { # "VI Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 3936
+		division_template = "Tágmata infántry" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+	division = { # "X Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+		location = 3844
+		division_template = "Tágmata infántry" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+	division = { # "XI Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 11
+		}
+		location = 11818
+		division_template = "Tágmata infántry" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+
+	# D Sóma Stratoú
+	division = { # "VII Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 11842
+		division_template = "Tágmata infántry" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+	division = { # "VII Merarchía Pezikoú"
+		name = "Anatoliká Themata"
+		location = 11747
+		division_template = "Thémata infántry" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+	}
+	division = { # "VII Merarchía Pezikoú"
+		name = "Anatoliká Themata"
+		location = 11747
+		division_template = "Thémata infántry" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+	}
+	division = { # "VII Merarchía Pezikoú"
+		name = "Anatoliká Themata"
+		location = 11747
+		division_template = "Thémata infántry" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+	}
+	division = { # "VII Merarchía Pezikoú"
+		name = "Anatoliká Themata"
+		location = 11747
+		division_template = "Thémata infántry" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+	}
+	division = { # "VII Merarchía Pezikoú"
+		name = "Anatoliká Themata"
+		location = 11747
+		division_template = "Thémata infántry" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+	}
+	division = { # "VII Merarchía Pezikoú"
+		name = "Anatoliká Themata"
+		location = 11747
+		division_template = "Thémata infántry" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+	}
+	division = { # "VII Merarchía Pezikoú"
+		name = "Anatoliká Themata"
+		location = 11747
+		division_template = "Thémata infántry" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+	}
+	division = { # "VII Merarchía Pezikoú"
+		name = "Anatoliká Themata"
+		location = 11747
+		division_template = "Thémata infántry" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+	}
+	division = { # "VII Merarchía Pezikoú"
+		name = "Anatoliká Themata"
+		location = 11747
+		division_template = "Thémata infántry" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+	}
+	division = { # "VII Merarchía Pezikoú"
+		name = "Anatoliká Themata"
+		location = 11747
+		division_template = "Thémata infántry" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+	}
+	division = { # "VII Merarchía Pezikoú"
+		name = "Pontikós Themata"
+		location = 9932
+		division_template = "Thémata infántry" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+	}
+	division = { # "VII Merarchía Pezikoú"
+		name = "Pontikós Themata"
+		location = 9932
+		division_template = "Thémata infántry" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+	}
+	division = { # "VII Merarchía Pezikoú"
+		name = "Pontikós Themata"
+		location = 9932
+		division_template = "Thémata infántry" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = { # "VII Merarchía Pezikoú"
+		name = "Kríti Themata"
+		location = 9940
+		division_template = "Thémata infántry" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = { # "VII Merarchía Pezikoú"
+		name = "Kýpros Themata"
+		location = 11984
+		division_template = "Thémata infántry" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = { # "VII Merarchía Pezikoú"
+		name = "Hellas Themata"
+		location = 4109
+		division_template = "Thémata infántry" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = { # "VII Merarchía Pezikoú"
+		name = "Hellas Themata"
+		location = 4109
+		division_template = "Thémata infántry" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = { # "VII Merarchía Pezikoú"
+		name = "Hellas Themata"
+		location = 4109
+		division_template = "Thémata infántry" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = { # "VII Merarchía Pezikoú"
+		name = "Hellas Themata"
+		location = 4109
+		division_template = "Thémata infántry" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+	}
+	division = { # "VII Merarchía Pezikoú"
+	name = "Anatoliká Themata"
+	location = 11747
+	division_template = "Thémata infántry" 
+	start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+}
+division = { # "VII Merarchía Pezikoú"
+	name = "Anatoliká Themata"
+	location = 11747
+	division_template = "Thémata infántry" 
+	start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+}
+division = { # "VII Merarchía Pezikoú"
+	name = "Anatoliká Themata"
+	location = 11747
+	division_template = "Thémata infántry" 
+	start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+}
+division = { # "VII Merarchía Pezikoú"
+	name = "Anatoliká Themata"
+	location = 11747
+	division_template = "Thémata infántry" 
+	start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+}
+division = { # "VII Merarchía Pezikoú"
+	name = "Anatoliká Themata"
+	location = 11747
+	division_template = "Thémata infántry" 
+	start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+}
+division = { # "VII Merarchía Pezikoú"
+	name = "Anatoliká Themata"
+	location = 11747
+	division_template = "Thémata infántry" 
+	start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+}
+division = { # "VII Merarchía Pezikoú"
+	name = "Anatoliká Themata"
+	location = 11747
+	division_template = "Thémata infántry" 
+	start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+}
+division = { # "VII Merarchía Pezikoú"
+	name = "Anatoliká Themata"
+	location = 11747
+	division_template = "Thémata infántry" 
+	start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+}
+division = { # "VII Merarchía Pezikoú"
+	name = "Anatoliká Themata"
+	location = 11747
+	division_template = "Thémata infántry" 
+	start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+}
+division = { # "VII Merarchía Pezikoú"
+	name = "Anatoliká Themata"
+	location = 11747
+	division_template = "Thémata infántry" 
+	start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+}
+division = { # "VII Merarchía Pezikoú"
+	name = "Pontikós Themata"
+	location = 9932
+	division_template = "Thémata infántry" 
+	start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+}
+division = { # "VII Merarchía Pezikoú"
+	name = "Pontikós Themata"
+	location = 9932
+	division_template = "Thémata infántry" 
+	start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+}
+division = { # "VII Merarchía Pezikoú"
+	name = "Pontikós Themata"
+	location = 9932
+	division_template = "Thémata infántry" 
+	start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+}
+division = { # "VII Merarchía Pezikoú"
+	name = "Kríti Themata"
+	location = 9940
+	division_template = "Thémata infántry" 
+	start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+}
+division = { # "VII Merarchía Pezikoú"
+	name = "Kýpros Themata"
+	location = 11984
+	division_template = "Thémata infántry" 
+	start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+}
+division = { # "VII Merarchía Pezikoú"
+	name = "Hellas Themata"
+	location = 4109
+	division_template = "Thémata infántry" 
+	start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+}
+division = { # "VII Merarchía Pezikoú"
+	name = "Hellas Themata"
+	location = 4109
+	division_template = "Thémata infántry" 
+	start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+}
+division = { # "VII Merarchía Pezikoú"
+	name = "Hellas Themata"
+	location = 4109
+	division_template = "Thémata infántry" 
+	start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+}
+division = { # "VII Merarchía Pezikoú"
+	name = "Hellas Themata"
+	location = 4109
+	division_template = "Thémata infántry" 
+	start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+}
+	# E Sóma Stratoú
+	division = { # "XII Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 12
+		}
+		location = 922
+		division_template = "Tágmata infántry" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 13
+		}
+		location = 11842
+		division_template = "Tágmata infántry" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 14
+		}
+		location = 3893
+		division_template = "Tágmata infántry" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 15
+		}
+		location = 849
+		division_template = "Tágmata infántry" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 16
+		}
+		location = 3936
+		division_template = "Tágmata infántry" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 17
+		}
+		location = 11818
+		division_template = "Tágmata infántry" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 18
+		}
+		location = 12029
+		division_template = "Tágmata infántry" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 19
+		}
+		location = 12029
+		division_template = "Tágmata infántry" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 20
+		}
+		location = 12029
+		division_template = "Tágmata infántry" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		force_equipment_variants = { armored_car_equipment_1 = { owner = "GRE" } }
+
+	}
+division = { # "XII Merarchía Pezikoú"
+	name = "Sýrios Auxilla"
+	location = 12029
+	division_template = "Áravas Auxilla" 
+	start_experience_factor = 0.6
+	start_equipment_factor = 0.8
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+}
+division = { # "XII Merarchía Pezikoú"
+	name = "Sýrios Auxilla"
+	location = 12029
+	division_template = "Áravas Auxilla" 
+	start_experience_factor = 0.6
+	start_equipment_factor = 0.8
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+}
+division = { # "XII Merarchía Pezikoú"
+	name = "Palaistínios Auxilla"
+	location = 12029
+	division_template = "Áravas Auxilla" 
+	start_experience_factor = 0.6
+	start_equipment_factor = 0.8
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+}
+division = { # "XII Merarchía Pezikoú"
+	name = "Palaistínios Auxilla"
+	location = 12029
+	division_template = "Áravas Auxilla" 
+	start_experience_factor = 0.6
+	start_equipment_factor = 0.8
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+}
+division = { # "XII Merarchía Pezikoú"
+	name = "Kourí Auxilla"
+	location = 12029
+	division_template = "Áravas Auxilla" 
+	start_experience_factor = 0.6
+	start_equipment_factor = 0.8
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+}
+division = { # "XII Merarchía Pezikoú"
+	name = "Kourí Auxilla"
+	location = 12029
+	division_template = "Áravas Auxilla" 
+	start_experience_factor = 0.6
+	start_equipment_factor = 0.8
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+}
+division = { # "XII Merarchía Pezikoú"
+	name = "Aigýptios Auxilla"
+	location = 12029
+	division_template = "Áravas Auxilla" 
+	start_experience_factor = 0.6
+	start_equipment_factor = 0.8
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+}
+division = { # "XII Merarchía Pezikoú"
+	name = "Aigýptios Auxilla"
+	location = 12029
+	division_template = "Áravas Auxilla" 
+	start_experience_factor = 0.6
+	start_equipment_factor = 0.8
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+}
+division = { # "XII Merarchía Pezikoú"
+	name = "Aigýptios Auxilla"
+	location = 12029
+	division_template = "Áravas Auxilla" 
+	start_experience_factor = 0.6
+	start_equipment_factor = 0.8
+	force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+
+}
+division = { # "XII Merarchía Pezikoú"
+	name = "Tagmata Varángōn (Konstantinoúpolis)"
+	location = 9833
+	division_template = "Tágmata Varángōn Kataphraktoi" 
+	force_equipment_variants = { light_tank_chassis_2 = { owner = "GRE" } version_name = "Katapéra 36L" }
+	force_equipment_variants = { medium_tank_chassis_1 = { owner = "GRE" } version_name = "Kataphraktoi 36M" }
+	start_experience_factor = 2
+}
+division = { # "XII Merarchía Pezikoú"
+	name = "Tagmata Varángōn (Thrakikós)"
+	location = 9833
+	division_template = "Tágmata Varángōn Kataphraktoi" 
+	force_equipment_variants = { light_tank_chassis_2 = { owner = "GRE" } version_name = "Katapéra 36L" }
+	force_equipment_variants = { medium_tank_chassis_1 = { owner = "GRE" } version_name = "Kataphraktoi 36M" }
+	start_experience_factor = 2
+}
+}
+
+air_wings = {
+	##### Elliniki Polemiki Aeroporia #####
+	989 = { 
+		# Machitís Moíras
+		fighter_equipment_1 = {
+			owner = "GRE" 
+			amount = 225
+			version_name = "Aetós II"
+			create_if_missing = yes
+		}
+		name = "Machitís Moíras"
+		start_experience_factor = 0.6
+		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_1).
+			modifier="fighter_genius"
+			name="Alexios"
+			surname="Doukas"
+			callsign="Phoenix"
+			portrait=4 # Pick random index here.
+		}
+		# Moíra vomvistón
+		tac_bomber_equipment_1 = {
+			version_name = "Pelargós II"
+			owner = "GRE" 
+			amount = 100
+			create_if_missing = yes
+		}
+		name = "Vomvardistikó Moíras"
+		start_experience_factor = 0.6
+		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_1).
+		modifier="support_good"
+		name="Justinios"
+		surname="Odysseas"
+		callsign="Zeus"
+		portrait=3 # Pick random index here.
+	}
+		tac_bomber_equipment_0 = {
+			version_name = "Vrychithmós"
+			owner = "GRE" 
+			amount = 100
+			version_name = "Vrychithmós"
+			create_if_missing = yes
+		}
+		start_experience_factor = 0.4
+		CAS_equipment_1 =  {
+			version_name = "Peristéri II"
+			owner = "GRE" 
+			amount = 100
+			create_if_missing = yes
+		}
+		name = "Postírixi Moíras"
+		start_experience_factor = 0.5
+		scout_plane_equipment_1 = {
+			owner = "GRE"
+			amount = 25
+		}
+		start_experience_factor = 0.3
+		name = "Anichneftís Moíras"
+	}
+}
+
+
+air_wings = {
+	##### Elliniki Polemiki Aeroporia #####
+	773 = { 
+		# Machitís Moíras
+		fighter_equipment_1 = {
+			owner = "GRE" 
+			amount = 225
+			version_name = "Aetós II"
+			create_if_missing = yes
+		}
+		start_experience_factor = 0.6
+		name = "Machitís Elláda"
+		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_1).
+		modifier="fighter_genius"
+		name="Aurelia"
+		surname="Elysian"
+		callsign="Polemistís"
+		is_female = yes
+		portrait=1 # Pick random index here.
+	}
+		# Moíra vomvistón
+		tac_bomber_equipment_1 = {
+			version_name = "Pelargós II"
+			owner = "GRE" 
+			amount = 100
+			create_if_missing = yes
+		}
+		start_experience_factor = 0.6
+		name = "Vomvardistikó Elláda"
+		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_1).
+		modifier="support_good"
+		name="Claudia"
+		surname="Hyperios"
+		callsign="Aries"
+		is_female = yes
+		portrait=2 # Pick random index here.
+	}
+		tac_bomber_equipment_0 = {
+			version_name = "Vrychithmós"
+			owner = "GRE" 
+			amount = 100
+			create_if_missing = yes
+		}
+		start_experience_factor = 0.4
+		CAS_equipment_1 =  {
+			version_name = "Peristéri II"
+			owner = "GRE" 
+			amount = 100
+			create_if_missing = yes
+		}
+		start_experience_factor = 0.5
+		name = "Postírixi Elláda"
+		scout_plane_equipment_1 = {
+			owner = "GRE"
+			amount = 25
+		}
+		start_experience_factor = 0.3
+		name = "Anichneftís Elláda"
+	}
+}
+
+air_wings = {
+	##### Elliniki Polemiki Aeroporia #####
+	47 = { 
+		nav_bomber_equipment_1 =  {	
+			owner = "GRE" 
+			amount = 125
+			version_name = "Erodiós II"
+			create_if_missing = yes
+		}
+		start_experience_factor = 0.6
+		name = "Naftikós Torpílis Vomvardistís"
+		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_1).
+		modifier="support_good"
+		name="Leonidas"
+		surname="Metaxas"
+		callsign="Neptune"
+		portrait=5 # Pick random index here.
+	}
+	transport_plane_equipment_1 = {
+		owner = "GRE"
+		creator = "GRE" 
+		amount = 50
+	}
+	start_experience_factor = 0.3
+	name = "Enaéria Metaforá"
+	scout_plane_equipment_1 = {
+		owner = "GRE"
+		amount = 25
+	}
+	start_experience_factor = 0.3
+	name = "Anichneftís Aigaío"
+	}
+}
+
+air_wings = {
+	##### Elliniki Polemiki Aeroporia #####
+	49 = { 
+		# Machitís Moíras
+		fighter_equipment_0 = {
+			version_name = "Koráki"
+			owner = "GRE" 
+			amount = 500
+			create_if_missing = yes
+		}
+		start_experience_factor = 0.2
+		name = "Machitís Apothematikó"
+		# Moíra vomvistón
+		tac_bomber_equipment_0 = {
+			version_name = "Vrychithmós"
+			owner = "GRE" 
+			amount = 300
+			create_if_missing = yes
+		}
+		start_experience_factor = 0.2
+		name = "Vomvardistikó Apothematikó"
+	}
+}
+
+air_wings = {
+	##### Elliniki Polemiki Aeroporia #####
+	182 = { 
+		nav_bomber_equipment_1 =  {	
+			owner = "GRE" 
+			amount = 125
+			version_name = "Erodiós II"
+			create_if_missing = yes
+		}
+		start_experience_factor = 0.6
+		name = "Naftikós Torpílis Vomvardistís"
+		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_1).
+		modifier="support_good"
+		name="Claudius"
+		surname="Dukas"
+		callsign="Poseidon"
+		portrait=1 # Pick random index here.
+	}
+	cv_fighter_equipment_0 = {
+		owner = "GRE"
+		creator = "GRE" 
+		amount = 50
+	}
+	start_experience_factor = 0.3
+	name = "Machitís Naftikós Foréas"
+	cv_nav_bomber_equipment_1 = {
+		owner = "GRE"
+		creator = "GRE" 
+		amount = 50
+	}
+	start_experience_factor = 0.3
+	name = "Naftikós Torpílis Foréas"
+	scout_plane_equipment_1 = {
+		owner = "GRE"
+		amount = 25
+	}
+	start_experience_factor = 0.3
+	name = "Anichneftís Kríti"
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "GRE"
+		}
+		requested_factories = 8
+		progress = 0.22
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+		}
+		requested_factories = 4
+		progress = 0.83
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "GRE"
+		}
+		requested_factories = 4
+		progress = 0.56
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_2
+			creator = "GRE"
+			version_name = "Kataphraktoi III"
+		}
+		requested_factories = 4
+		progress = 0.56
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = armored_car_equipment_1
+			creator = "GRE"
+			version_name = "Katapéra II"
+		}
+		requested_factories = 2
+		progress = 0.56
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "GRE"
+		}
+		requested_factories = 2
+		progress = 0.56
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = anti_tank_equipment_1
+			creator = "GRE"
+		}
+		requested_factories = 1
+		progress = 0.56
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = anti_air_equipment_1
+			creator = "GRE"
+		}
+		requested_factories = 1
+		progress = 0.56
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_2
+			creator = "GRE"
+			version_name = "Foínix III"
+		}
+		requested_factories = 2
+		progress = 0.56
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_1
+			creator = "GRE"
+			version_name = "Pelargós II"
+		}
+		requested_factories = 1
+		progress = 0.56
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_1
+			creator = "GRE"
+			version_name = "Peristéri II"
+		}
+		requested_factories = 1
+		progress = 0.56
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = nav_bomber_equipment_1
+			creator = "GRE"
+			version_name = "Erodiós II"
+		}
+		requested_factories = 1
+		progress = 0.56
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "GRE"
+			version_name = "Kríti Class"
+		}
+		requested_factories = 5
+		progress = 0.2
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "GRE"
+			version_name = "Rhódos Class"
+		}
+		requested_factories = 5
+		progress = 0.2
+		amount = 5
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "GRE"
+			version_name = "Hydra Class"
+		}
+		requested_factories = 5
+		progress = 0.2
+		amount = 5
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "GRE"
+			version_name = "Katsonis Class"
+		}
+		requested_factories = 5
+		progress = 0.2
+		amount = 5
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "GRE"
+			version_name = "Ioustinianós Class"
+		}
+		requested_factories = 2
+		progress = 0.2
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_carrier_conversion_ca
+			creator = "GRE"
+			version_name = "Theodóra Class"
+		}
+		requested_factories = 2
+		progress = 0.8
+		amount = 1
+	}
+}
+

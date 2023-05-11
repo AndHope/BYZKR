@@ -1,0 +1,40 @@
+state = {
+	id = 48
+	name = "STATE_48"
+	manpower = 2247300
+	
+	resources = {
+		aluminium = 22
+		steel = 18
+	}
+
+
+	state_category = six
+
+	history = {
+		owner = BUL
+		add_claim_by = GRE
+		add_core_of = BUL
+		victory_points = {
+			949 25
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 4
+			anti_air_building = 2
+			radar_station = 1
+			fuel_silo = 1
+
+			949 = {
+				bunker = 5
+			}
+
+		}
+	}
+
+	provinces = {
+		935 949 3908 3971 13635
+	}
+}

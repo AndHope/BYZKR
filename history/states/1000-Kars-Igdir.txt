@@ -1,0 +1,54 @@
+
+state={
+	id=1000
+	name="STATE_1000"
+
+	history={
+		owner = ARM
+		victory_points = {
+			10472 2 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			10472 = {
+				bunker = 4
+
+			}
+			12376 = {
+				bunker = 3
+
+			}
+			13672 = {
+				bunker = 3
+
+			}
+			6991 = {
+				bunker = 3
+
+			}
+			9858 = {
+				bunker = 3
+
+			}
+			652 = {
+				bunker = 3
+
+			}
+			6991 = {
+				bunker = 3
+
+			}
+
+		}
+		add_core_of = ARM
+
+	}
+
+	provinces={
+		652 9858 11853 12376 13672 
+	}
+	manpower=497595
+	buildings_max_level_factor=1.000
+	state_category=two
+}

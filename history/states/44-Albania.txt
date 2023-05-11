@@ -1,0 +1,45 @@
+state = {
+	id = 44
+	name = "STATE_44"
+	manpower = 1250035
+	resources = {
+		aluminium = 12
+		chromium = 33
+		oil = 6
+	}
+
+	state_category = four
+
+	history = {
+		owner = ALB
+		add_claim_by = GRE
+		victory_points = {
+			9914 5 #Tirana
+		}
+		victory_points = {
+			9780 4 #Scutari/Shkodër
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 3
+			air_base = 3
+			9914 = {
+				naval_base = 4
+				coastal_bunker = 2
+				bunker = 3
+			}
+			11767 = {
+				bunker = 2
+			}
+			9780 = {
+				bunker = 2
+			}
+		}
+		add_core_of = ALB
+	}
+
+	provinces = {
+		3884 3896 9780 9875 9914 10245 11762 11767
+	}
+}

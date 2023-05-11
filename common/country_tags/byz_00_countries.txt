@@ -1,0 +1,6 @@
+### Western Europe ###
+#GRE = "countries/WestEur.txt"
+TAR = "countries/EastEur.txt"
+AGY = "countries/MidEast.txt"
+BSR = "countries/MidEast.txt"
+

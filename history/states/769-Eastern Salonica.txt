@@ -1,0 +1,27 @@
+state = {
+	id = 769
+	name = "STATE_769"
+	manpower = 482500
+
+	state_category = two
+
+	history = {
+		owner = BUL
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			anti_air_building = 1
+		}
+		add_core_of = GRE
+		start_resistance = yes
+		set_resistance = 45
+		set_compliance = 25
+		victory_points = {
+			9930 1
+		}
+	}
+
+	provinces = {
+		9930 9791 6990
+	}
+}

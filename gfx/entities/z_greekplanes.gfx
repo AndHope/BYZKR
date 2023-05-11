@@ -1,0 +1,26 @@
+objectTypes = {	
+
+	pdxmesh = {
+		name = "BYZ_plane_light_mesh"
+		file = "gfx/models/units/planes/BYZ_plane_light.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+	
+	pdxmesh = {
+		name = "BYZ_plane_medium_mesh"
+		file = "gfx/models/units/planes/BYZ_plane_medium.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	}
+	
+	pdxmesh = {
+		name = "BYZ_plane_heavy_mesh"
+		file = "gfx/models/units/planes/BYZ_plane_heavy.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	}
+	pdxmesh = {
+		name = "GRE_scout_plane_mesh"
+		file = "gfx/models/planes/ITA_plane_scout/ITA_scout_plane.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+}
+

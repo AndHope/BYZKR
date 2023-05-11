@@ -1,0 +1,24 @@
+ARM = {
+	color = rgb { 163 15 79 }
+	color_ui = rgb { 163 15 79 }
+}
+GEO = {
+	color = rgb { 163 15 79 }
+	color_ui = rgb { 163 15 79 }
+}
+GRE = {
+	color = rgb { 163 15 79 }
+	color_ui = rgb { 163 15 79 }
+}
+AGY = {
+	color = rgb { 163 15 79 }
+	color_ui = rgb { 163 15 79 }
+}
+TAR = {
+	color = rgb { 163 15 79 }
+	color_ui = rgb { 163 15 79 }
+}
+BSR = {
+	color = rgb { 163 15 79 }
+	color_ui = rgb { 163 15 79 }
+}

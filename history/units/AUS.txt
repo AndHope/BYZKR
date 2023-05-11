@@ -1,0 +1,1232 @@
+﻿############
+#Templates
+############
+### Infantry Division
+division_template = {
+	name = "Infanteriedivision"
+	division_names_group = AUS_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		#artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+	}
+}
+### Territorial Army Infantry Division
+division_template = {
+	name = "Schützendivision"
+	division_names_group = AUS_INF_02
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+### Landsturm
+division_template = {
+	name = "Landsturminfanteriedivision"
+	division_names_group = AUS_MIL_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	template_counter = 68
+	priority = 0
+}
+### Mountaineers
+division_template = {
+	name = "Alpenjägerdivision"
+	division_names_group = AUS_MTN_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		#artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+	}
+	priority = 2
+}
+### Cavalry
+division_template = {
+	name = "Kavalleriedivision"
+	division_names_group = AUS_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		light_armor = { x = 2 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Kraftfahrjägerdivision"
+	division_names_group = AUS_MOT_01
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "Panzerdivision"
+	division_names_group = AUS_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Infanterie-Division mit Panzerunterstützung"
+	division_names_group = AUS_INF_01
+
+	regiments = {
+		heavy_armor = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		light_tank_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+	}
+}
+
+########
+# Land Units
+########
+
+units = {
+
+### Alpenjäger
+### Tyrol
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6631
+		division_template = "Alpenjägerdivision"
+		start_experience_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6631
+		division_template = "Alpenjägerdivision"
+		start_experience_factor = 0.8
+	}
+### Cavalry
+### Wien
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11666
+		division_template = "Panzerdivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+		force_equipment_variants = { gw_armored_car_equipment = { owner = "GER" } }
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11666
+		division_template = "Panzerdivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+		force_equipment_variants = { gw_armored_car_equipment = { owner = "GER" } }
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11666
+		division_template = "Panzerdivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+		force_equipment_variants = { gw_armored_car_equipment = { owner = "GER" } }
+	}
+### K.u.K. Infantry
+### Wien
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11666
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Budapest
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9660
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Klausenburg/Koloszvár
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 6711
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Prag/Praha
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11542
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Innsbruck
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 673
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.3
+	}
+### Lemberg/Lwów/Lwiw
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 11479
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Sarajevo
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 11899
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Milan
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 3780
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Landwehr
+### Wien
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11666
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11666
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Salzburg
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 688
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Innsbruck
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 673
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Graz
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13575
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Triest
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 6626
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Linz
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 9665
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Laibach
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 9627
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6631
+		division_template = "Alpenjägerdivision"
+		start_experience_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6631
+		division_template = "Alpenjägerdivision"
+		start_experience_factor = 0.8
+	}
+### Cavalry
+### Wien
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11666
+		division_template = "Kavalleriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+		force_equipment_variants = { gw_armored_car_equipment = { owner = "GER" } }
+	}
+### K.u.K. Infantry
+### Wien
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11666
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Budapest
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9660
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Klausenburg/Koloszvár
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 6711
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Prag/Praha
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11542
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Innsbruck
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 673
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.3
+	}
+### Lemberg/Lwów/Lwiw
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 11479
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Sarajevo
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 11899
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Milan
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 3780
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Landwehr
+### Wien
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11666
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11666
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Salzburg
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 688
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Innsbruck
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 673
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Graz
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13575
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Triest
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 6626
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Linz
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 9665
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Laibach
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 9627
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6631
+		division_template = "Alpenjägerdivision"
+		start_experience_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6631
+		division_template = "Alpenjägerdivision"
+		start_experience_factor = 0.8
+	}
+### Cavalry
+### Wien
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11666
+		division_template = "Kavalleriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+		force_equipment_variants = { gw_armored_car_equipment = { owner = "GER" } }
+	}
+### K.u.K. Infantry
+### Wien
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11666
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Budapest
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9660
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Klausenburg/Koloszvár
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 6711
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Prag/Praha
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11542
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Innsbruck
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 673
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.3
+	}
+### Lemberg/Lwów/Lwiw
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 11479
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Sarajevo
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 11899
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Milan
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 3780
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Landwehr
+### Wien
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11666
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11666
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Salzburg
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 688
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Innsbruck
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 673
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Graz
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13575
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Triest
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 6626
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Linz
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 9665
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Laibach
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 9627
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6631
+		division_template = "Alpenjägerdivision"
+		start_experience_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6631
+		division_template = "Alpenjägerdivision"
+		start_experience_factor = 0.8
+	}
+### Cavalry
+### Wien
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11666
+		division_template = "Kavalleriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+		force_equipment_variants = { gw_armored_car_equipment = { owner = "GER" } }
+	}
+	division = {
+		location = 11666
+		division_template = "Infanterie-Division mit Panzerunterstützung"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 11666
+		division_template = "Infanterie-Division mit Panzerunterstützung"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+### K.u.K. Infantry
+### Wien
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11666
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Budapest
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9660
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Klausenburg/Koloszvár
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 6711
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Prag/Praha
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11542
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Innsbruck
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 673
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.3
+	}
+### Lemberg/Lwów/Lwiw
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 11479
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Sarajevo
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 11899
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Milan
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 3780
+		division_template = "Infanteriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+### Landwehr
+### Wien
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11666
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11666
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Salzburg
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 688
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Innsbruck
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 673
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Graz
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13575
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Triest
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 6626
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Linz
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 9665
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+### Laibach
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 9627
+		division_template = "Schützendivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+########
+# Naval Units
+########
+}
+
+########
+# Air Units
+########
+air_wings = {
+	4 = {
+		fighter_equipment_0 = {
+			owner = "AUS"
+			amount = 150
+		}
+		tac_bomber_equipment_0 = {
+			owner = "AUS"
+			creator = "GER" 
+			amount = 250
+		}
+		fighter_equipment_0 = {
+			owner = "AUS"
+			amount = 150
+		}
+		fighter_equipment_1 = {
+			owner = "AUS"
+			amount = 100
+			create_if_missing = yes
+		}
+		CAS_equipment_1 =  {
+			owner = "AUS" 
+			amount = 100
+			create_if_missing = yes
+		}
+		tac_bomber_equipment_0 = {
+			owner = "AUS"
+			creator = "GER" 
+			amount = 250
+		}
+	}
+	736 = {
+		nav_bomber_equipment_1 = {
+			owner = "AUS"
+			amount = 50
+		}
+		nav_bomber_equipment_1 = {
+			owner = "AUS"
+			amount = 50
+		}
+	}
+}
+
+instant_effect = {
+
+	add_manpower = 775000
+	add_political_power = 1600
+
+	set_technology = {
+		### General ###
+		tech_support = 1
+		tech_recon = 1
+		tech_engineers = 1
+		gw_artillery = 1
+		gwtank = 1
+		basic_heavy_tank = 1
+		scout_plane1 = 1
+		armored_car1 = 1
+		tech_military_police = 1
+		early_fighter = 1
+		early_bomber = 1
+		tactical_bomber1 = 1
+		strategic_bomber1 = 1
+		CAS1 = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		interwar_antiair = 1
+		interwar_antitank = 1
+		tech_field_hospital = 1
+		tech_maintenance_company = 1
+		tech_logistics_company = 1
+
+		trench_warfare = 1
+		grand_battle_plan = 1
+		prepared_defense = 1
+		
+		#air
+		formation_flying = 1		
+	}
+
+	add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 25000 producer = GER }
+	add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 producer = GER }
+	add_equipment_to_stockpile = { type = support_equipment_1 amount = 200 producer = GER }
+	add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 200 producer = GER }
+	add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 200 producer = GER }
+	add_equipment_to_stockpile = { type = tac_bomber_equipment_0 amount = 200 producer = GER }
+	add_equipment_to_stockpile = { type = scout_plane_equipment_1 amount = 100 producer = GER }
+	add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 100 producer = GER }
+	add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 100 producer = GER }
+	add_equipment_to_stockpile = { type = gw_armored_car_equipment amount = 400 producer = GER }
+
+	if = {
+		limit = { has_dlc = "La Resistance" }
+		create_intelligence_agency = yes
+		upgrade_intelligence_agency = upgrade_economy_civilian
+		upgrade_intelligence_agency = upgrade_army_department
+	
+		upgrade_intelligence_agency = upgrade_passive_defense
+		upgrade_intelligence_agency = upgrade_anti_partisan
+	
+		upgrade_intelligence_agency = upgrade_form_department
+		upgrade_intelligence_agency = upgrade_crypto_strength
+		upgrade_intelligence_agency = upgrade_crypto_strength_2
+	}
+
+	set_politics = {
+		ruling_party = authoritarian_democrat
+		elections_allowed = no
+		}
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+		}
+		requested_factories = 4
+		progress = 0.82
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+		}
+		requested_factories = 2
+		progress = 0.83
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.44
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_0
+		}
+		requested_factories = 1
+		progress = 0.29
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.59
+		efficiency = 100
+	}
+	if = {
+		limit = {
+			has_dlc = "La Resistance"
+		}
+		add_equipment_production = {
+			equipment = {
+				type = gw_armored_car_equipment
+				creator = GER
+			}
+			requested_factories = 1
+			progress = 0.59
+			efficiency = 100
+		}
+	}
+	add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_1
+			creator = GER
+		}
+		requested_factories = 1
+		progress = 0.88
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = nav_bomber_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.88
+		efficiency = 100
+	}
+}

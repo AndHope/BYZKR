@@ -1,0 +1,38 @@
+state={
+	id=553
+	name="STATE_553"
+
+	resources = {
+		aluminium = 6
+		steel = 2
+	}
+
+	history={
+		owner = EGY
+		add_core_of = SYR
+		add_core_of = LEB
+		victory_points = {
+			792 3
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			air_base = 2
+			radar_station = 1
+			fuel_silo = 1
+			792 = {
+				naval_base = 5
+				coastal_bunker = 2
+				bunker = 2
+			}
+
+		}
+
+	}
+
+	provinces={
+		792
+	}
+	manpower=1136132
+	state_category=four
+}

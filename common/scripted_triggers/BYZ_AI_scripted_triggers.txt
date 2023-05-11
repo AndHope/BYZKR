@@ -1,0 +1,229 @@
+# AI triggers
+# By Rylock and Alpinia
+
+### To have tags send volunteers whenever a war starts, add a new rule below
+### ROOT is the tag sending the volunteers, FROM is the tag that receives them
+### If the conditions are fulfilled, ROOT will automatically send volunteers to FROM whenever the latter is at war
+### When adding new rules, please follow the order of triggers - first global (when the rule should apply), then FROM triggers (who should receive the volunteers), then ROOT triggers (who should send them)
+
+
+fourth_balkan_war_volunteers = {
+	SER = {
+		has_war_with = BUL
+		#is_faction_leader = yes
+		#has_country_flag = SER_founded_belgradepact
+	}
+	OR = {
+		AND = {
+			FROM = { tag = BUL }
+			AND = {
+				OR = {
+					tag = GER
+					tag = AUS
+					tag = SIC
+					#tag = ALB
+					tag = PER
+				}
+				#has_country_flag = SER_supported_bulgaria
+			}
+		}
+		AND = {
+			FROM = { tag = SER }
+			AND = {
+				OR = {
+					tag = RUS
+					tag = ROM
+				}
+			}
+		}
+	}
+}
+
+egyptian_war_volunteers = {
+	NFA = {
+		has_war_with = EGY
+		#is_faction_leader = yes
+		#has_country_flag = SER_founded_belgradepact
+	}
+	OR = {
+		AND = {
+			FROM = { tag = EGY }
+			AND = {
+				OR = {
+					tag = GER
+					tag = AUS
+					tag = PER
+				}
+				#has_country_flag = SER_supported_bulgaria
+			}
+		}
+		AND = {
+			FROM = { tag = SAU }
+			AND = {
+				OR = {
+					tag = GER
+					tag = AUS
+					tag = PER
+				}
+				#has_country_flag = SER_supported_bulgaria
+			}
+		}
+		AND = {
+			FROM = { tag = NFA }
+			AND = {
+				OR = {
+					tag = GRE
+					tag = CAN
+				}
+			}
+		}
+	}
+}
+persian_war_volunteers = {
+	GRE = {
+		has_war_with = PER
+		#is_faction_leader = yes
+		#has_country_flag = SER_founded_belgradepact
+	}
+	OR = {
+		AND = {
+			FROM = { tag = PER }
+			AND = {
+				OR = {
+					tag = GER
+					tag = AUS
+					tag = EGY
+				}
+				#has_country_flag = SER_supported_bulgaria
+			}
+		}
+		AND = {
+			FROM = { tag = GRE }
+			AND = {
+				OR = {
+					tag = NFA
+					tag = CAN
+					tag = RUS
+				}
+			}
+		}
+	}
+}
+
+byzantine_war_volunteers = {
+	GRE = {
+		has_war_with = BUL
+	}
+	OR = {
+		AND = {
+			FROM = { tag = BUL }
+			AND = {
+				OR = {
+					tag = GER
+					tag = AUS
+					tag = SIC
+					tag = ALB
+					tag = PER
+				}
+				#has_country_flag = SER_supported_bulgaria
+			}
+		}
+		AND = {
+			FROM = { tag = GRE }
+			AND = {
+				OR = {
+					tag = NFA
+					tag = CAN
+				}
+			}
+		}
+	}
+}
+ROM_war_volunteers = {
+	ROM = {
+		has_war_with = BUL
+	}
+	OR = {
+		AND = {
+			FROM = { tag = BUL }
+			AND = {
+				OR = {
+					tag = GER
+					tag = AUS
+					tag = SIC
+					tag = ALB
+					tag = PER
+				}
+				#has_country_flag = SER_supported_bulgaria
+			}
+		}
+		AND = {
+			FROM = { tag = ROM }
+			AND = {
+				OR = {
+					tag = RUS
+					tag = SER
+				}
+			}
+		}
+	}
+}
+ALB_balkan_war_volunteers = {
+	ALB = {
+		has_war_with = GRE
+		#is_faction_leader = yes
+		#has_country_flag = SER_founded_belgradepact
+	}
+	OR = {
+		AND = {
+			FROM = { tag = ALB }
+			AND = {
+				OR = {
+					tag = GER
+					tag = AUS
+					tag = SIC
+				}
+				#has_country_flag = SER_supported_bulgaria
+			}
+		}
+		AND = {
+			FROM = { tag = GRE }
+			AND = {
+				OR = {
+					tag = RUS
+					tag = NFA
+					tag = CAN
+				}
+			}
+		}
+	}
+}
+bulgarian_war_volunteers = {
+	BUL = {
+		has_war_with = GRE
+	}
+	OR = {
+		AND = {
+			FROM = { tag = BUL }
+			AND = {
+				OR = {
+					tag = GER
+					tag = AUS
+					tag = SIC
+					tag = EGY
+					tag = PER
+				}
+				#has_country_flag = SER_supported_bulgaria
+			}
+		}
+		AND = {
+			FROM = { tag = GRE }
+			AND = {
+				OR = {
+					tag = NFA
+					tag = CAN
+				}
+			}
+		}
+	}
+}

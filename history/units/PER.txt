@@ -1,0 +1,1780 @@
+﻿division_template = {
+	name = "Dastebandi Savareh"
+	is_locked = yes
+	division_names_group = PER_CAV_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+		cavalry = { x = 2 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Dastebandi Sarbaze Piyade"
+	division_names_group = PER_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Dastebandi Sarbaze Piyade II"
+	is_locked = yes
+	division_names_group = PER_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Gendarmerie"
+	is_locked = yes
+	division_names_group = PER_MTN_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Catapract"
+	division_names_group = PER_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Thémata Polikí"
+	division_names_group = GRE_CAV_01
+	regiments = {
+		armored_car = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+
+units = {
+
+
+	division = {
+		#name = "1. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1896
+		division_template = "Catapract"
+		start_experience_factor = 1.0
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { gw_armored_car_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "2. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1896
+		division_template = "Catapract"
+		start_experience_factor = 1.0
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { gw_armored_car_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "1. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1896
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "2. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1896
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "2. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 8009
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "4. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 7982
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "5. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7982
+		division_template = "Gendarmerie"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "6. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "6. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "2. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1896
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "2. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 8009
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "3. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 12756
+		division_template = "Gendarmerie"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		name = "1. Dastebandi Savareh"
+		location = 12756
+		division_template = "Dastebandi Savareh"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		name = "Persian Cossack Battalion 1&2"
+		location = 10837
+		division_template = "Dastebandi Savareh"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 8117
+		division_template = "Dastebandi Savareh"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "4. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 7982
+division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "5. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7982
+		division_template = "Gendarmerie"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "6. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "6. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "7. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Gendarmerie"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+
+	division = {
+		#name = "1. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1896
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "2. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1896
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "2. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 8009
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "3. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 12756
+		division_template = "Gendarmerie"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		name = "1. Dastebandi Savareh"
+		location = 12756
+		division_template = "Dastebandi Savareh"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		name = "Persian Cossack Battalion 1&2"
+		location = 10837
+		division_template = "Dastebandi Savareh"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 8117
+		division_template = "Dastebandi Savareh"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "4. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 7982
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "5. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7982
+		division_template = "Gendarmerie"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "6. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "6. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "7. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Gendarmerie"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "1. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1896
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "2. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1896
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "2. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 8009
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "3. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 12756
+		division_template = "Gendarmerie"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		name = "1. Dastebandi Savareh"
+		location = 12756
+		division_template = "Dastebandi Savareh"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		name = "Persian Cossack Battalion 1&2"
+		location = 10837
+		division_template = "Dastebandi Savareh"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 8117
+		division_template = "Dastebandi Savareh"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "4. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 7982
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "5. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7982
+		division_template = "Gendarmerie"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "6. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "6. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "7. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Gendarmerie"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "1. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1896
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "2. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1896
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "2. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 8009
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "3. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 12756
+		division_template = "Gendarmerie"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		name = "1. Dastebandi Savareh"
+		location = 12756
+		division_template = "Dastebandi Savareh"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		name = "Persian Cossack Battalion 1&2"
+		location = 10837
+		division_template = "Dastebandi Savareh"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 8117
+		division_template = "Dastebandi Savareh"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "4. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 7982
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "5. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7982
+		division_template = "Gendarmerie"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "6. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "6. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "7. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Gendarmerie"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	
+	division = {
+		#name = "1. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1896
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "2. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1896
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "2. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 8009
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "3. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 12756
+		division_template = "Gendarmerie"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		name = "1. Dastebandi Savareh"
+		location = 12756
+		division_template = "Dastebandi Savareh"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		name = "Persian Cossack Battalion 1&2"
+		location = 10837
+		division_template = "Dastebandi Savareh"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 8117
+		division_template = "Dastebandi Savareh"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "4. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 7982
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "5. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7982
+		division_template = "Gendarmerie"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "6. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "6. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "7. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Gendarmerie"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "1. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1896
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "2. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1896
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "2. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 8009
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "3. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 12756
+		division_template = "Gendarmerie"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		name = "1. Dastebandi Savareh"
+		location = 12756
+		division_template = "Dastebandi Savareh"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		name = "Persian Cossack Battalion 1&2"
+		location = 10837
+		division_template = "Dastebandi Savareh"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 8117
+		division_template = "Dastebandi Savareh"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "4. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 7982
+		division_template = "Dastebandi Sarbaze Piyade"
+		start_experience_factor = 0.4
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "PER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "5. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7982
+		division_template = "Gendarmerie"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "6. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Dastebandi Sarbaze Piyade"
+		start_experience_factor = 0.4
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "PER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "6. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Dastebandi Sarbaze Piyade"
+		start_experience_factor = 0.4
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "PER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "7. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Gendarmerie"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "1. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1896
+		division_template = "Dastebandi Sarbaze Piyade"
+		start_experience_factor = 0.4
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "PER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "2. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1896
+		division_template = "Dastebandi Sarbaze Piyade"
+		start_experience_factor = 0.4
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "PER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "2. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 8009
+		division_template = "Dastebandi Sarbaze Piyade"
+		start_experience_factor = 0.4
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "PER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "3. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 12756
+		division_template = "Gendarmerie"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		name = "1. Dastebandi Savareh"
+		location = 12756
+		division_template = "Dastebandi Savareh"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		name = "Persian Cossack Battalion 1&2"
+		location = 10837
+		division_template = "Dastebandi Savareh"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 8117
+		division_template = "Dastebandi Savareh"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 1.0
+		force_equipment_variants = { gw_tank_equipment = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "4. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 7982
+		division_template = "Dastebandi Sarbaze Piyade"
+		start_experience_factor = 0.4
+		#start_equipment_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "PER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "5. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7982
+		division_template = "Gendarmerie"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "6. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "6. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Dastebandi Sarbaze Piyade II"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+	division = {
+		#name = "7. Dastebandi Sarbaze Piyade II"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13082
+		division_template = "Gendarmerie"
+		start_experience_factor = 1.0
+		#start_equipment_factor = 0.8
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+	}
+}
+
+air_wings = {
+	266 = {
+		fighter_equipment_0 = {
+			owner = "PER"
+			creator = "AUS" 
+			amount = 75
+		}
+		tac_bomber_equipment_0 = {
+			owner = "PER"
+			creator = "GER" 
+			amount = 50
+		}
+		fighter_equipment_0 = {
+			owner = "PER"
+			creator = "GER" 
+			amount = 75
+		}
+		tac_bomber_equipment_0 = {
+			owner = "PER"
+			creator = "GER" 
+			amount = 50
+		}
+		fighter_equipment_0 = {
+			owner = "PER"
+			creator = "GER" 
+			amount = 75
+		}
+		tac_bomber_equipment_0 = {
+			owner = "PER"
+			creator = "GER" 
+			amount = 50
+		}
+		fighter_equipment_0 = {
+			owner = "PER"
+			creator = "GER" 
+			amount = 65
+		}
+		tac_bomber_equipment_0 = {
+			owner = "PER"
+			creator = "GER" 
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "PER"
+			creator = "GER" 
+			amount = 50
+		}
+	}
+}
+
+instant_effect = {
+
+	add_manpower = 1555000
+	add_political_power = 2000
+	### Offsite Factories ###
+	add_offsite_building = {
+		type = arms_factory
+		level = 25
+	}
+	add_offsite_building = {
+		type = industrial_complex
+		level = 5
+	}
+	add_offsite_building = {
+		type = dockyard
+		level = 5
+	}
+	
+	set_politics = {
+		ruling_party = authoritarian_democrat
+		elections_allowed = no
+		}
+
+	set_popularities = {
+		totalist = 0
+		radical_socialist = 2
+		syndicalist = 2
+		social_democrat = 15
+		social_liberal = 2
+		market_liberal = 2
+		social_conservative = 25
+		authoritarian_democrat = 30
+		paternal_autocrat = 20
+		national_populist = 2
+	}
+
+	add_war_support = 0.50
+	add_stability = 0.15
+
+	set_technology = {
+		### General ###
+		tech_support = 1
+		tech_recon = 1
+		tech_engineers = 1
+		gw_artillery = 1
+		gwtank = 1
+		scout_plane1 = 1
+		armored_car1 = 1
+		tech_military_police = 1
+
+		mobile_warfare = 1
+		#trench_warfare = 1
+		mass_assault = 1
+		#infiltration_in_depth = 1
+		guerilla_warfare = 1
+
+		trade_interdiction = 1
+		
+		#air
+		formation_flying = 1		
+	}
+
+	complete_national_focus = PER_agha_khan_legacy
+	complete_national_focus = PER_iraq_i_arab
+	complete_national_focus = PER_acerbaican
+	complete_national_focus = PER_baharain
+	#complete_national_focus = PER_tajik
+	#complete_national_focus = PER_afghanistan
+
+	add_state_claim = 584 
+	add_state_claim = 444 
+
+
+set_country_flag = was_at_war_with_OTT
+set_country_flag = IRQ_CONQ
+set_country_flag = KUR_CONQ
+set_country_flag = BASRA_CONQ
+
+annex_country = {
+		target = OTT
+	}
+annex_country = {
+		target = TUR
+	}
+	
+	if = {
+		limit = { has_dlc = "La Resistance" }
+		create_intelligence_agency = yes
+		upgrade_intelligence_agency = upgrade_economy_civilian
+		upgrade_intelligence_agency = upgrade_army_department
+	
+		upgrade_intelligence_agency = upgrade_passive_defense
+		upgrade_intelligence_agency = upgrade_anti_partisan
+	
+		upgrade_intelligence_agency = upgrade_form_department
+		upgrade_intelligence_agency = upgrade_crypto_strength
+		upgrade_intelligence_agency = upgrade_crypto_strength_2
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = GER
+		}
+		requested_factories = 2
+		progress = 0.82
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = GER
+		}
+		requested_factories = 1
+		progress = 0.83
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = GER
+		}
+		requested_factories = 1
+		progress = 0.44
+		efficiency = 100
+	}
+	if = {
+		limit = {
+			has_dlc = "La Resistance"
+		}
+		add_equipment_production = {
+			equipment = {
+				type = gw_armored_car_equipment
+				creator = GER
+			}
+			requested_factories = 1
+			progress = 0.59
+			efficiency = 100
+		}
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+			creator = GER
+		}
+		requested_factories = 1
+		progress = 0.59
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = GER
+		}
+		requested_factories = 1
+		progress = 0.29
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_1
+			creator = GER
+		}
+		requested_factories = 1
+		progress = 0.29
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_1
+			creator = "GER"
+			version_name = "Mülhausen Class"
+		}
+		requested_factories = 2
+		progress = 0.23
+		amount = 1
+	}
+
+	create_corps_commander = { #New Portrait
+	name = "Ömer Fahrettin "
+	traits = {
+		old_guard
+		war_hero
+		desert_fox
+		commando
+	}
+	skill = 4
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
+}
+
+create_corps_commander = {	#New Portrait
+	name = "Nuri "
+	traits = {
+		artillery_officer
+		war_hero
+		politically_connected
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = { #New Portrait
+	name = "Hayrullah "
+	traits = {
+		career_officer
+		war_hero
+		infantry_officer
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = { #New Portrait
+	name = "Abdurrahman Nafiz "
+	traits = {
+		war_hero
+		desert_fox
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = { #New Portrait
+	name = "Mustafa Muglali "
+	traits = {
+		war_hero
+		trait_mountaineer
+		infantry_officer
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = { #New Portrait
+	name = "Mehmet Kâzım "
+	traits = {
+		war_hero
+		infantry_officer
+		trait_engineer
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = { #New Portrait
+	name = "Cemil Cahit "
+	traits = {
+		war_hero
+		infantry_leader
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = { #New Portrait (Iraqi)
+	name = "Yasin al-Hashimi"
+	traits = {
+		war_hero
+		politically_connected
+		infantry_leader
+		harsh_leader
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = { #New Portrait
+	name = "Asım "
+	traits = {
+		war_hero
+		trait_engineer
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = { #New Portrait
+	name = "Mehmet Hayri "
+	traits = {
+		war_hero
+		politically_connected
+		trait_cautious
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = { #New Portrait
+	name = "Nihat "
+	traits = {
+		fortress_buster
+		trait_engineer
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = { #close associate of Mustafa Kemal
+	name = "Fahrettin "
+	traits = {
+		war_hero
+		trickster
+		cavalry_leader
+		cavalry_expert
+	}
+	skill = 3
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = { #New Portrait
+	name = "Tahsin "
+	traits = {
+		armor_officer
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+#son of the sultan and pretty cool lad, also big footbal fan
+create_corps_commander = {
+	name = "Ömer Faruk Efendi"
+	traits = {
+		war_hero
+		politically_connected
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+### Navy Leader
+create_navy_leader = {
+	name = "Mehmet Ali "
+	traits = {}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Şükrü "
+	traits = {}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Hüseyin Rauf "
+	traits = {
+		superior_tactician
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Mahmud Muhtar "
+	traits = {
+		seawolf
+	}
+	skill = 2
+	coordination_skill = 2
+	maneuvering_skill = 2
+	defense_skill = 1
+	attack_skill = 2
+}
+
+PER = {
+	every_army_leader = { 
+		add_skill_level = 1
+		add_logistics = 2
+		add_defense = 2
+	}	
+}
+
+}

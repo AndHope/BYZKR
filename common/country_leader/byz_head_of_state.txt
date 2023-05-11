@@ -1,0 +1,17 @@
+	leader_traits = {
+
+    BUL_great_restorer = {
+		random = no
+		stability_factor = 0.05
+		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.1
+		unit_limit_bonus = 20
+	}
+	BUL_great_restorer_2 = {
+		random = no
+		stability_factor = 0.15
+		army_core_attack_factor = 0.15
+		army_core_defence_factor = 0.15
+		unit_limit_bonus = 25
+	}
+    }

@@ -1,0 +1,37 @@
+state = {
+	id = 989
+	name = "STATE_989"
+	manpower = 1840000
+
+	state_category = nine
+
+	history = {
+		owner = GRE
+		add_core_of = GRE
+		buildings = {
+			infrastructure = 8
+			arms_factory = 2
+			air_base = 5
+			anti_air_building = 5
+			industrial_complex = 5
+			dockyard = 2
+			radar_station = 2
+			fuel_silo = 1
+			11818 = {
+				naval_base = 8
+				coastal_bunker = 6
+				bunker = 6
+			}
+			3936 = {
+				bunker = 3
+			}
+		}
+		victory_points = {
+			11818 15
+		}
+	}
+
+	provinces = {
+		895 3936 11818
+	}
+}

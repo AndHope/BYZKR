@@ -1,0 +1,36 @@
+
+state={
+	id=350
+	name="STATE_350"
+
+	history={
+		owner = TUR
+		add_claim_by = GRE
+		add_core_of = ARM
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 1
+			radar_station = 1
+			4512 = {
+				bunker = 2
+
+			}
+
+		}
+		victory_points = {
+			4512 5 
+		}
+		start_resistance = yes
+		set_resistance = 45
+		set_compliance = 25
+
+	}
+
+	provinces={
+		4512 5004 7530 11739 11759 12387 12416 13744 13745 
+	}
+	manpower=980729
+	buildings_max_level_factor=1.000
+	state_category=three
+}

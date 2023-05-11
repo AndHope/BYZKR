@@ -1,0 +1,3455 @@
+focus_tree = {
+	id = GRE_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GRE
+		}
+	}
+	default = no
+	focus = {
+		id = GRE_black_monday_focus
+		icon = GFX_focus_empty_coffers
+		cost = 0.00
+		x = 3
+		y = 0
+			available = {
+					has_idea = GRE_black_monday_1
+				}
+			ai_will_do = {
+					factor = 100
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			bypass = {
+					has_idea = GRE_black_monday_1
+				}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_black_monday_focus"
+					custom_effect_tooltip = unlock_focuses
+				}
+
+	}
+		#id = GRE_monarchy_referendum
+		#icon = GFX_goal_greek_shield
+		#country_event = gre.100
+	focus = {
+		id = GRE_autocratic_greece
+		icon = GFX_goal_authoritarian
+		cost = 1.00
+		x = 10
+		y = 0
+			available = {
+					OR = {
+							has_government = paternal_autocrat
+							has_government = authoritarian_democrat
+						}
+				}
+			ai_will_do = {
+					factor = 100
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			#bypass = {
+			#		OR = {
+			#				has_government = paternal_autocrat
+			#				has_government = authoritarian_democrat
+			#			}
+			#	}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_autocratic_greece"
+					custom_effect_tooltip = unlock_focuses
+					add_political_power = 100
+				}
+
+	}
+	focus = {
+		id = GRE_prepare_for_war
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 3.00
+		x = 30
+		y = 0
+			ai_will_do = {
+					factor = 5
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			bypass = {
+					owns_state = 106
+				}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_prepare_for_war"
+					add_war_support = 0.25
+					add_timed_idea = {
+							idea = GRE_war_preparations
+							days = 665
+						}
+				}
+			search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+
+	}
+	focus = {
+		id = GRE_farming_crisis
+		icon = GFX_goal_agriculture
+		cost = 5.00
+		prerequisite = {
+			focus = GRE_black_monday_focus
+		}
+		x = 0
+		y = 1
+		relative_position_id = GRE_black_monday_focus
+			available = {
+					has_idea = GRE_black_monday_1
+				}
+			ai_will_do = {
+					factor = 50
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			bypass = {
+					NOT = {
+							has_idea = GRE_black_monday_1
+						}
+				}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_farming_crisis"
+					swap_ideas = {
+							remove_idea = GRE_black_monday_1
+							add_idea = GRE_black_monday_2
+						}
+					country_event = gre.6
+				}
+			search_filters = { FOCUS_FILTER_INDUSTRY  FOCUS_FILTER_STABILITY }
+
+	}
+	focus = {
+		id = GRE_foreign_industry_question
+		icon = GFX_focus_generic_industry_3
+		cost = 5.00
+		prerequisite = {
+			focus = GRE_farming_crisis
+		}
+		x = 0
+		y = 2
+		relative_position_id = GRE_black_monday_focus
+			available = {
+					OR = {
+							has_idea = GRE_black_monday_1
+							has_idea = GRE_black_monday_2
+						}
+				}
+			ai_will_do = {
+					factor = 50
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			bypass = {
+					NOT = {
+							has_idea = GRE_black_monday_1
+							has_idea = GRE_black_monday_2
+						}
+				}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_foreign_industry_question"
+					if = {
+							limit = {
+									has_idea = GRE_black_monday_2
+								}
+							swap_ideas = {
+									remove_idea = GRE_black_monday_2
+									add_idea = GRE_black_monday_3
+								}
+						}
+					country_event = gre.7
+				}
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+		#id = GRE_monarchist_victory
+		#icon = GFX_goal_monarchism
+		#id = GRE_king_alexandros
+		#icon = GFX_GRE_king_alexander
+		#country_event = gre.25
+	focus = {
+		id = GRE_nationalize_industry
+		icon = GFX_goal_economic_control
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_foreign_industry_question
+		}
+		mutually_exclusive = {
+			focus = GRE_privatize_industry
+		}
+		x = 1
+		y = 3
+		relative_position_id = GRE_black_monday_focus
+			ai_will_do = {
+					factor = 10
+					modifier = {
+							factor = 0
+							has_government = market_liberal
+						}
+					modifier = {
+							factor = 0.5
+							OR = {
+									has_government = social_conservative
+									has_government = social_liberal
+								}
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_nationalize_industry"
+					add_political_power = -100
+					add_timed_idea = {
+							idea = GRE_nationalised_industry
+							days = 365
+						}
+					increase_ruling_party_popularity_by_5 = yes
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+
+	}
+	focus = {
+		id = GRE_fund_business
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_nationalize_industry
+		}
+		x = 1
+		y = 4
+		relative_position_id = GRE_black_monday_focus
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_fund_business"
+					add_political_power = -50
+					add_popularity = {
+							ideology = syndicalist
+							popularity = 0.03
+						}
+					custom_effect_tooltip = GRE_increase_monarchist
+					hidden_effect = {
+							modify_country_flag = {
+									flag = gre_monarchist_sympathies
+									value = 1
+								}
+						}
+					random_owned_state = {
+							prioritize = { 47 }#Attica
+							limit = {
+									is_in_home_area = yes
+									industrial_complex > 0
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL  FOCUS_FILTER_INDUSTRY }
+
+	}
+	
+		#id = GRE_king_georgios
+		#icon = GFX_GRE_king_georgios
+		#country_event = gre.26
+		
+	focus = {
+		id = GRE_greek_rail
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_foreign_industry_question
+		}
+		x = 3
+		y = 3
+		relative_position_id = GRE_black_monday_focus
+			available = {
+					OR = {
+							341 = {
+									is_owned_and_controlled_by = GRE
+								}
+							#Attica
+							340 = {
+									is_owned_and_controlled_by = GRE
+								}
+							#Epirus
+							49 = {
+									is_owned_and_controlled_by = GRE
+								}
+						}
+				}
+			#Thessalia
+			ai_will_do = {
+					factor = 10
+					modifier = {
+							factor = 0.1
+							NOT = {
+									controls_all_owned_states = yes
+								}
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			bypass = {
+					NOT = {
+							owns_state = 341
+							owns_state = 340
+							owns_state = 49
+						}
+				}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_greek_rail"
+					if = {
+							limit = {
+									341 = {
+											is_owned_and_controlled_by = GRE
+										}
+								}
+							341 = {
+									add_building_construction = {
+											type = infrastructure
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+					if = {
+							limit = {
+									340 = {
+											is_owned_and_controlled_by = GRE
+										}
+								}
+							340 = {
+									add_building_construction = {
+											type = infrastructure
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+					if = {
+							limit = {
+									49 = {
+											is_owned_and_controlled_by = GRE
+										}
+								}
+							49 = {
+									add_building_construction = {
+											type = infrastructure
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+					if = {
+							limit = {
+									345 = {
+											is_owned_and_controlled_by = GRE
+										}
+								}
+							345 = {
+									add_building_construction = {
+											type = infrastructure
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+						if = {
+							limit = {
+									346 = {
+											is_owned_and_controlled_by = GRE
+										}
+								}
+							346 = {
+									add_building_construction = {
+											type = infrastructure
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+				}
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+	focus = {
+		id = GRE_land_reform
+		icon = GFX_goal_agrarian_reform
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_greek_rail
+		}
+		x = 3
+		y = 4
+		relative_position_id = GRE_black_monday_focus
+			available = {
+					OR = {
+							341 = {
+									is_owned_and_controlled_by = GRE
+								}
+							#Attica
+							340 = {
+									is_owned_and_controlled_by = GRE
+								}
+							#Thessalia
+							339 = {
+									is_owned_and_controlled_by = GRE
+								}
+						}
+				}
+			#Salonika
+			ai_will_do = {
+					factor = 10
+					modifier = {
+							factor = 0.1
+							NOT = {
+									controls_all_owned_states = yes
+								}
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			bypass = {
+					NOT = {
+							owns_state = 341
+							owns_state = 340
+							owns_state = 339
+						}
+				}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_land_reform"
+					#remove_ideas = RAJ_backwards_economy_1
+					if = {
+							limit = {
+									341 = {
+											is_owned_and_controlled_by = GRE
+										}
+								}
+							341 = {
+									add_extra_state_shared_building_slots = 2
+								}
+						}
+					if = {
+							limit = {
+									340 = {
+											is_owned_and_controlled_by = GRE
+										}
+								}
+							340 = {
+									add_extra_state_shared_building_slots = 2
+								}
+						}
+					if = {
+							limit = {
+									339 = {
+											is_owned_and_controlled_by = GRE
+										}
+								}
+							339 = {
+									add_extra_state_shared_building_slots = 2
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = GRE_evaluate_navy
+		icon = GFX_GRE_navy_focus
+		cost = 5.00
+		prerequisite = {
+			focus = GRE_prepare_for_war
+		}
+		x = 2
+		y = 1
+		relative_position_id = GRE_prepare_for_war
+			available = {
+					any_owned_state = {
+							is_coastal = yes
+						}
+				}
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_evaluate_navy"
+					navy_experience = 25
+				}
+			search_filters = { FOCUS_FILTER_NAVY_BONUS }
+
+	}
+	focus = {
+		id = GRE_ambitious_navy
+		icon = GFX_goal_generic_build_navy
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_evaluate_navy
+		}
+		mutually_exclusive = {
+			focus = GRE_efficient_navy
+		}
+		x = 5
+		y = 2
+		relative_position_id = GRE_prepare_for_war
+			available = {
+					any_owned_state = {
+							is_coastal = yes
+						}
+				}
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_ambitious_navy"
+					add_ideas = GRE_ambitious_navy_idea
+				}
+			search_filters = { FOCUS_FILTER_NAVY_BONUS }
+
+	}
+	focus = {
+		id = GRE_update_navy
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_ambitious_navy
+		}
+		x = 4
+		y = 3
+		relative_position_id = GRE_prepare_for_war
+			available = {
+					any_owned_state = {
+							is_coastal = yes
+						}
+				}
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_update_navy"
+					add_tech_bonus = {
+							name = GRE_update_navy
+							bonus = 1
+							uses = 2
+							category = naval_equipment
+						}
+				}
+			search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+	focus = {
+		id = GRE_athens_shipyard
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_ambitious_navy
+		}
+		x = 6
+		y = 3
+		relative_position_id = GRE_prepare_for_war
+			available = {
+					47 = {
+							is_owned_and_controlled_by = GRE
+						}
+				}
+			#Attica
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			bypass = {
+					NOT = {
+							owns_state = 47
+						}
+				}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_athens_shipyard"
+					47 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+	focus = {
+		id = GRE_purchase_ships
+		icon = GFX_goal_generic_navy_battleship
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_update_navy
+		}
+		prerequisite = {
+			focus = GRE_athens_shipyard
+		}
+		x = 5
+		y = 4
+		relative_position_id = GRE_prepare_for_war
+			available = {
+					47 = {
+							is_owned_and_controlled_by = GRE
+						}
+				}
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			bypass = {
+					NOT = {
+							owns_state = 47
+						}
+				}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_purchase_ships"
+					unlock_decision_tooltip = GRE_shipbuilding_program_1
+				}
+
+	}
+	focus = {
+		id = GRE_purple_pheonix
+		icon = GFX_goal_monarchism
+		cost = 3.00
+		prerequisite = {
+			focus = GRE_prepare_for_war
+		}
+		x = 37
+		y = 1
+			available = {
+					OR = {
+							has_government = social_conservative
+							has_government = authoritarian_democrat
+							has_government = paternal_autocrat
+							has_government = national_populist
+						}
+					owns_state = 773
+					owns_state = 49
+					owns_state = 341
+					owns_state = 187
+					owns_state = 183
+					owns_state = 340
+					owns_state = 339
+					owns_state = 342
+					owns_state = 356
+					owns_state = 343
+				}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_anatolia"
+					#custom_effect_tooltip = GRE_byzantium_reborn
+					#country_event = gre.305
+					add_ideas = GRE_purple_phoenix_idea
+				}
+
+	}
+	focus = {
+		id = GRE_ready_masses
+		icon = GFX_goal_national_mobilization
+		cost = 3.00
+		prerequisite = {
+			focus = GRE_purple_pheonix
+		}
+		x = 12
+		y = 2
+		relative_position_id = GRE_prepare_for_war
+			available = {
+					is_subject = no
+					OR = {
+							NOT = {
+									owns_state = 106
+								}
+							#Western Macedonia
+		
+						}
+				}
+			#Eastern Macedonia
+			bypass = {
+					owns_state = 106
+				}
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 5
+							date > 1936.6.1
+						}
+					modifier = {
+							factor = 2
+							is_in_faction_with = SER
+						}
+				}
+			available_if_capitulated = no
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_ready_masses"
+					add_ideas = ott_reformed_conscription
+					if = {
+							limit = {
+									has_idea = volunteer_only
+								}
+							swap_ideas = {
+									remove_idea = volunteer_only
+									add_idea = limited_conscription
+								}
+						}
+				}
+			search_filters = { FOCUS_FILTER_MANPOWER }
+
+	}
+	
+	focus = {
+		id = GRE_fight_for_north
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 3.00
+		prerequisite = {
+			focus = GRE_ready_masses
+		}
+		x = 12
+		y = 3
+		relative_position_id = GRE_prepare_for_war
+			available = {
+					has_war = no
+					is_subject = no
+					controls_all_owned_states = yes
+					OR = {
+							106 = {
+									owner = {
+											NOT = {
+													tag = GRE
+													is_in_faction_with = GRE
+													is_subject_of = GRE
+												}
+										}
+								}
+							#Western Macedonia
+						}
+				}
+			#Eastern Macedonia
+			bypass = {
+					owns_state = 106
+				}
+			ai_will_do = {
+					factor = 5
+					modifier = {
+							factor = 0
+							OR = {
+									has_idea = GRE_black_monday_1
+									has_idea = GRE_black_monday_2
+									has_idea = GRE_black_monday_3
+								}
+						}
+					modifier = {
+							factor = 0
+							is_in_faction_with = SER
+						}
+					modifier = {
+							factor = 0
+							is_in_faction = no
+							106 = {
+									owner = {
+											NOT = {
+													tag = GRE
+													is_subject_of = GRE
+												}
+											is_in_faction = yes
+										}
+								}
+						}
+					modifier = {
+							factor = 0
+							is_in_faction = no
+							106 = {
+									owner = {
+											OR = {
+													tag = GRE
+													is_subject_of = GRE
+												}
+										}
+								}
+						}
+					modifier = {
+							factor = 0
+							NOT = {
+									is_in_faction_with = SER
+								}
+							is_in_faction = yes
+							106 = {
+									owner = {
+											NOT = {
+													tag = GRE
+													is_in_faction_with = GRE
+													is_subject_of = GRE
+												}
+											is_in_faction = yes
+										}
+								}
+						}
+					modifier = {
+							factor = 0
+							is_in_faction = no
+							106 = {
+									owner = {
+											NOT = {
+													tag = GRE
+													is_subject_of = GRE
+												}
+											OR = {
+													strength_ratio = {
+															tag = GRE
+															ratio > 1.0
+														}
+													AND = {
+															is_subject = yes
+															overlord = {
+																	strength_ratio = {
+																			tag = GRE
+																			ratio > 1.0
+																		}
+																}
+														}
+												}
+										}
+								}
+						}
+					modifier = {
+							factor = 0
+							is_in_faction = no
+							106 = {
+									owner = {
+											OR = {
+													tag = GRE
+													is_subject_of = GRE
+												}
+										}
+								}
+							106 = {
+									owner = {
+											NOT = {
+													tag = GRE
+													is_subject_of = GRE
+												}
+											OR = {
+													strength_ratio = {
+															tag = GRE
+															ratio > 1.0
+														}
+													AND = {
+															is_subject = yes
+															overlord = {
+																	strength_ratio = {
+																			tag = GRE
+																			ratio > 1.0
+																		}
+																}
+														}
+												}
+										}
+								}
+						}
+				}
+			will_lead_to_war_with = BUL
+			available_if_capitulated = no
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_fight_for_north"
+					add_war_support = 0.05
+					create_wargoal = {
+							type = annex_everything
+							target = BUL
+						}
+						create_wargoal = {
+							type = annex_everything
+							target = ALB
+						}
+						create_wargoal = {
+							type = annex_everything
+							target = SER
+						}
+				}
+			search_filters = { FOCUS_FILTER_ANNEXATION }
+
+	}
+	focus = {
+		id = GRE_new_expansionism
+		icon = GFX_goal_generic_territory_or_war
+		cost = 5.00
+		prerequisite = {
+			focus = GRE_fight_for_north
+		}
+		x = 12
+		y = 4
+		relative_position_id = GRE_prepare_for_war
+			available = {
+					is_subject = no
+					controls_all_owned_states = yes
+				}
+			ai_will_do = {
+					factor = 5
+					modifier = {
+							factor = 0.1
+							NOT = {
+									has_government = paternal_autocrat
+									has_government = authoritarian_democrat
+								}
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_new_expansionism"
+					add_named_threat = {
+							threat = 5
+							name = GRE_took_expansionist_path
+						}
+					add_ideas = GRE_new_expansionism_idea
+				}
+			search_filters = { FOCUS_FILTER_WAR_SUPPORT  FOCUS_FILTER_ANNEXATION }
+
+	}
+	focus = {
+		id = GRE_war_industry
+		icon = GFX_goal_generic_build_tank
+		cost = 5.00
+		prerequisite = {
+			focus = GRE_new_expansionism
+		}
+		x = 11
+		y = 5
+		relative_position_id = GRE_prepare_for_war
+			available = {
+					is_subject = no
+					controls_all_owned_states = yes
+				}
+			ai_will_do = {
+					factor = 3
+				}
+			available_if_capitulated = no
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_war_industry"
+					random_owned_controlled_state = {
+							limit = {
+									is_core_of = GRE
+									arms_factory > 0
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									is_core_of = GRE
+									dockyard > 0
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+	focus = {
+		id = GRE_motivate_army
+		icon = GFX_goal_generic_political_pressure
+		cost = 5.00
+		prerequisite = {
+			focus = GRE_new_expansionism
+		}
+		x = 13
+		y = 5
+		relative_position_id = GRE_prepare_for_war
+			available = {
+					is_subject = no
+				}
+			ai_will_do = {
+					factor = 3
+				}
+			available_if_capitulated = no
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_motivate_army"
+					swap_ideas = {
+							remove_idea = GRE_new_expansionism_idea
+							add_idea = GRE_new_expansionism2_idea
+						}
+				}
+			search_filters = { FOCUS_FILTER_WAR_SUPPORT  FOCUS_FILTER_ARMY_BONUS  FOCUS_FILTER_ANNEXATION }
+
+	}
+	focus = {
+		id = GRE_art_of_war
+		icon = GFX_goal_monarchism
+		cost = 5.00
+		prerequisite = {
+			focus = GRE_war_industry
+		}
+		prerequisite = {
+			focus = GRE_motivate_army
+		}
+		x = 38
+		y = 6
+			available = {
+					OR = {
+							has_government = social_conservative
+							has_government = authoritarian_democrat
+							has_government = paternal_autocrat
+							has_government = national_populist
+						}
+				}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_art_of_war"
+					add_ideas = war_economy
+					add_tech_bonus = {
+							bonus = 1
+							uses = 1
+							category = land_doctrine
+						}
+			every_owned_state = {
+				limit = {
+					is_core_of = GRE
+					any_neighbor_state = {
+						NOT = { is_owned_by = ROOT }
+					}
+				}
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_orthodox_defence
+		text = GRE_orthodox_defence
+		icon = GFX_goal_monarchism
+		cost = 5.00
+		prerequisite = {
+			focus = GRE_art_of_war
+		}
+		x = 38
+		y = 7
+			available = {
+					OR = {
+							has_government = social_conservative
+							has_government = authoritarian_democrat
+							has_government = paternal_autocrat
+							has_government = national_populist
+						}
+				}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_orthodox_defence"
+					#country_event = gre.310
+					add_ideas = GRE_orthodox_idea
+				}
+
+	}
+	focus = {
+		id = GRE_national_service
+		text = GRE_national_service
+		icon = GFX_goal_monarchism
+		cost = 5.00
+		prerequisite = {
+			focus = GRE_war_industry
+		}
+		prerequisite = {
+			focus = GRE_motivate_army
+		}
+		x = 40
+		y = 6
+			available = {
+					OR = {
+							has_government = social_conservative
+							has_government = authoritarian_democrat
+							has_government = paternal_autocrat
+							has_government = national_populist
+						}
+				}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_national_service"
+					#country_event = gre.304
+					#add_ideas = service_by_requirement
+					add_manpower = 250000
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_0
+							amount = 15000
+							producer = GRE
+						}
+				}
+
+	}
+	focus = {
+		id = GRE_metaxas_youth
+		text = GRE_metaxas_youth
+		icon = GFX_goal_monarchism
+		cost = 5.00
+		prerequisite = {
+			focus = GRE_national_service
+		}
+		x = 40
+		y = 7
+			available = {
+					OR = {
+							has_government = social_conservative
+							has_government = authoritarian_democrat
+							has_government = paternal_autocrat
+							has_government = national_populist
+						}
+				}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_metaxas_youth"
+					#country_event = gre.309
+					add_war_support = 0.05
+                    increase_ruling_party_popularity_by_5 = yes
+				}
+
+	}
+
+	focus = {
+		id = GRE_secure_south
+		text = GRE_secure_south
+		icon = GFX_goal_monarchism
+		cost = 5.00
+		prerequisite = {
+			focus = GRE_metaxas_youth
+		}
+		prerequisite = {
+			focus = GRE_orthodox_defence
+		}
+		x = 39
+		y = 8
+			available = {
+					OR = {
+							has_government = social_conservative
+							has_government = authoritarian_democrat
+							has_government = paternal_autocrat
+							has_government = national_populist
+						}
+				}
+				bypass = {
+					owns_state = 753
+				}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_secure_south"
+					add_war_support = 0.05
+					create_wargoal = {
+							type = annex_everything
+							target = EGY
+						}
+					add_state_claim = 346
+					add_state_claim = 680
+					add_state_claim = 344
+					add_state_claim = 677
+					add_state_claim = 995
+					add_state_claim = 554
+					add_state_claim = 553
+					add_state_claim = 455
+					add_state_claim = 992
+					add_state_claim = 454
+					add_state_claim = 753
+					add_state_claim = 453
+					add_state_claim = 446
+					add_state_claim = 447
+					add_state_claim = 452
+				}
+
+	}
+	focus = {
+		id = GRE_rome
+		text = GRE_rome
+		icon = GFX_goal_monarchism
+		cost = 5.00
+		prerequisite = {
+			focus = GRE_secure_south
+		}
+		x = 38
+		y = 9
+			available = {
+					OR = {
+							has_government = social_conservative
+							has_government = authoritarian_democrat
+							has_government = paternal_autocrat
+							has_government = national_populist
+						}
+				}
+				bypass = {
+					owns_state = 106
+				}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_rome"
+					add_war_support = 0.05
+					create_wargoal = {
+							type = annex_everything
+							target = ITA
+						}
+						if = {
+							limit = { country_exists = PAP }
+							create_wargoal = {
+								type = annex_everything
+								target = PAP
+							}
+						}						
+						if = {
+							limit = { country_exists = SIC }
+							create_wargoal = {
+								type = annex_everything
+								target = SIC
+							}
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = SRI
+						}
+						create_wargoal = {
+							type = annex_everything
+							target = AUS
+						}
+						create_wargoal = {
+							type = annex_everything
+							target = CRO
+						}
+					add_state_claim = 2
+					add_state_claim = 117
+					add_state_claim = 742
+					add_state_claim = 837
+					add_state_claim = 1006
+					add_state_claim = 156
+					add_state_claim = 1149
+					add_state_claim = 115
+				}
+
+	}
+	focus = {
+		id = GRE_secure_south
+		text = GRE_africa
+		icon = GFX_goal_monarchism
+		cost = 5.00
+		prerequisite = {
+			focus = GRE_secure_south
+		}
+		x = 40
+		y = 9
+			available = {
+					OR = {
+							has_government = social_conservative
+							has_government = authoritarian_democrat
+							has_government = paternal_autocrat
+							has_government = national_populist
+						}
+				}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_africa"
+					add_war_support = 0.05
+					create_wargoal = {
+							type = annex_everything
+							target = LBA
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = NFA
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = MLT
+						}
+					add_state_claim = 451
+					add_state_claim = 663
+					add_state_claim = 450
+					add_state_claim = 448
+					add_state_claim = 665
+					add_state_claim = 458
+					add_state_claim = 116
+				}
+
+	}
+	focus = {
+		id = GRE_board_of_industry
+		icon = GFX_goal_generic_production
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_foreign_industry_question
+		}
+		x = -3
+		y = 3
+		relative_position_id = GRE_black_monday_focus
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_board_of_industry"
+					add_tech_bonus = {
+							name = GRE_board_of_industry
+							bonus = 1
+							uses = 2
+							category = industry
+						}
+				}
+			search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+	focus = {
+		id = GRE_greek_mining
+		icon = GFX_focus_generic_steel
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_board_of_industry
+		}
+		x = -3
+		y = 4
+		relative_position_id = GRE_black_monday_focus
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_greek_mining"
+					add_tech_bonus = {
+							name = GRE_greek_mining
+							bonus = 1
+							uses = 1
+							category = excavation_tech
+						}
+				}
+			search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+	focus = {
+		id = GRE_privatize_industry
+		icon = GFX_goal_factory_complex
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_foreign_industry_question
+		}
+		mutually_exclusive = {
+			focus = GRE_nationalize_industry
+		}
+		x = -1
+		y = 3
+		relative_position_id = GRE_black_monday_focus
+			ai_will_do = {
+					factor = 10
+					modifier = {
+							factor = 0
+							OR = {
+									has_socialist_government = yes
+									has_government = social_democrat
+								}
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_privatize_industry"
+					add_political_power = 100
+					add_timed_idea = {
+							idea = GRE_privatised_industry
+							days = 365
+						}
+					add_popularity = {
+							ideology = market_liberal
+							popularity = 0.05
+						}
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+
+	}
+	focus = {
+		id = GRE_military_conversion
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_privatize_industry
+		}
+		x = -1
+		y = 4
+		relative_position_id = GRE_black_monday_focus
+			available = {
+					num_of_military_factories > 1
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			bypass = {
+					num_of_military_factories < 2
+				}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_military_conversion"
+					increase_ruling_party_popularity_by_10 = yes
+					custom_effect_tooltip = GRE_decrease_monarchist
+					hidden_effect = {
+							modify_country_flag = {
+									flag = gre_monarchist_sympathies
+									value = -1
+								}
+						}
+					random_owned_state = {
+							prioritize = { 47 }#Attica
+							limit = {
+									arms_factory > 0
+								}
+							remove_building = {
+									type = arms_factory
+									level = 1
+								}
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_state = {
+							prioritize = { 895 }#Salonika
+							limit = {
+									arms_factory > 0
+								}
+							remove_building = {
+									type = arms_factory
+									level = 1
+								}
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+	focus = {
+		id = GRE_recovery
+		icon = GFX_goal_generic_trade
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_military_conversion
+			focus = GRE_fund_business
+		}
+		prerequisite = {
+			focus = GRE_greek_mining
+		}
+		prerequisite = {
+			focus = GRE_land_reform
+		}
+		x = 0
+		y = 5
+		relative_position_id = GRE_black_monday_focus
+			available = {
+					has_idea = GRE_black_monday_3
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			bypass = {
+					NOT = {
+							has_idea = GRE_black_monday_3
+						}
+				}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_recovery"
+					add_political_power = 50
+					remove_ideas = GRE_black_monday_3
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+
+	}
+
+		#id = GRE_monarchist_question
+		#icon = GFX_goal_tfv_sever_ties_with_uk
+		#country_event = gre.117
+	
+		#id = GRE_empowered_parliament
+		#icon = GFX_goal_government_icon
+		#add_ideas = GRE_empowered_parliament
+
+		#id = GRE_strong_executive
+		#icon = GFX_goal_generic_cavalry
+		#add_ideas = GRE_strong_executive
+
+		#id = GRE_empower_the_throne
+		#icon = GFX_GRE_empower_monarchy
+	
+
+		#id = GRE_divine_mediator
+		#icon = GFX_focus_generic_strike_at_democracy1
+		#add_ideas = GRE_divine_mediator
+	
+
+	focus = {
+		id = GRE_consolidate_rule
+		icon = GFX_goal_generic_major_war
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_autocratic_greece
+		}
+		mutually_exclusive = {
+			focus = GRE_restore_monarchy
+		}
+		x = -1
+		y = 1
+		relative_position_id = GRE_autocratic_greece
+			available = {
+					OR = {
+							has_government = authoritarian_democrat
+							has_government = paternal_autocrat
+						}
+				}
+			ai_will_do = {
+					factor = 5
+					modifier = {
+							factor = 0.5
+							has_government = authoritarian_democrat
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_consolidate_rule"
+					add_political_power = -100
+					add_ideas = GRE_full_centralization_idea
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL  FOCUS_FILTER_STABILITY }
+
+	}
+	focus = {
+		id = GRE_full_centralization
+		icon = GFX_goal_authority
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_consolidate_rule
+		}
+		x = -1
+		y = 1
+		relative_position_id = GRE_consolidate_rule
+			available = {
+					OR = {
+							has_government = paternal_autocrat
+							has_government = authoritarian_democrat
+						}
+				}
+			ai_will_do = {
+					factor = 3
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_full_centralization"
+					add_political_power = -100
+					remove_ideas = BYZ_aristocrat
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL  FOCUS_FILTER_STABILITY }
+
+	}
+	focus = {
+		id = GRE_state_industry
+		icon = GFX_goal_state_economy
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_full_centralization
+		}
+		x = -1
+		y = 2
+		relative_position_id = GRE_consolidate_rule
+			available = {
+					OR = {
+							has_government = paternal_autocrat
+							has_government = authoritarian_democrat
+						}
+					any_owned_state = {
+							is_controlled_by = GRE
+							is_core_of = GRE
+							is_in_home_area = yes
+							arms_factory > 0
+						}
+				}
+			ai_will_do = {
+					factor = 3
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_state_industry"
+					if = {
+							limit = {
+									NOT = {
+											has_completed_focus = GRE_free_trade
+											has_completed_focus = GRE_industrialization_program
+											has_completed_focus = GRE_export_focus
+											has_completed_focus = GRE_planned_industry
+											has_completed_focus = GRE_new_enterprise
+											has_completed_focus = GRE_finding_our_own_way
+											has_completed_focus = GRE_foreign_investment
+										}
+								}
+							random_owned_state = {
+									limit = {
+											is_controlled_by = GRE
+											is_core_of = GRE
+											is_in_home_area = yes
+											arms_factory > 0
+										}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = arms_factory
+											level = 1
+											instant_build = yes
+										}
+								}
+							random_owned_state = {
+									limit = {
+											is_controlled_by = GRE
+											is_core_of = GRE
+											is_in_home_area = yes
+											arms_factory > 0
+										}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = arms_factory
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					else = {
+							add_timed_idea = {
+									idea = GRE_state_industry_idea
+									days = 365
+								}
+						}
+				}
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+	focus = {
+		id = GRE_restore_monarchy
+		icon = GFX_GRE_king_pavlos
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_autocratic_greece
+		}
+		mutually_exclusive = {
+			focus = GRE_consolidate_rule
+		}
+		x = 2
+		y = 0
+		relative_position_id = GRE_consolidate_rule
+			available = {
+					OR = {
+							has_government = paternal_autocrat
+							has_government = authoritarian_democrat
+						}
+				}
+			ai_will_do = {
+					factor = 5
+					modifier = {
+							factor = 0.5
+							has_government = authoritarian_democrat
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			#bypass = {
+			#		has_cosmetic_tag = BYZ
+			#		has_country_leader = {
+			#				ruling_only = yes
+			#				name = "Basileus Geórgios II"
+			#			}
+			#	}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_restore_monarchy"
+					add_stability = -0.10
+					add_ideas = BYZ_authoritarian_constitution
+					set_politics = {
+							ruling_party = paternal_autocrat
+							elections_allowed = no
+						}
+					add_popularity = {
+							ideology = paternal_autocrat
+							popularity = 0.10
+						}
+					hidden_effect = {
+							country_event = gre.27
+							random_other_country = {
+									limit = {
+											is_ai = yes
+										}
+									news_event = {
+											id = worldnews.159
+											days = 1
+										}
+								}
+						}
+				}
+			search_filters = { FOCUS_FILTER_STABILITY }
+
+	}
+	focus = {
+		id = GRE_state_orthodoxy
+		icon = GFX_goal_orthodox_state
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_restore_monarchy
+		}
+		x = 3
+		y = 1
+		relative_position_id = GRE_consolidate_rule
+			available = {
+					OR = {
+							has_government = paternal_autocrat
+							has_government = authoritarian_democrat
+						}
+				}
+			ai_will_do = {
+					factor = 3
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_state_orthodoxy"
+					add_political_power = 100
+					add_stability = 0.05
+					add_ideas = RUS_state_religion
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL  FOCUS_FILTER_STABILITY }
+
+	}
+	focus = {
+		id = GRE_foreign_investment
+		icon = GFX_goal_generic_trade
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_state_orthodoxy
+		}
+		x = 3
+		y = 2
+		relative_position_id = GRE_consolidate_rule
+			available = {
+					OR = {
+							has_government = paternal_autocrat
+							has_government = authoritarian_democrat
+						}
+					any_owned_state = {
+							is_controlled_by = GRE
+							is_core_of = GRE
+							is_in_home_area = yes
+							industrial_complex > 0
+						}
+				}
+			ai_will_do = {
+					factor = 3
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_foreign_investment"
+					if = {
+							limit = {
+									NOT = {
+											has_completed_focus = GRE_free_trade
+											has_completed_focus = GRE_industrialization_program
+											has_completed_focus = GRE_export_focus
+											has_completed_focus = GRE_planned_industry
+											has_completed_focus = GRE_new_enterprise
+											has_completed_focus = GRE_finding_our_own_way
+											has_completed_focus = GRE_state_industry
+										}
+								}
+							random_owned_state = {
+									limit = {
+											is_controlled_by = GRE
+											is_core_of = GRE
+											is_in_home_area = yes
+											industrial_complex > 0
+										}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = industrial_complex
+											level = 1
+											instant_build = yes
+										}
+								}
+							random_owned_state = {
+									limit = {
+											is_controlled_by = GRE
+											is_core_of = GRE
+											is_in_home_area = yes
+											industrial_complex > 0
+										}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = industrial_complex
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					else = {
+							add_timed_idea = {
+									idea = GRE_foreign_investment_idea
+									days = 365
+								}
+						}
+				}
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+	focus = {
+		id = GRE_propaganda
+		icon = GFX_goal_generic_propaganda
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_consolidate_rule
+			focus = GRE_restore_monarchy
+		}
+		x = 1
+		y = 1
+		relative_position_id = GRE_consolidate_rule
+			available = {
+					OR = {
+							has_government = paternal_autocrat
+							has_government = authoritarian_democrat
+						}
+				}
+			ai_will_do = {
+					factor = 5
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_propaganda"
+					increase_ruling_party_popularity_by_10 = yes
+					add_stability = 0.05
+					add_war_support = 0.10
+				}
+			search_filters = { FOCUS_FILTER_WAR_SUPPORT  FOCUS_FILTER_STABILITY }
+
+	}
+	focus = {
+		id = GRE_greek_science
+		icon = GFX_focus_research
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_propaganda
+		}
+		x = 1
+		y = 2
+		relative_position_id = GRE_consolidate_rule
+			available = {
+					OR = {
+							has_government = paternal_autocrat
+							has_government = authoritarian_democrat
+						}
+				}
+			ai_will_do = {
+					factor = 5
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_greek_science"
+					if = {
+							limit = {
+									OR = {
+											has_completed_focus = GRE_education_programs
+											has_completed_focus = GRE_sponsor_church_schools
+											has_completed_focus = GRE_planned_research
+											has_completed_focus = GRE_leap_forward
+										}
+								}
+							add_timed_idea = {
+									idea = GRE_research_idea
+									days = 730
+								}
+							else = {
+									add_research_slot = 1
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = GRE_the_iron_fist
+		icon = GFX_goal_demand_sudetenland
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_foreign_investment
+			focus = GRE_state_industry
+		}
+		prerequisite = {
+			focus = GRE_greek_science
+		}
+		mutually_exclusive = {
+			focus = GRE_the_velvet_glove
+		}
+		x = 0
+		y = 3
+		relative_position_id = GRE_consolidate_rule
+			available = {
+					OR = {
+							has_government = paternal_autocrat
+							has_government = authoritarian_democrat
+						}
+				}
+			ai_will_do = {
+					factor = 3
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_the_iron_fist"
+					add_ideas = GRE_the_iron_fist_idea
+				}
+			search_filters = { FOCUS_FILTER_ARMY_BONUS  FOCUS_FILTER_MANPOWER  FOCUS_FILTER_POLITICAL  FOCUS_FILTER_STABILITY }
+
+	}
+	focus = {
+		id = GRE_the_velvet_glove
+		icon = GFX_goal_generic_national_unity
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_foreign_investment
+			focus = GRE_state_industry
+		}
+		prerequisite = {
+			focus = GRE_greek_science
+		}
+		mutually_exclusive = {
+			focus = GRE_the_iron_fist
+		}
+		x = 2
+		y = 3
+		relative_position_id = GRE_consolidate_rule
+			available = {
+					OR = {
+							has_government = paternal_autocrat
+							has_government = authoritarian_democrat
+						}
+				}
+			ai_will_do = {
+					factor = 3
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_the_velvet_glove"
+					add_ideas = GRE_the_velvet_glove_idea
+				}
+			search_filters = { FOCUS_FILTER_ARMY_BONUS  FOCUS_FILTER_POLITICAL  FOCUS_FILTER_STABILITY }
+
+	}
+	focus = {
+		id = GRE_national_father
+		icon = GFX_goal_tfv_can_compromise_with_quebec
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_the_iron_fist
+			focus = GRE_the_velvet_glove
+		}
+		x = 1
+		y = 4
+		relative_position_id = GRE_consolidate_rule
+			available = {
+					OR = {
+							has_government = paternal_autocrat
+							has_government = authoritarian_democrat
+						}
+				}
+			ai_will_do = {
+					factor = 3
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_national_father"
+					add_ideas = BYZ_resurgent_byzantium
+					add_political_power = 300
+					add_stability = 0.1
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL  FOCUS_FILTER_STABILITY }
+
+	}
+	focus = {
+		id = GRE_evaluate_army
+		icon = GFX_GRE_army_focus
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_prepare_for_war
+		}
+		x = -12
+		y = 1
+		relative_position_id = GRE_prepare_for_war
+			ai_will_do = {
+					factor = 2
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_evaluate_army"
+					army_experience = 25
+					add_tech_bonus = {
+							name = GRE_evaluate_army
+							bonus = 1
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+			search_filters = { FOCUS_FILTER_ARMY_BONUS  FOCUS_FILTER_RESEARCH }
+
+	}
+	focus = {
+		id = GRE_firepower
+		icon = GFX_goal_doctrine_fire_superiority
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_evaluate_army
+		}
+		mutually_exclusive = {
+			focus = GRE_battleplan
+		}
+		x = -15
+		y = 2
+		relative_position_id = GRE_prepare_for_war
+			ai_will_do = {
+					factor = 2
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_firepower"
+					if = {
+							limit = {
+									already_has_other_doctrine_SF = yes
+								}
+							add_tech_bonus = {
+									name = GRE_firepower
+									bonus = 1
+									uses = 2
+									category = land_doctrine
+								}
+							else = {
+									add_tech_bonus = {
+											name = GRE_firepower
+											bonus = 1
+											uses = 2
+											category = cat_superior_firepower
+										}
+								}
+						}
+				}
+			search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+	focus = {
+		id = GRE_artillery_focus
+		icon = GFX_goal_national_artillery
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_firepower
+		}
+		x = -16
+		y = 3
+		relative_position_id = GRE_prepare_for_war
+			ai_will_do = {
+					factor = 2
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_artillery_focus"
+					add_tech_bonus = {
+							name = GRE_artillery_focus
+							bonus = 1
+							uses = 1
+							category = artillery
+						}
+				}
+			search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+	focus = {
+		id = GRE_marines_focus
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_firepower
+		}
+		x = -14
+		y = 3
+		relative_position_id = GRE_prepare_for_war
+			available = {
+					capital_scope = {
+							is_controlled_by = GRE
+						}
+				}
+			ai_will_do = {
+					factor = 2
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_marines_focus"
+					if = {
+							limit = {
+									NOT = {
+											has_tech = marines
+										}
+								}
+							set_technology = {
+									marines = 1
+								}
+							else = {
+									add_tech_bonus = {
+											name = GRE_marines_focus
+											bonus = 1
+											uses = 1
+											category = marine_tech
+										}
+								}
+						}
+					add_tech_bonus = {
+							name = GRE_marines_focus
+							bonus = 1
+							uses = 1
+							category = tp_tech
+						}
+					custom_effect_tooltip = GRE_marine_spawn
+					hidden_effect = {
+							division_template = {
+									name = "Greek Marines"
+									division_names_group = GRE_MAR_01
+									regiments = {
+											marine = {
+													x = 0
+													y = 0
+												}
+											marine = {
+													x = 0
+													y = 1
+												}
+											marine = {
+													x = 0
+													y = 2
+												}
+											marine = {
+													x = 1
+													y = 0
+												}
+											marine = {
+													x = 1
+													y = 1
+												}
+											marine = {
+													x = 1
+													y = 2
+												}
+											marine = {
+													x = 2
+													y = 0
+												}
+											marine = {
+													x = 2
+													y = 1
+												}
+											marine = {
+													x = 2
+													y = 2
+												}
+										}
+									support = {
+											recon = {
+													x = 0
+													y = 0
+												}
+											artillery = {
+													x = 0
+													y = 1
+												}
+										}
+									priority = 2
+								}
+							capital_scope = {
+									create_unit = {
+											division = "name = \"Elleniki Merarchía Pezonavton\" division_template = \"Greek Marines\"  start_experience_factor = 0.8"
+											owner = GRE
+										}
+								}
+						}
+				}
+			search_filters = { FOCUS_FILTER_MANPOWER  FOCUS_FILTER_RESEARCH }
+
+	}
+	focus = {
+		id = GRE_bullets_not_men
+		icon = GFX_goal_generic_army_artillery
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_marines_focus
+		}
+		prerequisite = {
+			focus = GRE_artillery_focus
+		}
+		x = -15
+		y = 4
+		relative_position_id = GRE_prepare_for_war
+			ai_will_do = {
+					factor = 2
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_bullets_not_men"
+					add_tech_bonus = {
+							name = GRE_bullets_not_men
+							bonus = 1
+							uses = 1
+							category = infantry_weapons
+						}
+					add_tech_bonus = {
+							name = GRE_bullets_not_men
+							bonus = 1
+							uses = 2
+							category = support_tech
+						}
+				}
+			search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+	focus = {
+		id = GRE_battleplan
+		icon = GFX_goal_generic_position_armies
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_evaluate_army
+		}
+		mutually_exclusive = {
+			focus = GRE_firepower
+		}
+		x = -9
+		y = 2
+		relative_position_id = GRE_prepare_for_war
+			ai_will_do = {
+					factor = 2
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_battleplan"
+					if = {
+							limit = {
+									already_has_other_doctrine_GBP = yes
+								}
+							add_tech_bonus = {
+									name = GRE_battleplan
+									bonus = 1
+									uses = 2
+									category = land_doctrine
+								}
+							else = {
+									add_tech_bonus = {
+											name = GRE_battleplan
+											bonus = 1
+											uses = 2
+											category = cat_grand_battle_plan
+										}
+								}
+						}
+				}
+			search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+	focus = {
+		id = GRE_mountaineers
+		icon = GFX_goal_generic_special_forces
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_battleplan
+		}
+		x = -10
+		y = 3
+		relative_position_id = GRE_prepare_for_war
+			available = {
+					capital_scope = {
+							is_controlled_by = GRE
+						}
+				}
+			ai_will_do = {
+					factor = 2
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_mountaineers"
+					if = {
+							limit = {
+									NOT = {
+											has_tech = tech_mountaineers
+										}
+								}
+							set_technology = {
+									tech_mountaineers = 1
+								}
+							else = {
+									add_tech_bonus = {
+											name = GRE_mountaineers
+											bonus = 1
+											uses = 1
+											category = mountaineers_tech
+										}
+								}
+						}
+					custom_effect_tooltip = GRE_mountaineer_spawn
+					hidden_effect = {
+							division_template = {
+									name = "Greek Mountaineers"
+									division_names_group = GRE_MTN
+									regiments = {
+											mountaineers = {
+													x = 0
+													y = 0
+												}
+											mountaineers = {
+													x = 0
+													y = 1
+												}
+											mountaineers = {
+													x = 0
+													y = 2
+												}
+											mountaineers = {
+													x = 1
+													y = 0
+												}
+											mountaineers = {
+													x = 1
+													y = 1
+												}
+											mountaineers = {
+													x = 1
+													y = 2
+												}
+											mountaineers = {
+													x = 2
+													y = 0
+												}
+											mountaineers = {
+													x = 2
+													y = 1
+												}
+											mountaineers = {
+													x = 2
+													y = 2
+												}
+										}
+									support = {
+											recon = {
+													x = 0
+													y = 0
+												}
+											artillery = {
+													x = 0
+													y = 1
+												}
+										}
+									priority = 2
+								}
+							capital_scope = {
+									create_unit = {
+											division = "name = \"Elleniki Merarchía Pezikoú\" division_template = \"Greek Mountaineers\"  start_experience_factor = 0.8"
+											owner = GRE
+										}
+								}
+						}
+				}
+			search_filters = { FOCUS_FILTER_MANPOWER  FOCUS_FILTER_RESEARCH }
+
+	}
+	focus = {
+		id = GRE_mobility
+		icon = GFX_goal_generic_army_motorized
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_battleplan
+		}
+		x = -8
+		y = 3
+		relative_position_id = GRE_prepare_for_war
+			ai_will_do = {
+					factor = 2
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_mobility"
+					add_tech_bonus = {
+							name = GRE_mobility
+							bonus = 1
+							uses = 2
+							category = motorized_equipment
+							category = mot_rockets
+						}
+				}
+			search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+	focus = {
+		id = GRE_expand_staff
+		icon = GFX_focus_generic_military_mission
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_mountaineers
+		}
+		prerequisite = {
+			focus = GRE_mobility
+		}
+		x = -9
+		y = 4
+		relative_position_id = GRE_prepare_for_war
+			ai_will_do = {
+					factor = 2
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_expand_staff"
+					add_ideas = GRE_general_staff
+					add_tech_bonus = {
+							name = GRE_expand_staff
+							bonus = 1
+							uses = 1
+							category = land_doctrine
+						}
+				}
+			search_filters = { FOCUS_FILTER_ARMY_BONUS  FOCUS_FILTER_POLITICAL  FOCUS_FILTER_RESEARCH }
+
+	}
+	focus = {
+		id = GRE_innovation
+		icon = GFX_focus_research2
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_evaluate_army
+		}
+		x = -12
+		y = 3
+		relative_position_id = GRE_prepare_for_war
+			ai_will_do = {
+					factor = 5
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_innovation"
+					add_research_slot = 1
+				}
+			search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+	focus = {
+		id = GRE_expand_armaments_1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_innovation
+		}
+		x = -13
+		y = 4
+		relative_position_id = GRE_prepare_for_war
+			ai_will_do = {
+					factor = 2
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_expand_armaments_1"
+					random_owned_state = {
+							limit = {
+									is_core_of = GRE
+									is_controlled_by = GRE
+									OR = {
+											arms_factory > 0
+											industrial_complex > 0
+										}
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_state = {
+							limit = {
+									is_core_of = GRE
+									is_controlled_by = GRE
+									OR = {
+											arms_factory > 0
+											industrial_complex > 0
+										}
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+	focus = {
+		id = GRE_expand_armaments_2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_innovation
+		}
+		x = -11
+		y = 4
+		relative_position_id = GRE_prepare_for_war
+			available = {
+					any_owned_state = {
+							is_core_of = GRE
+							is_controlled_by = GRE
+							OR = {
+									arms_factory > 0
+									industrial_complex > 0
+								}
+							free_building_slots = {
+									building = arms_factory
+									size > 1
+									include_locked = yes
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 2
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_expand_armaments_2"
+					if = {
+							limit = {
+									NOT = {
+											has_idea = greek_powder
+										}
+								}
+							add_ideas = greek_powder
+							random_owned_state = {
+									limit = {
+											is_core_of = GRE
+											is_controlled_by = GRE
+											OR = {
+													arms_factory > 0
+													industrial_complex > 0
+												}
+											free_building_slots = {
+													building = arms_factory
+													size > 0
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = arms_factory
+											level = 1
+											instant_build = yes
+										}
+								}
+							else = {
+									random_owned_state = {
+											limit = {
+													is_core_of = GRE
+													is_controlled_by = GRE
+													OR = {
+															arms_factory > 0
+															industrial_complex > 0
+														}
+													free_building_slots = {
+															building = arms_factory
+															size > 1
+															include_locked = yes
+														}
+												}
+											add_extra_state_shared_building_slots = 2
+											add_building_construction = {
+													type = arms_factory
+													level = 2
+													instant_build = yes
+												}
+										}
+								}
+						}
+				}
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+	focus = {
+		id = GRE_legacy_of_alexander
+		icon = GFX_goal_volunteer_alliance
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_bullets_not_men
+			focus = GRE_expand_staff
+		}
+		prerequisite = {
+			focus = GRE_expand_armaments_2
+		}
+		prerequisite = {
+			focus = GRE_expand_armaments_1
+		}
+		x = -12
+		y = 5
+		relative_position_id = GRE_prepare_for_war
+			#available = {
+			#		has_idea = GRE_legacy_of_alexander_idea
+			#	}
+			ai_will_do = {
+					factor = 5
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_legacy_of_alexander"
+							add_ideas = GRE_neo_varangian_idea
+				}
+			search_filters = { FOCUS_FILTER_ARMY_BONUS  FOCUS_FILTER_MANPOWER }
+
+	}
+	focus = {
+		id = GRE_evaluate_air_force
+		icon = GFX_GRE_air_force_focus
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_prepare_for_war
+		}
+		x = -5
+		y = 1
+		relative_position_id = GRE_prepare_for_war
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_evaluate_air_force"
+					air_experience = 25
+				}
+			search_filters = { FOCUS_FILTER_AIRFORCE_BONUS }
+
+	}
+	focus = {
+		id = GRE_air_academy
+		icon = GFX_goal_generic_air_doctrine
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_evaluate_air_force
+		}
+		x = -6
+		y = 2
+		relative_position_id = GRE_prepare_for_war
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_air_academy"
+					add_tech_bonus = {
+							name = GRE_air_academy
+							bonus = 1
+							uses = 2
+							category = air_doctrine
+						}
+				}
+			search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+	focus = {
+		id = GRE_salonika_airport
+		icon = GFX_goal_generic_construction2
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_evaluate_air_force
+		}
+		x = -4
+		y = 2
+		relative_position_id = GRE_prepare_for_war
+			available = {
+					989 = {
+							is_owned_and_controlled_by = GRE
+						}
+				}
+			#Salonika
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			bypass = {
+					NOT = {
+							owns_state = 989
+						}
+				}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_salonika_airport"
+					989 = {
+							add_building_construction = {
+									type = air_base
+									level = 4
+									instant_build = yes
+								}
+						}
+				}
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+	focus = {
+		id = GRE_fighter_focus
+		icon = GFX_goal_generic_air_fighter
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_salonika_airport
+		}
+		prerequisite = {
+			focus = GRE_air_academy
+		}
+		mutually_exclusive = {
+			focus = GRE_radar_focus
+		}
+		x = -6
+		y = 3
+		relative_position_id = GRE_prepare_for_war
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_fighter_focus"
+					add_tech_bonus = {
+							name = GRE_fighter_focus
+							bonus = 1
+							uses = 2
+							category = light_fighter
+							category = cat_heavy_fighter
+						}
+				}
+			search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+	focus = {
+		id = GRE_air_production
+		icon = GFX_goal_generic_air_production
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_fighter_focus
+		}
+		x = -6
+		y = 4
+		relative_position_id = GRE_prepare_for_war
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_air_production"
+					add_ideas = GRE_aviation_industry
+				}
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+	focus = {
+		id = GRE_radar_focus
+		icon = GFX_goal_generic_radar
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_air_academy
+		}
+		prerequisite = {
+			focus = GRE_salonika_airport
+		}
+		mutually_exclusive = {
+			focus = GRE_fighter_focus
+		}
+		x = -4
+		y = 3
+		relative_position_id = GRE_prepare_for_war
+			available = {
+					47 = {
+							is_owned_and_controlled_by = GRE
+						}
+				}
+			#Attica
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			bypass = {
+					NOT = {
+							owns_state = 47
+						}
+				}
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_radar_focus"
+					add_tech_bonus = {
+							name = GRE_radar_focus
+							bonus = 1
+							uses = 1
+							category = radar_tech
+						}
+					if = {
+							limit = {
+									has_tech = radio_detection
+								}
+							47 = {
+									add_building_construction = {
+											type = radar_station
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_tech = radio_detection
+										}
+									has_tech = radio
+								}
+							set_technology = {
+									radio_detection = 1
+								}
+							47 = {
+									add_building_construction = {
+											type = radar_station
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_tech = radio_detection
+										}
+									NOT = {
+											has_tech = radio
+										}
+								}
+							set_technology = {
+									radio = 1
+								}
+						}
+				}
+			search_filters = { FOCUS_FILTER_INDUSTRY  FOCUS_FILTER_RESEARCH }
+
+	}
+	focus = {
+		id = GRE_antiair_focus
+		icon = GFX_focus_generic_air_defense
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_radar_focus
+		}
+		x = -4
+		y = 4
+		relative_position_id = GRE_prepare_for_war
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_antiair_focus"
+					if = {
+							limit = {
+									NOT = {
+											has_tech = interwar_antiair
+										}
+								}
+							set_technology = {
+									interwar_antiair = 1
+								}
+						}
+					if = {
+							limit = {
+									989 = {
+											is_owned_and_controlled_by = GRE
+										}
+								}
+							#Salonika
+							989 = {
+									add_building_construction = {
+											type = anti_air_building
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+					if = {
+							limit = {
+									47 = {
+											is_owned_and_controlled_by = GRE
+										}
+								}
+							#Attica
+							47 = {
+									add_building_construction = {
+											type = anti_air_building
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+					add_tech_bonus = {
+							name = GRE_antiair_focus
+							bonus = 1
+							uses = 1
+							technology = antiair1
+							technology = antiair2
+							technology = antiair3
+							technology = antiair4
+							technology = antiair5
+						}
+				}
+			search_filters = { FOCUS_FILTER_INDUSTRY  FOCUS_FILTER_RESEARCH }
+
+	}
+	focus = {
+		id = GRE_dominate_heights
+		icon = GFX_goal_generic_CAS
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_antiair_focus
+			focus = GRE_air_production
+		}
+		x = -5
+		y = 5
+		relative_position_id = GRE_prepare_for_war
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_dominate_heights"
+					air_experience = 50
+					add_tech_bonus = {
+							name = GRE_dominate_heights
+							bonus = 1
+							uses = 2
+							category = air_doctrine
+						}
+				}
+			search_filters = { FOCUS_FILTER_RESEARCH  FOCUS_FILTER_AIRFORCE_BONUS }
+
+	}
+	focus = {
+		id = GRE_efficient_navy
+		icon = GFX_goal_generic_sea_focused_navy
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_evaluate_navy
+		}
+		mutually_exclusive = {
+			focus = GRE_ambitious_navy
+		}
+		x = -1
+		y = 2
+		relative_position_id = GRE_prepare_for_war
+			available = {
+					any_owned_state = {
+							is_coastal = yes
+						}
+				}
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_efficient_navy"
+					add_ideas = GRE_efficient_navy_idea
+				}
+			search_filters = { FOCUS_FILTER_NAVY_BONUS }
+
+	}
+	focus = {
+		id = GRE_sub_focus
+		icon = GFX_goal_generic_navy_submarine
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_efficient_navy
+		}
+		x = -2
+		y = 3
+		relative_position_id = GRE_prepare_for_war
+			available = {
+					any_owned_state = {
+							is_coastal = yes
+						}
+				}
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_sub_focus"
+					add_tech_bonus = {
+							name = GRE_sub_focus
+							bonus = 1
+							uses = 2
+							category = ss_tech
+						}
+				}
+			search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+	focus = {
+		id = GRE_destroyer_focus
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_efficient_navy
+		}
+		x = 0
+		y = 3
+		relative_position_id = GRE_prepare_for_war
+			available = {
+					any_owned_state = {
+							is_coastal = yes
+						}
+				}
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_destroyer_focus"
+					add_tech_bonus = {
+							name = GRE_destroyer_focus
+							bonus = 1
+							uses = 2
+							category = dd_tech
+						}
+				}
+			search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+	focus = {
+		id = GRE_naval_command
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_sub_focus
+		}
+		prerequisite = {
+			focus = GRE_destroyer_focus
+		}
+		x = -1
+		y = 4
+		relative_position_id = GRE_prepare_for_war
+			available = {
+					any_owned_state = {
+							is_coastal = yes
+						}
+				}
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_naval_command"
+					add_tech_bonus = {
+							name = GRE_naval_command
+							bonus = 1
+							uses = 2
+							category = naval_doctrine
+						}
+				}
+			search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+	focus = {
+		id = GRE_merchant_marine
+		icon = GFX_goal_generic_coastal_navy
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_evaluate_navy
+		}
+		x = 2
+		y = 3
+		relative_position_id = GRE_prepare_for_war
+			available = {
+					any_owned_state = {
+							is_coastal = yes
+						}
+				}
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_merchant_marine"
+					add_equipment_to_stockpile = {
+							type = convoy_1
+							amount = 50
+							producer = GRE
+						}
+				}
+
+	}
+	focus = {
+		id = GRE_hellenic_shipyards
+		icon = GFX_GRE_hellenic_shipyard
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_merchant_marine
+		}
+		x = 2
+		y = 4
+		relative_position_id = GRE_prepare_for_war
+			available = {
+					any_owned_state = {
+							is_core_of = GRE
+							is_controlled_by = GRE
+							dockyard > 0
+							free_building_slots = {
+									building = dockyard
+									size > 1
+									include_locked = yes
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_hellenic_shipyards"
+					if = {
+							limit = {
+									NOT = {
+											has_idea = hellenic_shipyard
+										}
+								}
+							add_ideas = hellenic_shipyard
+						}
+					random_owned_state = {
+							limit = {
+									is_core_of = GRE
+									is_controlled_by = GRE
+									dockyard > 0
+									free_building_slots = {
+											building = dockyard
+											size > 1
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+	focus = {
+		id = GRE_navy_motto
+		icon = GFX_goal_generic_wolf_pack
+		cost = 8.00
+		prerequisite = {
+			focus = GRE_purchase_ships
+			focus = GRE_naval_command
+		}
+		prerequisite = {
+			focus = GRE_hellenic_shipyards
+		}
+		x = 2
+		y = 5
+		relative_position_id = GRE_prepare_for_war
+			available = {
+					any_owned_state = {
+							is_coastal = yes
+						}
+					OR = {
+							has_idea = GRE_efficient_navy_idea
+							has_idea = GRE_ambitious_navy_idea
+						}
+				}
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 2
+							has_war = yes
+						}
+				}
+			available_if_capitulated = yes
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			completion_reward = {
+					log = "[GetDateText]: [Root.GetName]: Focus GRE_navy_motto"
+					if = {
+							limit = {
+									has_idea = GRE_efficient_navy_idea
+								}
+							swap_ideas = {
+									remove_idea = GRE_efficient_navy_idea
+									add_idea = GRE_efficient_navy2_idea
+								}
+						}
+					if = {
+							limit = {
+									has_idea = GRE_ambitious_navy_idea
+								}
+							swap_ideas = {
+									remove_idea = GRE_ambitious_navy_idea
+									add_idea = GRE_ambitious_navy2_idea
+								}
+						}
+				}
+			search_filters = { FOCUS_FILTER_NAVY_BONUS  FOCUS_FILTER_INDUSTRY }
+
+	}
+	
+}

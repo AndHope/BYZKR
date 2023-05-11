@@ -1,0 +1,390 @@
+﻿# Byzantine events
+
+add_namespace = byz
+
+country_event = {
+	id = byz.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event byz.1"}
+	title = byz.1.t
+	desc = byz.1.d
+	picture = GFX_report_event_BYZ_formation
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GRE
+		is_subject = no
+		owns_state = 773 #Constantinople
+		has_cosmetic_tag = GRE_kingdom
+	}
+	
+	mean_time_to_happen = {
+	days = 2
+	}
+	
+	option = {
+		name = byz.1.a
+		set_cosmetic_tag = BYZ
+		set_capital = 773
+		
+
+		hidden_effect = {
+			if = {
+				limit = {
+						has_country_leader = {
+						ruling_only = yes
+						name = "Basileus Aléxandros I"
+					}
+				}
+				create_country_leader = {
+					name = "Basileus Aléxandros IV"
+					desc = "POLITICS_KING_ALEXANDROS_DESC"
+					picture = "gfx/leaders/GRE/Portrait_GRE_Alexander.tga"
+					expire = "1962.1.1"
+					ideology = social_democrat_subtype
+					traits = {}
+				}
+				create_country_leader = {
+					name = "Basileus Aléxandros IV"
+					desc = "POLITICS_KING_ALEXANDROS_DESC"
+					picture = "gfx/leaders/GRE/Portrait_GRE_Alexander.tga"
+					expire = "1962.1.1"
+					ideology = social_conservative_subtype
+					traits = {}
+				}
+				create_country_leader = {
+					name = "Basileus Aléxandros IV"
+					desc = "POLITICS_KING_ALEXANDROS_DESC"
+					picture = "gfx/leaders/GRE/Portrait_GRE_Alexander.tga"
+					expire = "1962.1.1"
+					ideology = social_liberal_subtype
+					traits = {}
+				}
+				create_country_leader = {
+					name = "Basileus Aléxandros IV"
+					desc = "POLITICS_KING_ALEXANDROS_DESC"
+					picture = "gfx/leaders/GRE/Portrait_GRE_Alexander.tga"
+					expire = "1962.1.1"
+					ideology = market_liberal_subtype
+					traits = {}
+				}
+			}
+			
+			if = {
+				limit = {
+						has_country_leader = {
+						ruling_only = yes
+						name = "Basileus Geórgios II"
+					}
+				}
+				create_country_leader = {
+					name = "Basileus Geórgios II"
+					desc = "POLITICS_KING_GEORGIOS_DESC"
+					picture = "gfx/leaders/GRE/Portrait_GRE_George.tga"
+					expire = "1962.1.1"
+					ideology = social_democrat_subtype
+					traits = {}
+				}
+				create_country_leader = {
+					name = "Basileus Geórgios II"
+					desc = "POLITICS_KING_GEORGIOS_DESC"
+					picture = "gfx/leaders/GRE/Portrait_GRE_George.tga"
+					expire = "1962.1.1"
+					ideology = social_conservative_subtype
+					traits = {}
+				}
+				create_country_leader = {
+					name = "Basileus Geórgios II"
+					picture = "gfx/leaders/GRE/Portrait_GRE_George.tga"
+					expire = "1962.1.1"
+					ideology = social_liberal_subtype
+					traits = {}
+				}
+				create_country_leader = {
+					name = "Basileus Geórgios II"
+					desc = "POLITICS_KING_GEORGIOS_DESC"
+					picture = "gfx/leaders/GRE/Portrait_GRE_George.tga"
+					expire = "1962.1.1"
+					ideology = market_liberal_subtype
+					traits = {}
+				}
+				create_country_leader = {
+					name = "Basileus Geórgios II"
+					desc = "POLITICS_KING_GEORGIOS_DESC"
+					picture = "gfx/leaders/GRE/Portrait_GRE_George.tga"
+					expire = "1965.1.1"
+					ideology = authoritarian_democrat_subtype
+					traits = {}
+				}
+			}
+			
+			if = {
+				limit = {
+						has_country_leader = {
+						ruling_only = yes
+						name = "Basileus Pávlos I"
+					}
+				}
+				create_country_leader = {
+					name = "Basileus Pávlos I"
+					desc = "POLITICS_KING_PAVLOS_DESC"
+					picture = "gfx/leaders/GRE/Portrait_GRE_Paul.tga"
+					expire = "1962.1.1"
+					ideology = social_democrat_subtype
+					traits = {}
+				}
+				create_country_leader = {
+					name = "Basileus Pávlos I"
+					desc = "POLITICS_KING_PAVLOS_DESC"
+					picture = "gfx/leaders/GRE/Portrait_GRE_Paul.tga"
+					expire = "1962.1.1"
+					ideology = social_conservative_subtype
+					traits = {}
+				}
+				create_country_leader = {
+					name = "Basileus Pávlos I"
+					desc = "POLITICS_KING_PAVLOS_DESC"
+					picture = "gfx/leaders/GRE/Portrait_GRE_Paul.tga"
+					expire = "1962.1.1"
+					ideology = social_liberal_subtype
+					traits = {}
+				}
+				create_country_leader = {
+					name = "Basileus Pávlos I"
+					desc = "POLITICS_KING_PAVLOS_DESC"
+					picture = "gfx/leaders/GRE/Portrait_GRE_Paul.tga"
+					expire = "1962.1.1"
+					ideology = market_liberal_subtype
+					traits = {}
+				}
+				create_country_leader = {
+					name = "Basileus Pávlos I"
+					desc = "POLITICS_KING_PAVLOS_DESC"
+					picture = "gfx/leaders/GRE/Portrait_GRE_Paul.tga"
+					expire = "1962.1.1"
+					ideology = authoritarian_democrat_subtype
+					traits = {}
+				}
+				if = {
+					limit = {
+						has_government = paternal_autocrat
+					}
+					create_country_leader = {
+						name = "Basileus Pávlos I"
+						desc = "POLITICS_KING_PAVLOS_DESC"
+						picture = "gfx/leaders/GRE/Portrait_GRE_Paul.tga"
+						expire = "1962.1.1"
+						ideology = paternal_autocrat_subtype
+						traits = {}
+					}
+				}
+				if = {
+					limit = {
+						has_government = national_populist
+					}
+					create_country_leader = {
+						name = "Basileus Pávlos I"
+						desc = "POLITICS_KING_PAVLOS_DESC"
+						picture = "gfx/leaders/GRE/Portrait_GRE_Paul.tga"
+						expire = "1962.1.1"
+						ideology = national_populist_subtype
+						traits = {}
+					}
+				}
+			}
+			country_event =  {
+				id = byz.5
+				days = 365
+			}
+		}
+	}
+	
+	option = {
+		name = byz.1.b
+	}
+}
+	
+country_event = {
+	id = byz.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event byz.2"}
+	title = byz.2.t
+	desc = byz.2.d
+	picture = GFX_report_event_BYZ_Hagia_Sofia
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GRE
+		not_has_socialist_government = yes
+		owns_state = 773
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = byz.2.a
+		add_political_power = 25
+		
+	}
+	
+	option = {
+		name = byz.2.b
+		add_political_power = -25
+		add_stability = 0.02
+		add_war_support = 0.02
+		
+	}
+	
+	option = {
+		name = byz.2.c
+		add_political_power = -75
+		add_stability = 0.05
+		add_war_support = 0.05
+		
+	}
+	
+}
+country_event = {
+	id = byz.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event byz.3"}
+	title = byz.3.t
+	desc = byz.3.d
+	picture = GFX_report_event_GRE_riot
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GRE
+		OR = {
+			owns_state = 106
+			owns_state = 212
+		}
+	}
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = byz.3.a
+		add_political_power = -100
+		add_timed_idea = {
+			idea = BYZ_idea_riotslow
+			days = 120
+		}
+	}
+	
+	option = {
+		name = byz.3.b
+		add_political_power = -50
+		add_timed_idea = {
+			idea = BYZ_idea_riotshigh
+			days = 60
+		}
+	}
+}
+
+country_event = {
+	id = byz.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event byz.4"}
+
+	title = {
+		text = byz.4.ta
+		trigger = {
+			country_exists = SOV
+		}
+	}
+	
+	title = {
+		text = byz.4.tb
+		trigger = {
+			has_global_flag = UKR_Alone
+			NOT = {country_exists = SOV}
+		}
+	}
+	
+	picture = GFX_report_event_GRE_exchange
+	
+	desc = {
+		text = byz.4.da
+		trigger = {
+			country_exists = SOV
+			NOT = {country_exists = RUS}
+		}
+	}
+	
+	desc = {
+		text = byz.4.db
+		trigger = {
+			AND = {
+				country_exists = SOV
+				country_exists = RUS
+			}
+		}
+	}
+	
+	desc = {
+		text = byz.4.dc
+		trigger = {
+			has_global_flag = UKR_Alone
+			NOT = {country_exists = SOV}
+		}
+	}
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GRE
+		not_has_socialist_government = yes
+		OR = {
+			country_exists = SOV
+			has_global_flag = UKR_Alone
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = byz.4.a
+		add_manpower = 50000
+		add_stability = -0.05
+		add_ideas = BYZ_idea_immigrant_benefits
+		set_country_flag = BYZ_Accepted_Refugees
+	}
+	
+	option = {
+		name = byz.4.b
+		add_stability = 0.05
+	}
+}
+
+
+
+country_event = {
+	id = byz.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event byz.5"}
+	title = byz.5.t
+	desc = byz.5.d
+	picture = GFX_report_event_GRE_crowd
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_subject = no
+	}
+
+	option = {
+		name = byz.5.a
+		add_political_power = 25
+		hidden_effect = {
+			country_event = {
+				id = byz.5
+				days = 365
+				
+			}
+		}
+	}
+}
+

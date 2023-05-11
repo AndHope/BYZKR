@@ -1,0 +1,31 @@
+state = {
+	id = 679
+	name = "STATE_679"
+
+	history = {
+		owner = EGY
+		add_core_of = HEJ
+		victory_points = {
+			12883 1
+		}
+		victory_points = {
+			5037 5
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			air_base = 1
+			radar_station = 1
+			12883 = {
+				naval_base = 2
+				bunker = 1
+			}
+		}
+	}
+
+	provinces = {
+		4981 5037 12883
+	}
+	manpower = 854141
+	state_category = four
+}
